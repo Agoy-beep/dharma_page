@@ -1,25 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
 import Header from "./header";
 import Footer from "./footer";
 import InfoPage from "./pages/info";
 import OfferPage from "./pages/offer";
 import ContactPage from "./pages/contact";
 import AboutPage from "./pages/about";
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
-  const [lang, setLang] = useState('nl');
-  const language = document.documentElement.lang;
+  const [language, setLanguage] = useState('en');
   const setLanguageToDutch = () => {
-    const languageIdTag = document.getElementById('language');
-    setLang('nl');
-    languageIdTag.lang = lang;
+    setLanguage('nl');
   }
   const setLanguageToEnglish = () => {
-    const languageIdTag = document.getElementById('language');
-    setLang('en');
-    languageIdTag.lang = lang;
+    setLanguage('en');
 }
 
   return (
