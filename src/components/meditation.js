@@ -5,8 +5,8 @@ const hidden = "w-0 h-0";
 
 export default function Meditation(props) {
     // const [hiddenState, setHiddenState] = useState(hidden);
-    const meditation_title = retrieveLabel('mediation.dual.vip1.title', props.lang);
-    const arrayOfLabels = retrieveArrayOfLabels('vip1_', props.lang);
+    const meditation_title = retrieveLabel(props.meditationTitle, props.lang);
+    const arrayOfLabels = retrieveArrayOfLabels(props.meditation, props.lang);
     
     // const dehide = "container flex flex-col mx-10 w-0 h-0 my-auto bg-gray bg-opacity-25 border rounded-lg border-gray-light shadow-lg "
     const unhide = "container flex transition-all ease-in-out delay-150 duration-700 flex-col mx-10 w-2/3 my-auto bg-gray bg-opacity-25 border rounded-lg border-gray-light shadow-lg "
