@@ -7,6 +7,9 @@ TODO
 - Turn Meditationbutton into Nele (disabled for now)
 - Maak de containers met buttons voor meditaties universeel
 - Check of ge van die classNames geen variabelen kunt maken want amai. 
+- Maak een disclaimer dat je geen lineage holder bent
+- Maak tussentitels
+- Spacing tussen paragrafen moet echt wel beter. 
 - Fix footer (disabled until then)
 - Sessions will be a calendar. 
 - Nice to have, scroll progress bar!
