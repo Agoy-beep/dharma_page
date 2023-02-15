@@ -45,6 +45,11 @@ export const labels = [
     en : 'A QUIET PLACE'
   },
   { 
+    key: 'mediation.dual.vip1.title',
+    nl : 'Let-Op-Je-Ademhaling',
+    en : 'SESSIONS'
+  },
+  { 
     key: 'mediation.dual.vip1_1',
     nl : 'Sluit je ogen (nu nog niet)',
     en : 'SESSIONS'

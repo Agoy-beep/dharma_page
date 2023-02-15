@@ -17,20 +17,23 @@ export default function App() {
 }
 
   return (
-    <BrowserRouter>
-    <Header lang={language} setToDutch={setLanguageToDutch} setToEnglish={setLanguageToEnglish}/>
-      { 
-        <div id='pages-container' className="flex-1 h-screen my-36 mx-60">
-          <Routes>
-            <Route path='/' element={<MainPage lang={language}/>} />
-            <Route path='info' element={<InfoPage lang={language}/>} />
-            <Route path='main' element={<MainPage lang={language}/>} />
-            <Route path='about' element={<AboutPage lang={language}/>} />
-            <Route path='contact' element={<ContactPage lang={language}/>} />
-          </Routes>
-        </div>
-      }
-    <Footer lang={language}/>
-  </BrowserRouter>
+    <React.Fragment>
+      <BrowserRouter>
+      <Header lang={language} setToDutch={setLanguageToDutch} setToEnglish={setLanguageToEnglish}/>
+        { 
+          <div id='pages-container' className="flex-1 h-screen my-36 mx-60">
+            <Routes>
+              <Route path='/' element={<MainPage lang={language}/>} />
+              <Route path='info' element={<InfoPage lang={language}/>} />
+              <Route path='main' element={<MainPage lang={language}/>} />
+              <Route path='about' element={<AboutPage lang={language}/>} />
+              <Route path='contact' element={<ContactPage lang={language}/>} />
+            </Routes>
+          </div>
+        }
+    
+    </BrowserRouter>
+    {/* <Footer lang={language}/> */}
+  </React.Fragment>
   )
 }
