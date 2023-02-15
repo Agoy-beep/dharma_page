@@ -27,7 +27,7 @@ export default function Main(props) {
             </div> 
             <div className= "container flex flex-col mx-5 my-auto border rounded-lg border-gray-light shadow-lg">
                 <h1 className="text-4xl my-8 text-center">{main_title_2}</h1>
-                <div className="container flex flex-col pb-5 justify-evenly border rounded-lg border-gray-light">
+                <div className="container flex flex-col pb-5 justify-evenly">
                 <p className="my-5 ml-12 text-left text-lg">{main_paragraph_2}</p>
                 <button className="w-52 h-12 m-auto overflow-hidden text-center text-lg bg-orange opacity-70 rounded-lg 
                     transition ease-in-out delay-100 hover:scale-110 duration-200" onClick={toggleFirstMeditation}>

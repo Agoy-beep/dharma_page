@@ -31,7 +31,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_2',
-    nl : 'Wat verstaan we onder dualistisch mediteren? Er bestaat een onderscheid tussen een mediteerder en het onderwerp van de meditatie. Het bekendste voorbeeld hiervan is een meditatie waarbij gevraagd wordt zich te richten op de ademhaling. Mocht je ooit al eens in aanraking gekomen zijn met meditatie is de kans groot dat je dit al eens gedaan hebt. ',
+    nl : 'Bij een dualistische meditatie bestaat er een onderscheid tussen een mediteerder (onderwerp) en het richtpunt van de aandacht van die mediteerder (object). Men spreekt van een onderwerp als de persoon die de wereld ervaart die bestaat uit objecten die anders zijn dan de persoon die er naar kijkt. Dit is een belangrijk onderscheid waar we later bij de niet-dualistische meditatie op terugkomen. Hier en daar zal je op deze website de mogelijkheid hebben om een schriftelijke beschrijving van een meditatie te raadplegen, in dit geval een meditatie waarbij men de ademhaling observeert. Daarvoor heb ik een knop gemaakt die er zo uitziet: ',
     en : 'A QUIET PLACE'
   },
   { 
