@@ -10,6 +10,17 @@ export const retrieveLabel = (labelName, language) => {
   
 }
 
+export const retrieveArrayOfLabels = (labelSegment, language) => {
+  const filteredLabelsOnLang = retrieveLabels(language);
+  let arrayOfLabels;
+  for (const label of filteredLabelsOnLang) {
+    if (label.key.includes(labelSegment)) {
+      arrayOfLabels.push(label.lang); 
+    }
+  }
+  return arrayOfLabels;
+}
+
 export const retrieveLabels = (language) => {
   return labels.map((label) =>{return {key: label.key, lang: label[language]}});
   
