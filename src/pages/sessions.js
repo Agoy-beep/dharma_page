@@ -1,6 +1,6 @@
 import { lorem, quote } from '../filler/filler'
 
-export default function InfoPage(){
+export default function SessionsPage(){
     return(
         <div className= "container flex flex-col text-center mx-auto my-auto ">
             <h1 className="text-4xl my-8">SESSIES</h1>

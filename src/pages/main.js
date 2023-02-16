@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import Meditation from '../components/meditation.js';
 import Footer from "../footer.js";
+import { containerClassName, 
+    titleClassName, 
+    paragraphClassName, 
+    divClassName, 
+    quoteClassName, 
+    paragraphBottomClassName, 
+    titleSubClassName,
+    buttonClassName } from '../collections/layout.js';
 
 const meditationStarterBools = {
     meditation_1: false,
@@ -11,18 +19,9 @@ const meditationStarterBools = {
     meditation_5: false,
 }
 
-const paragraphClassName = "my-3 mx-12 text-left text-lg";
-const divClassName = "my-1 mx-12 text-left text-lg"
-const paragraphBottomClassName = "my-3 pb-4 mx-12 text-left text-lg";
-const titleSubClassName = "text-2xl my-4 ml-12 text-left";
-const buttonClassName = "w-52 h-12 mx-auto my-4 overflow-hidden text-center text-lg bg-orange opacity-70 rounded-lg transition ease-in-out delay-100 hover:scale-110 duration-200"
-
 export default function Main(props) {
     const [meditationBools, setMedationBools] = useState(meditationStarterBools);
     const main_title_1 = retrieveLabel('main.title_1', props.lang);
-    const main_div_par1_1 = retrieveLabel('main.div.par1_1', props.lang);
-    const main_div_par1_2 = retrieveLabel('main.div.par1_2', props.lang);
-    const main_paragraph_1 = retrieveLabel('main.paragraph_1', props.lang);
     const main_quote_1 = retrieveLabel('main.quote_1', props.lang);
     const main_quote_3 = retrieveLabel('main.quote_3', props.lang);
     const main_title_2 = retrieveLabel('main.title_2', props.lang);
@@ -33,6 +32,9 @@ export default function Main(props) {
     const main_title_sub_4 = retrieveLabel('main.title.sub_4', props.lang);
     const main_title_sub_5 = retrieveLabel('main.title.sub_5', props.lang);
     const main_title_sub_6 = retrieveLabel('main.title.sub_6', props.lang);
+    const main_paragraph_1 = retrieveLabel('main.paragraph_1', props.lang);
+    const main_div_par1_1 = retrieveLabel('main.div.par1_1', props.lang);
+    const main_div_par1_2 = retrieveLabel('main.div.par1_2', props.lang);
     const main_paragraph_2 = retrieveLabel('main.paragraph_2', props.lang);
     const main_paragraph_3 = retrieveLabel('main.paragraph_3', props.lang);
     const main_paragraph_4 = retrieveLabel('main.paragraph_4', props.lang);
@@ -76,25 +78,25 @@ export default function Main(props) {
 
     return (
         <React.Fragment>
-            <div className= "container flex flex-col mx-5 my-8 pb-8 border rounded-lg border-gray-light shadow-lg">
-                <h1 className="text-4xl my-8 text-center">{main_title_1}</h1>
+            <div className= {containerClassName}>
+                <h1 className={titleClassName}>{main_title_1}</h1>
                 <div className={divClassName}>{main_div_par1_1}</div>
                 <p className={paragraphBottomClassName}>{main_paragraph_1}</p>
                 <div className={divClassName}>{main_div_par1_2}</div>
             </div> 
-            <div className= "container flex flex-col mx-5 my-auto pb-8 border rounded-lg border-gray-light shadow-lg">
-                <h1 className="text-4xl my-8 text-center">{main_title_2}</h1>
+            <div className= {containerClassName}>
+                <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>
                 {/* <div className="container flex flex-col pb-5 justify-evenly"> */}
                 <p className={paragraphClassName}>{main_paragraph_2}</p>
                 <button className={buttonClassName} onClick={toggleFirstMeditation}>
-                    Probeer een meditatie
+                    Ademhaling
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_1} meditation={'vip1_'} meditationTitle={'meditation.dual.vip1.title'}/>
                 <p className={paragraphClassName}>{main_paragraph_3}</p>
-                <p className="text-2xl my-5 mx-12 text-center italic">"{main_quote_1}"</p>
+                <p className={quoteClassName}>"{main_quote_1}"</p>
                 <p className={paragraphClassName}>{main_paragraph_4}</p>
                 <h3 className={titleSubClassName}>{main_title_sub_2}</h3>
                 <p className={paragraphClassName}>{main_paragraph_5}</p>
@@ -116,8 +118,8 @@ export default function Main(props) {
                 <p className={paragraphClassName}>{main_paragraph_10}</p>
                 <p className={paragraphBottomClassName}>{main_paragraph_11}</p>
             </div>
-            <div className= "container flex flex-col mx-5 my-8 border rounded-lg border-gray-light shadow-lg">
-                <h1 className="text-4xl my-8 text-center">{main_title_3}</h1>
+            <div className= {containerClassName}>
+                <h1 className={titleClassName}>{main_title_3}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_4}</h3>
                 <p className={paragraphClassName}>{main_paragraph_12}</p>
                 <p className={paragraphClassName}>{main_paragraph_13}</p>
@@ -133,7 +135,7 @@ export default function Main(props) {
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_4} meditation={'nondual1_'} meditationTitle={'meditation.nondual1.title'}/>
-                <p className="text-2xl my-5 mx-12 text-center italic">"{main_quote_3}"</p>
+                <p className={quoteClassName}>"{main_quote_3}"</p>
                 <p className={paragraphClassName}>{main_paragraph_19}</p>
                 <button className={buttonClassName} onClick={toggleFifthMeditation}>
                     Staren, Of Niet Staren?

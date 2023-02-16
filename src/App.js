@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./header";
 import Footer from "./footer";
-import InfoPage from "./pages/info";
+import SessionsPage from "./pages/sessions";
 import MainPage from "./pages/main";
-import ContactPage from "./pages/contact";
+import SourcesPage from "./pages/sources";
 import AboutPage from "./pages/about";
 import React, { useState } from 'react';
 
@@ -19,15 +19,19 @@ export default function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-      <Header lang={language} setToDutch={setLanguageToDutch} setToEnglish={setLanguageToEnglish}/>
+      <Header 
+        lang={language} 
+        setToDutch={setLanguageToDutch}
+        setToEnglish={setLanguageToEnglish}
+        />
         { 
           <div id='pages-container' className="flex-1 h-screen my-36 mx-60">
             <Routes>
               <Route path='/' element={<MainPage lang={language}/>} />
-              <Route path='info' element={<InfoPage lang={language}/>} />
+              <Route path='sessions' element={<SessionsPage lang={language}/>} />
               <Route path='main' element={<MainPage lang={language}/>} />
               <Route path='about' element={<AboutPage lang={language}/>} />
-              <Route path='contact' element={<ContactPage lang={language}/>} />
+              <Route path='sources' element={<SourcesPage lang={language}/>} />
             </Routes>
           </div>
         }

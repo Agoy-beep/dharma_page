@@ -390,14 +390,29 @@ export const labels = [
     en : 'SESSIONS'
   },
   { 
-    key: 'about',
-    nl : 'OVER',
-    en : 'ABOUT'
+    key: 'sources',
+    nl : 'BRONMATERIAAL',
+    en : 'SOURCE MATERIAL'
   },
   { 
-    key: 'contact',
-    nl : 'CONTACT',
-    en : 'CONTACT'
+    key: 'source_1',
+    nl : 'De Waking Up App kan je bijna beschouwen als de plek waar je alles vindt wat je maar nodig hebt. Je vindt er begeleide meditaties, conversaties, lessen en lezingen. Het geesteskind van schrijver Sam Harris heeft als doel om meditatie bij zoveel mogelijk mensen te krijgen. Er bestaat een boek met dezelfde naam die zeker ook de moeite is. Het is een betalende app, die ook een gratis versie ter beschikking stelt voor mensen die het zich niet kunnen verloorloven. De gebruikers van de app kunnen de app voor 1 maand gratis ter beschikking stellen voor anderen. Ik ben erbij sinds het begin, dus ik kan dat ook. Contacteer mij gerust als je het eens wil proberen. Alle inhoud is in het Engels en vooral de conversaties vereisen een goede beheersing van de taal. Beschikbaar op Android, IPhone en via de browser.',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source.button.link.app',
+    nl : 'Naar de website',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source.button.link.book',
+    nl : 'Naar het boek',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'about',
+    nl : 'OVER MIJ',
+    en : 'ABOUT ME'
   },
   { 
     key: 'footer',

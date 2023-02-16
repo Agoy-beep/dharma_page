@@ -1,4 +1,4 @@
-import { labels } from '../labels/labels';
+import { labels } from '../collections/labels';
 
 export const retrieveLabel = (labelName, language) => {
   const filteredLabelsOnLang = retrieveLabels(language);
