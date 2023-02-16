@@ -400,6 +400,16 @@ export const labels = [
     en : 'SOURCE MATERIAL'
   },
   { 
+    key: 'source_2',
+    nl : 'De beschrijving hoeft hier niet moeilijk te zijn, daar waar de titel perfect beschrijft waar het over gaat. Dit boek heeft mij aangezet tot de stap te wagen en een meditatie retraite te doen. 11 Dagen mediteren in stilte, 12 uur per dag. Ik kijk met veel nostalgie terug naar die periode en het heeft mij heel hard veranderd. Matthieu Ricard is een Franse Boeddhistische monnik die ook zeer goede boeken geschreven heeft over onder andere dierenleed. Het boek is ook beschikbaar in het Frans, voor de liefhebbers.',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source_3',
+    nl : 'Ze hebben op het eerste zicht weinig met meditatie te maken maar psychedelica en meditatie hebben veel meer met elkaar gemeen dan dat je zou denken. Het boek dat mee voor de heropleving van deze substanties heeft gezorgd en maakte van schrijver Michael Pollan één van de voortrekkers van verantwoord gebruik, behoud van de ceremonie en een goed doordachte legalisering van o.a. psylocibine en ayahuasca. Naast de razend interessante inhoud, één van de best geschreven boeken die ik ooit heb mogen lezen. Netflix heeft hierover ook een documentaire serie met dezelfde naam.',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
     key: 'source.button.link.app',
     nl : 'Naar de website',
     en : 'SOURCE MATERIAL'

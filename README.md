@@ -3,14 +3,18 @@ TODO
 - change language with a button V
 - style the buttons V
 - Meditation Component V
-- Animate Mediation Component V (can be cleaned up, really)
+- Animate Mediation Component V
 - Turn Meditationbutton into Nele (disabled for now)
 - Maak de containers met buttons voor meditaties universeel V
-- Check of ge van die classNames geen variabelen kunt maken want amai.  
-- Maak een disclaimer dat je geen lineage holder bent
+- Check of ge van die classNames geen variabelen kunt maken want amai. V  
+- Maak een disclaimer dat je geen lineage holder bent (of misschien niet)
 - Maak tussentitels V
 - Spacing tussen paragrafen moet echt wel beter. V
-- Buttons overlappen met de header?
+- Buttons overlappen met de header? FIXED v
+- Sources page aanvullen, pretty please.
+- Sources pagina rederen via zo'n array.map toestand. 
+- Over mij pagina aanvullen. 
+- Blogpagina? Zal wel van de niet dynamische soort zijn.
 - Fix footer (disabled until then)
 - Sessions will be a calendar. 
 - Nice to have, scroll progress bar!
