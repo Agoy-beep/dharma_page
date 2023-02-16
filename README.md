@@ -13,6 +13,7 @@ TODO
 - Buttons overlappen met de header? FIXED v
 - Sources page aanvullen, pretty please.
 - Sources pagina rederen via zo'n array.map toestand. 
+- Foto's fixen. 
 - Over mij pagina aanvullen. 
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
 - Fix footer (disabled until then)

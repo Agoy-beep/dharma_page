@@ -25,7 +25,7 @@ export default function SourcesPage(props){
     const link_how_to_change_your_mind = 'https://www.standaardboekhandel.be/p/how-to-change-your-mind-9781594204227';
     return(
         <React.Fragment>
-            <div className={titleClassName}>BRONNEN</div>
+            {/* <div className={titleClassName}>BRONNEN</div> */}
            <Source title='Waking Up App' 
            image={image_waking_up} 
            description={description_waking_up} 

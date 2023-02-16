@@ -1,17 +1,27 @@
-import { lorem, quote, kintsugiText } from '../filler/filler'
+import { lorem, quote, kintsugiText } from '../filler/filler';
+import { retrieveLabel } from '../helpers/labelhelper.js';
+import { containerClassName, 
+    titleClassName, 
+    paragraphClassName, 
+    divClassName, 
+    quoteClassName, 
+    paragraphBottomClassName, 
+    titleSubClassName,
+    sourceButtonClassName } from '../collections/layout.js';
 
 
-export default function AboutPage(){
+export default function AboutPage(props){
+    const about_title = retrieveLabel('about', props.lang);
+    const about_paragraph_1 = retrieveLabel('about.paragraph_1', props.lang);
+    const about_paragraph_2 = retrieveLabel('about.paragraph_2', props.lang);
+    const about_paragraph_3 = retrieveLabel('about.paragraph_3', props.lang);
+
     return( 
-            <div className= "container flex flex-col text-center mx-auto my-auto ">
-            <h1 className="text-3xl my-8">Over Kintsugi Studio</h1>
-            <div className="container flex  rounded-lg mx-auto border-2 w-44 h-32"></div>
-            <p className="my-5">{kintsugiText}</p>
-            <h1 className="text-3xl my-8">Over Nele</h1>
-            <div className="container flex flex-row">
-                <p className="text-xl my-4 italic">"{quote}"</p>
-            </div>
-            <p className="my-5">{lorem}</p>
+        <div className= {containerClassName}>
+            <h1 className={titleClassName}>{about_title}</h1>
+            <p className={paragraphClassName}>{about_paragraph_1}</p>
+            <p className={paragraphClassName}>{about_paragraph_2}</p>
+            <p className={paragraphClassName}>{about_paragraph_3}</p>     
         </div>
     )
 }
