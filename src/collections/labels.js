@@ -161,7 +161,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_20',
-    nl : 'Hoe doe je dat, je aandacht richten op je aandacht? Ben jij niet je aandacht? Hoe kan jij, het onderwerp, de hoofdrolspeler, de aandacht richten op je eigen aandacht, het object, het andere.',
+    nl : 'Hoe doe je dat, je aandacht richten op je aandacht? Ben jij niet je aandacht? Hoe kan jij, het onderwerp, de hoofdrolspeler, de aandacht richten op je eigen aandacht, het object, het andere?',
     en : 'A QUIET PLACE'
   },
   { 
