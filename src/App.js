@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <BrowserRouter basename='/dharma_page/'>
       <Header 
         lang={language} 
         setToDutch={setLanguageToDutch}
@@ -27,7 +27,7 @@ export default function App() {
         { 
           <div id='pages-container' className="flex-1 h-screen my-36 mx-60">
             <Routes>
-              <Route exact path='/' element={<MainPage lang={language}/>} />
+              <Route path='/' element={<MainPage lang={language}/>} />
               <Route path='/sessions' element={<SessionsPage lang={language}/>} />
               <Route path='/main' element={<MainPage lang={language}/>} />
               <Route path='/about' element={<AboutPage lang={language}/>} />
