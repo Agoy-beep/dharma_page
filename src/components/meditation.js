@@ -15,7 +15,7 @@ export default function Meditation(props) {
         <React.Fragment>
             {props.show ? <div className={props.show ? unhide : hidden}>
                 <h3 className="mt-4 mx-auto font-bold">{meditation_title}</h3>
-                <ul className="mt-8 mb-6 ml-8 list-disc">
+                <ul className="mt-4 mb-6 ml-8 list-disc">
                     {arrayOfLabels.map(label => <li className="my-2 mx-6" key={label.key}>{label.lang}</li> )}
                 </ul>
              </div> : <div></div>}

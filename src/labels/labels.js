@@ -26,12 +26,47 @@ export const labels = [
   },
   {
     key:'main.title.sub_1',
-    nl: 'De body scan',
+    nl: 'DE AAP UIT DE MOUW',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_2',
+    nl: 'DE BODY SCAN',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_3',
+    nl: 'METTA',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_4',
+    nl: 'DE PILOOT ACHTER ONZE OGEN',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_5',
+    nl: 'HET ONGEDAAN MAKEN VAN DE ONVERANDERLIJKE PERSOON',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_6',
+    nl: 'HET CONCEPT IS DOOD, LEVE HET CONCEPT',
+    en: 'The body scan'
+  },
+  {
+    key:'main.div.par1_1',
+    nl: 'Van harte welkom op deze website!',
+    en: 'The body scan'
+  },
+  {
+    key:'main.div.par1_2',
+    nl: 'Arne Goyvaerts',
     en: 'The body scan'
   },
   { 
     key: 'main.paragraph_1',
-    nl : 'Van harte welkom op deze website! Ze is in leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie. Vroeger, toen ik nog jong en knap(per) was,  ging ik op zoek naar rust door mijn omgeving te veranderen. Zo ging ik wandelen in de natuur, zette ik een hoofdtelefoon op om mij af te zonderen of ging ik hardlopen om ‘mijn gedachten te verzetten’. Waar deze website voor staat, is het creëren van een rustige ruimte in ons hoofd die altijd ter beschikking is, waarbij meditatie het gereedschap gaat zijn waarmee we dat kunnen bereiken. Meditatie is een grote waaier waaronder heel veel verschillende activiteiten worden gegroepeerd. Dat ganse spectrum ga ik niet uit de doeken doen, zover reikt mijn kennis ook niet, maar ik zal mij beperken tot een gecondenseerde uitleg waarin beschreven staat wat er voor mij ‘werkt’. Spiritualiteit gaat voor mij immer samen met een zoektocht naar een soort Ultieme Waarheid, waarbij er een hoop technieken en filosofieën doorheen de jaren uit de boot zijn gevallen. Gouden tip: als er iemand handenvol geld vraagt voor een ‘revolutionaire aanpak’, draai hen de rug toe en loop zo snel mogelijk de andere richting uit. Daarmee gerelateerd zou ik graag voorop willen stellen dat ik geen nieuwe, fantastische aanpak predik. Alle handvaten en technieken die hier worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta. Omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, hier in het Nederlands ter beschikking stellen. De sessies die ik organiseer en het samenstellen van deze website is mijn manier om deze informatie makkelijk toegankelijk te maken, in de hoop dat jullie er veel baat bij zullen hebben. Lees je op deze pagina verder dan vind je het onderscheid tussen dualistisch en niet-dualistisch mediteren, waarom dat onderscheid van belang is en hoe de inzichten die eruit kunnen voortvloeien leiden tot meer geluk in het dagelijkse leven. In de hoofdbalk kunnen jullie doorheen de website navigeren naar de hierboven reeds vernoemde bronnen, sessies en verdere contactinformatie. Ik wens jullie veel leesplezier!',
+    nl : 'Ze is in leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie. Vroeger, toen ik nog jong en knap(per) was,  ging ik op zoek naar rust door mijn omgeving te veranderen. Zo ging ik wandelen in de natuur, zette ik een hoofdtelefoon op om mij af te zonderen of ging ik hardlopen om ‘mijn gedachten te verzetten’. Waar deze website voor staat, is het creëren van een rustige ruimte in ons hoofd die altijd ter beschikking is, waarbij meditatie het gereedschap gaat zijn waarmee we dat kunnen bereiken. Meditatie is een grote waaier waaronder heel veel verschillende activiteiten worden gegroepeerd. Dat ganse spectrum ga ik niet uit de doeken doen, zover reikt mijn kennis ook niet, maar ik zal mij beperken tot een gecondenseerde uitleg waarin beschreven staat wat er voor mij ‘werkt’. Spiritualiteit gaat voor mij immer samen met een zoektocht naar een soort Ultieme Waarheid, waarbij er een hoop technieken en filosofieën doorheen de jaren uit de boot zijn gevallen. Gouden tip: als er iemand handenvol geld vraagt voor een ‘revolutionaire aanpak’, draai hen de rug toe en loop zo snel mogelijk de andere richting uit. Daarmee gerelateerd zou ik graag voorop willen stellen dat ik geen nieuwe, fantastische aanpak predik. Alle handvaten en technieken die hier worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta. Omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, hier in het Nederlands ter beschikking stellen. De sessies die ik organiseer en het samenstellen van deze website is mijn manier om deze informatie makkelijk toegankelijk te maken, in de hoop dat jullie er veel baat bij zullen hebben. Lees je op deze pagina verder dan vind je het onderscheid tussen dualistisch en niet-dualistisch mediteren, waarom dat onderscheid van belang is en hoe de inzichten die eruit kunnen voortvloeien leiden tot meer geluk in het dagelijkse leven. In de hoofdbalk kunnen jullie doorheen de website navigeren naar de hierboven reeds vernoemde bronnen, sessies en verdere contactinformatie. Ik wens jullie veel leesplezier!',
     en : 'A QUIET PLACE'
   },
   { 
@@ -100,8 +135,73 @@ export const labels = [
     en : 'A QUIET PLACE'
   },
   { 
+    key: 'main.paragraph_15',
+    nl : 'Mocht je totaal nieuw zijn in de wereld van meditatie, net gehoord hebben van de rivierenmetafoor, de aap die in het rond springt of de gedachten die als haken zijn, dan volgt er nu misschien wel een stuk waardoor je het hele project links wil laten liggen. Ik nodig je uit om dat niet te doen. Toen ik voor het eerst werd geconfronteerd met deze manier van naar het leven kijken vond ik het een volstrekt belachelijk idee. Ik voelde mij bijna beledigd. Ook waren de meditaties zo vaag en frustrerend, dat ik vaak slechter gezind uit een meditatie stapte, wat al helemaal niet de bedoeling mag zijn. Ik hoop jullie van die valkuil te behoeden door erop te hameren dat naar élk gevoel of gedachte gekeken kan worden op een manier dat je er niet mee wordt meegetrokken. Zowel tijdens een meditatie als erbuiten kan je leren voelen wat er komt en kan je leren de ruimte te creëren die je nodig hebt om geen slaaf te zijn van de impulsen die in je opkomen.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_16',
+    nl : 'Dit alles gezegd zijnde, denk ik dat we nu aan een splitsing staan:  ofwel keer je nu terug en wijdt je zoveel tijd je wil aan het dualistisch mediteren en al de voordelen die erbij komen kijken, ofwel lees je voort en raak je heel verward. Het goede nieuws is dat wat je zoekt bij non-dualisme, op de oppervlakte ligt te sluimeren. ‘Hidden in plain sight’, zoals men in het Engels zo mooi zegt. Je zou het kunnen vertalen als ‘Verstopt in je gewone gezichtsveld’. Het minder goede nieuws is dat ik moet proberen om een concept-loos bestaan te beschrijven, dat je als lezer dat ergens moet proberen begrijpen om tot de mogelijkheid te komen om het te ervaren. In de traditionele manier van handelen, is daar veel voorbereiding voor nodig en heb je een begeleider nodig die je actief kan ondersteunen tijdens je zoektocht. Dit is een tekst. De voorbereiding is erg summier, daar waar hierboven een erg beknopte uitleg staat wat dualistisch mediteren inhoudt. En niemand kan je vertellen of je goed bezig bent. Daarom is het vooral nu de bedoeling om je nieuwsgierigheid te prikkelen, je op weg te helpen naar een immens boeiende zoektocht naar je eigen natuur. Ik heb nooit een vaste begeleider gehad. Ik ben altijd nieuwsgierig geweest, mijn intuïtie blijven volgen en leren vertrouwen in het proces. Ik heb soms gekke dingen gedaan, 11 dagen in stilte geleefd waarbij ik 12 uur per dag mediteerde, een paar dagen in een bos gezeten zonder eten en drinken, een aantal uur in een ‘zweethut’ gezeten waar ik mijzelf ben tegengekomen en aan ceremonies deelgenomen met verschillende soorten psychedelica. Maar het is allemaal een zoektocht, een fantastisch proces dat zich voortzet tot ik uiteindelijk ophoud met bestaan. Maar genoeg over mijzelf, tijd voor de harde, doch verlossende waarheid:',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_17',
+    nl : 'In de pure essentie van het bestaan, is het dualistisch mediteren gebaseerd op een misvatting. Het is allemaal ‘fake’.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_18',
+    nl : 'Herinner u de ‘gedachtenrivier’. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Je (onderwerp, hoofdrolspeler) kijkt naar je gedachten (het object, het andere) die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: ‘Waar komen die gedachten vandaan?’. Probeer het proces te benoemen.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_19',
+    nl : 'Het is allemaal nog niet moeilijk genoeg, dus hier een hoop vragen waar je eens bij stil kan staan: Wat onderscheidt een gedachte van een geluid dat je hoort? Of van een geur die je opvangt? Of van je eigen hand dat je ziet? Is er iets helemaal ‘eigen’ aan het creëren van een gedachte? Nu we toch een hand vernoemd hebben: kijk eens naar je hand en vervolgens naar je pols. Waar eindigt je hand en begint een pols? Is dat een universeel gegeven, stopt die voor iedereen exact op de zelfde plaats, of zijn een hand en een pols concepten die helpen om je door de wereld te navigeren? Is de boom die je deze ochtend bent tegengekomen nog altijd dezelfde boom wanneer je hem later op de dag terug ziet? Is hij misschien gegroeid? Waar begint en eindigt het concept boom, in de kruin, bij de wortels of nog ergens anders? Is het een spar, een berk of een hazelaar? Het aan elkaar naaien van een wereldbeeld dat opgebouwd is uit concepten en het al dan niet eigen zijn van gedachten lijkt misschien een moeilijke opdracht, maar dat hoeft het niet te zijn. ',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_20',
+    nl : 'Hoe doe je dat, je aandacht richten op je aandacht? Ben jij niet je aandacht? Hoe kan jij, het onderwerp, de hoofdrolspeler, de aandacht richten op je eigen aandacht, het object, het andere.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_21',
+    nl : 'Ik weet niet of het helemaal duidelijk is, maar het concept van onderwerp-object-gebaseerde meditatie, het dualistisch denken, begint hier onder druk te staan. Je kan niet vanuit een apart perspectief kijken naar je eigen perspectief.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_22',
+    nl : 'Stel dat je aandacht vertrekt vanuit een punt in je hoofd. Dat is waar de ‘ik’ bestaat, de piloot achter de knoppen van je leven. Het centrum van je bestaan. Jij gebruikt je aandacht van daaruit als een zaklamp om iets in je omgeving te belichten. Je kijkt naar deze tekst bijvoorbeeld. Tegelijk ben je niet bezig met het gegeven of er al dan niet net een vogel een liedje aan het zingen is, tenzij die nu tegen je raam vliegt. Door het geluid van een vogel die tegen je raam vliegt, verplaatst je aandacht naar de oorsprong van het geluid. De vogel ligt roerloos op de grond en je begint je stilaan ongerust te voelen over zijn toestand. Gelukkig vindt de vogel terug zijn bewustzijn en kan hij/zij opstijgen en verder gaan met zijn leven. Jij, immer empathisch dat je bent, voelt een golf van opluchting door je lichaam gaan. Wat een heftige rit. Herinner je de riviermetafoor. Het zou al handig zijn als je zou kunnen kijken naar de vloed van emoties die je soms kan ervaren, en niet door het water wordt meegesleurd.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_23',
+    nl : 'Stel nu dat het enige wat er bestaat, aandacht is, of liever: bewustzijn. Je leest nog altijd deze tekst maar niet vanuit een bepaald punt dat ergens vertrekt vanuit je hoofd. De tekst komt ‘binnen’, net als alle andere objecten in je gezichtsveld. Het geluid van de botsende vogel komt ook binnen, het verschijnt in je bewustzijn in de vorm van een geluid. Je ongerustheid komt ook binnen, verschijnend als een gevoel dat je in je lichaam. Zo ook de opluchting. Dit is nog altijd een ‘gelaagde’ manier van kijken naar het leven, daar waar we concepten blijven gebruiken om een vogel, tekst, geluid, gevoel en bewustzijn aan te duiden. Die geven het leven een context, waardoor we kunnen functioneren. Nu keren we terug naar de riviermetafoor, die nu klaar is voor een grondige aanpassing. Wat gebeurt er als we de observeerder van de rivier weg halen? Er is niemand om naar de rivier te kijken, geen hoofdpersonage, alleen een rivier. In deze metafoor ben jij de rivier. Een constant veranderlijke stroom waar alles waar wij een concept voor hebben in voorbijgaat.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_24',
+    nl : 'Ik heb jullie eerder uitgenodigd om het meditatie project niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart al jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, ook een concept is, dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheidt tussen de ik en de Ik. De ik zonder hoofdletter is een concept, de Ik met de grote letter is de ervaring van het leven via het pure bewustzijn. Andere spreken van een ik ervaring met een zaklamp tegenover een lamp die zichzelf verlicht. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord ‘ignorance’ dat je in meditatiekringen vaak hoort vallen), kan verdrijven. ‘Emptiness’ is nog zo’n wordt dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De ‘Leegte’, is een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons. De eigenschappen die wij voorwerpen geven, worden door ons gegeven, die worden in het bestaan geroepen, ze zijn niet inherent aan het bestaan. Dat wil niet zeggen dat je vanaf nu alle concepten weg moet gooien en concept-loos moet proberen bestaan. Het gaat er om het inzicht, of herkenning, ervan. Zie in dat je levenswereld opgebouwd is rond concepten, waarbij ook je ‘ik’ een concept is dat gecreëerd is. Dat concept heb je in het dagelijkse leven nodig, hoe weet anders iemand dat mijn schoenen ‘mijn’ schoenen zijn? Maar je moet je er niet mee vereenzelvigen, want je ‘ik’ sleurt je ook de dieperik in. Samsara, het steeds terugkeren van het verlangen voor iets dat je niet hebt, heeft hier ook een oorsprong in. Wil je uit dat systeem stappen, zie dan eerst en vooral in dat je bewustzijn de deur naar de realiteit is, niet je ‘ik’. Mocht dit allemaal zeer vreemd overkomen, dan heb ik het geweldige nieuws dat het allemaal nog vreemder wordt. ',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_25',
+    nl : 'Het concept van een concept-loos bestaan begrijpen is één ding, de ondervinding ervan is een ander. Het kan goed zijn dat er korte momenten zijn doorheen je dag waarin je merkt dat er een breuk ontstaat tussen hoe je de wereld vroeger ervaarde en nu. Soms wordt je leven schijnbaar geleefd, rafelt het voor je ogen af zonder dat je eigenlijk iets aan het doen bent. Dan zijn er momenten die een soort van stabiliteit vragen die kunnen binnenkomen als diep spirituele ervaringen. Je kan overvallen worden door een cascade-effect, waarbij je inziet dat het bewustzijn al hetgeen is dat er bestaat en je op onverklaarbare manier bij je hart terechtkomt en je jezelf verbonden voelt met alles en iedereen. Er komt een gevoel van warmte boven dat je uitdraagt naar iedereen rondom je. Het lijkt alsof je alles en iedereen graag ziet. Op dat moment wordt er een blik  geworpen op je ware natuur. Onze ware natuur als mensen laat zich zien en voelen als een diepe naastenliefde. Allesomvattend mededogen. Vraag me nu niet waarom. Geen idee. Het is wat het is. Er zijn mensen geweest die het merendeel van hun leven doorbrachten in grotten, tot dit inzicht kwamen en dat uitdroegen naar hun omgeving. Anderen kijken naar een bloem en worden overvallen door de waarheid van het bestaan. Dit is niet eigen aan één levensvisie. Boeddhisme, Zen, Hindoeïsme, allen hebben ze een eigen versie van deze waarheid. Er is een Ontwaken en er is mogelijk een Verlichting. De Verlichte mens heeft de ervaring vanuit het bewustzijn om zo’n manier gestabiliseerd dat die daar permanent kan vertoeven. Wat er ook schijnbaar altijd bij hoort is dat deze mensen niet in de traditionele manier functioneren in de wereld. Zij moeten niet naar hun werk, hebben geen kinderen op te voeden en leven van de vrijgevigheid van anderen. Een Ontwaakt bestaan is iets anders. Daar ben je in staat in te zien dat de realiteit anders is dan dat je dacht -er is geen onderwerp dat objecten ervaart -, maar je bent nog wel in staat om op een ‘maatschappelijk aanvaardbare manier’ in het leven te staan. Je kan nog uit je lood geslagen worden, meegevoerd worden met een gedachtegang en soms diep ongeluk ervaren. Je hebt niet de stabiliteit die je kan doen dobberen op de golven van de zee van het leven, maar je hebt het wel ter beschikking als hulpmiddel, zolang je ernaar leert kijken.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.paragraph_26',
+    nl : 'Proficiat, je bent aan het einde geraakt! Hopelijk is dit het begin of voortzetting van een boeiende reis en niet een abrupte botsing met De Muur Van Frustratie, Hoongelach En Bitterheid, of zoiets.',
+    en : 'A QUIET PLACE'
+  },
+  { 
     key: 'main.quote_1',
     nl : 'Gedachten worden zoals dieven die een leeg huis komen plunderen, zelfs de mogelijkheid om afgeleid te worden houdt op met bestaan',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_3',
+    nl : 'Komen gedachten voort uit ‘het niets’?',
     en : 'A QUIET PLACE'
   },
   { 
@@ -117,6 +217,16 @@ export const labels = [
   { 
     key: 'meditation.dual.vip3.title',
     nl : 'Metta',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1.title',
+    nl : 'Vind Je Held',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual2.title',
+    nl : 'Aandacht Voor Bewustzijn',
     en : 'SESSIONS'
   },
   { 
@@ -227,6 +337,51 @@ export const labels = [
   { 
     key: 'meditation.dual.vip3_8',
     nl : 'Herhaal deze zinnen gedurende 15 minuten op een zo bewust mogelijke manier (nu mag je de ogen sluiten)',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_1',
+    nl : 'Haal je iemand voor de geest die je bewondert',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_2',
+    nl : 'Probeer het hele proces in kaart te brengen: ',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_3',
+    nl : 'Waarom heb je die persoon gekozen?',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_4',
+    nl : 'Hoe is die persoon in je opgekomen?',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_5',
+    nl : 'Kan je een mentaal beeld van die persoon lang vasthouden?',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual1_6',
+    nl : 'Gaat het beter als je ERG je best doet?',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual2_1',
+    nl : 'Kijk naar een object dat voor je ligt',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual2_2',
+    nl : 'Zo af en toe, maar voor korte periodes, probeer je aandacht te richten op het punt waaruit je aandacht vertrekt',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'meditation.nondual2_3',
+    nl : 'Wanneer je afgeleid wordt door een emotie of een gedachte, richt je aandacht daarop en ervaar wat er gebeurt',
     en : 'SESSIONS'
   },
   { 
