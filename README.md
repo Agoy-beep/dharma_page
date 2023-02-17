@@ -11,6 +11,8 @@ TODO
 - Maak tussentitels V
 - Spacing tussen paragrafen moet echt wel beter. V
 - Buttons overlappen met de header? FIXED v
+- Scroll up V
+- Set up CI/CD met github. 
 - Sources page aanvullen, pretty please.
 - Sources pagina rederen via zo'n array.map toestand. 
 - Foto's fixen. 
@@ -18,5 +20,6 @@ TODO
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
 - Fix footer (disabled until then)
 - Sessions will be a calendar. 
+- BUG: Je krijgt een flikkerend typstreepje in de header?
 - Nice to have, scroll progress bar!
 

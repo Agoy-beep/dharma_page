@@ -390,6 +390,121 @@ export const labels = [
     en : 'SESSIONS'
   },
   { 
+    key: 'session.subject.nondual.intro',
+    nl : 'INTRODUCTIE NIET-DUALISTISCHE MEDITATIE',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.description.nondual.intro',
+    nl : 'Hier baseren we ons voornamelijk uit de meditaties die afkomstig zijn uit de Vipassana traditie. Na een korte verwelkoming en voorstelronde beginnen we eerst met een praktijkoefening en volgen daarna deelcirkels, uitleg, meer oefeningen en een uitgebreide mogelijkheid om vragen te stellen. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur. ',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.subject.dual.intro',
+    nl : 'INTRODUCTIE DUALISTISCHE MEDITATIE',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.description.dual.intro',
+    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen dat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_1',
+    nl : 'JANUARI',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_2',
+    nl : 'FEBRUARI',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_3',
+    nl : 'MAART',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_4',
+    nl : 'APRIL',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_5',
+    nl : 'MEI',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_6',
+    nl : 'JUNI',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_7',
+    nl : 'JULI',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_8',
+    nl : 'AUGUSTUS',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_9',
+    nl : 'SEPTEMBER',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_10',
+    nl : 'OKTOBER',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_11',
+    nl : 'NOVEMBER',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.month_12',
+    nl : 'DECEMBER',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_1',
+    nl : 'ZONDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_2',
+    nl : 'MAANDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_3',
+    nl : 'DINSDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_4',
+    nl : 'WOENSDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_5',
+    nl : 'DONDERDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_6',
+    nl : 'VRIJDAG',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.day_7',
+    nl : 'ZATERDAG',
+    en : 'SESSIONS'
+  },
+  { 
     key: 'sources',
     nl : 'BRONMATERIAAL',
     en : 'SOURCE MATERIAL'
@@ -407,6 +522,11 @@ export const labels = [
   { 
     key: 'source_3',
     nl : 'Ze hebben op het eerste zicht weinig met meditatie te maken maar psychedelica en meditatie hebben veel meer met elkaar gemeen dan dat je zou denken. Het boek dat mee voor de heropleving van deze substanties heeft gezorgd en maakte van schrijver Michael Pollan één van de voortrekkers van verantwoord gebruik, behoud van de ceremonie en een goed doordachte legalisering van o.a. psylocibine en ayahuasca. Naast de razend interessante inhoud, één van de best geschreven boeken die ik ooit heb mogen lezen. Netflix heeft hierover ook een documentaire serie met dezelfde naam.',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source_4',
+    nl : 'Yongey Mingyur Rinpoche is al een tijdje abt van een klooster wanneer hij besluit om op een nacht de grote poort achter zich dicht te trekken en zonder enige bezitting buiten zijn kledij en de inhoud van zijn zakken de wijde wereld in te trekken. Een ‘dwalende retraite’, zoals hij dat noemt. Het zou zonde zijn om te verklappen wat er in dit boek gebeurt, maar ergens kan je het al raden. Mingyur Rinpoche is opgegroeid in zeer beschermde omstandigheden en voor hij deze expeditie ondernam, nog nooit onbegeleid buiten zijn klooster geweest. Het boek is een mooie introductie tot non-dualistisch denken. Ook zijn andere boeken ‘Joyful Wisdom’ en ‘Joy Of Living’ zijn aan te raden. Hij is de initiator van de Tergar Meditation Community. Ik heb enkele van zijn cursussen reeds doorlopen maar ik moet toegeven dat het tegenwoordig op een laag pitje staat.',
     en : 'SOURCE MATERIAL'
   },
   { 
