@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dharma_page/static/css/main.659fdddd.css",
-    "main.js": "/dharma_page/static/js/main.f87ff21b.js",
+    "main.css": "/dharma_page/static/css/main.74bc153c.css",
+    "main.js": "/dharma_page/static/js/main.6f67715f.js",
     "static/js/787.24c5df12.chunk.js": "/dharma_page/static/js/787.24c5df12.chunk.js",
     "index.html": "/dharma_page/index.html",
-    "main.659fdddd.css.map": "/dharma_page/static/css/main.659fdddd.css.map",
-    "main.f87ff21b.js.map": "/dharma_page/static/js/main.f87ff21b.js.map",
+    "main.74bc153c.css.map": "/dharma_page/static/css/main.74bc153c.css.map",
+    "main.6f67715f.js.map": "/dharma_page/static/js/main.6f67715f.js.map",
     "787.24c5df12.chunk.js.map": "/dharma_page/static/js/787.24c5df12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.659fdddd.css",
-    "static/js/main.f87ff21b.js"
+    "static/css/main.74bc153c.css",
+    "static/js/main.6f67715f.js"
   ]
 }
