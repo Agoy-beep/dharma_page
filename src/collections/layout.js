@@ -1,7 +1,8 @@
-export const containerClassName = "container flex flex-col mx-auto my-8 pb-8 border  bg-white rounded-lg border-gray-light shadow-lg opacity-90";
+export const containerClassName = "container flex flex-col w-4/6 mx-auto h-fit my-12 pb-8 pt-4 transition-all ease-in-out delay-100 duration-1000 border bg-white rounded-lg border-gray-light shadow-lg opacity-90";
+export const containerHiddenClassName = "container flex flex-col w-4/6 mx-auto h-fit my-12 pb-8 pt-4 opacity-0";
 export const titleClassName = "text-4xl my-8 text-center";
-export const paragraphClassName = "my-3 mx-12 text-left text-lg";
-export const divClassName = "my-1 mx-12 text-left text-lg";
+export const paragraphClassName = "my-2 mx-12 text-left text-lg";
+export const divClassName = "my-4 mx-12 text-left text-lg";
 export const quoteClassName = "text-2xl my-5 mx-12 text-center italic";
 export const paragraphBottomClassName = "my-3 pb-4 mx-12 text-left text-lg";
 export const titleSubClassName = "text-2xl my-4 ml-12 text-left";

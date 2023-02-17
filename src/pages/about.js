@@ -1,14 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import FaqPage from './faqpage';
 import Footer from '../footer';
 import { retrieveLabel } from '../helpers/labelhelper.js';
-import { containerClassName, 
+import { containerClassName,
+    containerHiddenClassName, 
     titleClassName, 
     paragraphClassName, 
     } from '../collections/layout.js';
 
 
 export default function AboutPage(props){
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    
+    useEffect(()=>{
+        setContainerVisibleClassName(() => containerClassName);
+    }, []);
+
     const about_title = retrieveLabel('about', props.lang);
     const about_paragraph_1 = retrieveLabel('about.paragraph_1', props.lang);
     const about_paragraph_2 = retrieveLabel('about.paragraph_2', props.lang);
@@ -16,7 +23,7 @@ export default function AboutPage(props){
 
     return( 
         <React.Fragment>
-            <div className= {containerClassName}>
+            <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{about_title}</h1>
                 <p className={paragraphClassName}>{about_paragraph_1}</p>
                 <p className={paragraphClassName}>{about_paragraph_2}</p>

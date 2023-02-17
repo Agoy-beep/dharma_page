@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./header";
 import SessionsPage from "./pages/sessions";
+import IntroPage from './pages/intro';
 import MainPage from "./pages/main";
 import SourcesPage from "./pages/sources";
 import AboutPage from "./pages/about";
@@ -26,9 +27,9 @@ export default function App() {
           setToEnglish={setLanguageToEnglish}
           />
           { 
-            <div id='pages-container' className="flex-auto h-full min-h-screen mt-28 bg-darkyellowtrees bg-fixed bg-repeat-y">
+            <div id='pages-container' className="flex-auto content-center h-full min-h-screen mt-28 pt-8 bg-darkyellowtrees bg-fixed bg-repeat-y">
               <Routes>
-                <Route path='/' element={<MainPage lang={language}/>} />
+                <Route path='/' element={<IntroPage lang={language}/>} />
                 <Route path='/sessions' element={<SessionsPage lang={language}/>} />
                 <Route path='/main' element={<MainPage lang={language}/>} />
                 <Route path='/about' element={<AboutPage lang={language}/>} />

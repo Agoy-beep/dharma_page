@@ -11,7 +11,7 @@ export default function Header(props) {
     return (
         <div className="container fixed top-0 flex mx-auto z-10 px-16 h-28 max-w-full bg-gray-light opacity-85 text-black">
             <div className="container flex items-center mx-auto px-4 basis-1/5">
-                <div className="text-4xl ">{title}</div>
+                <div className="text-4xl "><Link to= "/">{title}</Link></div>
             </div>
             <div className="container flex items-center text-center px-14 basis-4/5 select-none">
                 <div className="text-xl basis-1/4 transition ease-in-out delay-100 hover:scale-110 hover:underline-offset-1 duration-200">

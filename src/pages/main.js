@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
+import Intro from './intro.js';
 import Meditation from '../components/meditation.js';
 import Footer from "../footer.js";
-import { containerClassName, 
+import { containerClassName,
+    containerHiddenClassName, 
     titleClassName, 
     paragraphClassName, 
     divClassName, 
@@ -21,6 +23,12 @@ const meditationStarterBools = {
 
 export default function Main(props) {
     const [meditationBools, setMedationBools] = useState(meditationStarterBools);
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    
+    useEffect(()=>{
+        setContainerVisibleClassName(() => containerClassName);
+    }, []);
+
     const main_title_1 = retrieveLabel('main.title_1', props.lang);
     const main_quote_1 = retrieveLabel('main.quote_1', props.lang);
     const main_quote_3 = retrieveLabel('main.quote_3', props.lang);
@@ -32,9 +40,6 @@ export default function Main(props) {
     const main_title_sub_4 = retrieveLabel('main.title.sub_4', props.lang);
     const main_title_sub_5 = retrieveLabel('main.title.sub_5', props.lang);
     const main_title_sub_6 = retrieveLabel('main.title.sub_6', props.lang);
-    const main_paragraph_1 = retrieveLabel('main.paragraph_1', props.lang);
-    const main_div_par1_1 = retrieveLabel('main.div.par1_1', props.lang);
-    const main_div_par1_2 = retrieveLabel('main.div.par1_2', props.lang);
     const main_paragraph_2 = retrieveLabel('main.paragraph_2', props.lang);
     const main_paragraph_3 = retrieveLabel('main.paragraph_3', props.lang);
     const main_paragraph_4 = retrieveLabel('main.paragraph_4', props.lang);
@@ -75,16 +80,12 @@ export default function Main(props) {
     const toggleFifthMeditation = () => {
         setMedationBools((prevState) => {return {...prevState, meditation_5: !meditationBools.meditation_5}});
     }
+    
 
     return (
         <React.Fragment>
-            <div className= {containerClassName}>
-                <h1 className={titleClassName}>{main_title_1}</h1>
-                <div className={divClassName}>{main_div_par1_1}</div>
-                <p className={paragraphBottomClassName}>{main_paragraph_1}</p>
-                <div className={divClassName}>{main_div_par1_2}</div>
-            </div> 
-            <div className= {containerClassName}>
+            {/* <Intro lang={props.lang} /> */}
+            <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>
                 {/* <div className="container flex flex-col pb-5 justify-evenly"> */}

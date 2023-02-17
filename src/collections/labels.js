@@ -6,7 +6,7 @@ export const labels = [
   },
   { 
     key: 'main',
-    nl : 'HOME',
+    nl : 'INLEIDING',
     en : 'HOME'
   },
   { 
@@ -55,19 +55,39 @@ export const labels = [
     en: 'The body scan'
   },
   {
-    key:'main.div.par1_1',
+    key:'intro.div_1',
     nl: 'Van harte welkom op deze website!',
     en: 'The body scan'
   },
   {
-    key:'main.div.par1_2',
+    key:'intro.div_2',
+    nl: 'Ik wens jullie veel lees- en leerplezier!',
+    en: 'The body scan'
+  },
+  {
+    key:'intro.div_3',
     nl: 'Arne Goyvaerts',
     en: 'The body scan'
   },
   { 
-    key: 'main.paragraph_1',
-    nl : 'Ze is in leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie. Vroeger, toen ik nog jong en knap(per) was,  ging ik op zoek naar rust door mijn omgeving te veranderen. Zo ging ik wandelen in de natuur, zette ik een hoofdtelefoon op om mij af te zonderen of ging ik hardlopen om ‘mijn gedachten te verzetten’. Waar deze website voor staat, is het creëren van een rustige ruimte in ons hoofd die altijd ter beschikking is, waarbij meditatie het gereedschap gaat zijn waarmee we dat kunnen bereiken. Meditatie is een grote waaier waaronder heel veel verschillende activiteiten worden gegroepeerd. Dat ganse spectrum ga ik niet uit de doeken doen, zover reikt mijn kennis ook niet, maar ik zal mij beperken tot een gecondenseerde uitleg waarin beschreven staat wat er voor mij ‘werkt’. Gouden tip: als er iemand handenvol geld vraagt voor een ‘revolutionaire aanpak’, draai hen de rug toe en loop zo snel mogelijk de andere richting uit. Daarmee gerelateerd zou ik graag voorop willen stellen dat ik geen nieuwe, fantastische aanpak predik. Alle handvaten en technieken die hier worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta. Omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, hier in het Nederlands ter beschikking stellen. De sessies die ik organiseer en het samenstellen van deze website is mijn manier om deze informatie makkelijk toegankelijk te maken, in de hoop dat jullie er veel baat bij zullen hebben. Lees je op deze pagina verder dan vind je het onderscheid tussen dualistisch en niet-dualistisch mediteren, waarom dat onderscheid van belang is en hoe de inzichten die eruit kunnen voortvloeien leiden tot meer geluk in het dagelijkse leven. In de hoofdbalk kunnen jullie doorheen de website navigeren naar de hierboven reeds vernoemde bronnen, sessies en verdere contactinformatie. Ik wens jullie veel leesplezier! ',
+    key: 'intro.paragraph_1',
+    nl : 'Ze is in leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie.',
     en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'intro.paragraph_2',
+    nl : 'Ik raad je aan te beginnen bij een inleidende tekst die ik heb opgesteld waar twee verschillende soorten meditatie uit de doeken worden gedaan. Enerzijds heb je de dualistische meditatie, waar er een duidelijk onderscheid bestaat tussen een persoon die observeert en een object dat geobserveerd wordt, anderzijds heb je de niet-dualistische meditatie, waarbij er alleen een bewustzijn bestaat waarin alles wat je maar kan bedenken in tevoorschijn komt en weer verdwijnt. ',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'intro.paragraph_3',
+    nl : 'Alle handvaten en technieken die zowel op deze website als tijdens workshops en sessies worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Hiermee wil ik duidelijk stellen dat ik mij niet profileer als iemand die je een revolutionaire nieuwe aanpak ga aanleren. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta maar omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, in het Nederlands ter beschikking stellen. ',
+    en : 'A QUIET PLACE'
+  },
+  {
+    key:'intro.button',
+    nl: 'NAAR DE INLEIDING =>',
+    en: 'The body scan'
   },
   { 
     key: 'main.paragraph_2',
