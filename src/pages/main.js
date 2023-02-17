@@ -102,7 +102,7 @@ export default function Main(props) {
                 <h3 className={titleSubClassName}>{main_title_sub_2}</h3>
                 <p className={paragraphClassName}>{main_paragraph_5}</p>
                 <button className={buttonClassName} onClick={toggleSecondMeditation}>
-                    De Body Scan
+                    Bodyscan
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_2}  meditation={'vip2_'} meditationTitle={'meditation.dual.vip2.title'} />

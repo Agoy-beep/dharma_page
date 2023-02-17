@@ -106,7 +106,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_5',
-    nl : 'Concentratievermogen kan nog verder gecultiveerd worden doormiddel van een body scan. Hierbij gebruiken we onze aandacht als een zaklamp waarmee we verschillende onderdelen van ons lichaam belichten terwijl we proberen onze aandacht erbij te houden. Ook hier is het van uiterst belang dat we ons niet zenuwachtig maken wanneer we merken dat we na een tijdje zijn afgedwaald. Gedachten zijn als haken die hun uiterste best doen om je aandacht met hen mee te voeren. Het is onvermijdbaar dat hen dat soms lukt. Kijk naar de gedachte die je heeft meegevoerd en ervaar dan wat er met die gedachte gebeurt. ',
+    nl : 'Concentratievermogen kan nog verder gecultiveerd worden doormiddel van een bodyscan. Hierbij gebruiken we onze aandacht als een zaklamp waarmee we verschillende onderdelen van ons lichaam belichten terwijl we proberen onze aandacht erbij te houden. Ook hier is het van uiterst belang dat we ons niet zenuwachtig maken wanneer we merken dat we na een tijdje zijn afgedwaald. Gedachten zijn als haken die hun uiterste best doen om je aandacht met hen mee te voeren. Het is onvermijdbaar dat hen dat soms lukt. Kijk naar de gedachte die je heeft meegevoerd en ervaar dan wat er met die gedachte gebeurt. ',
     en : 'A QUIET PLACE'
   },
   { 
@@ -231,7 +231,7 @@ export const labels = [
   },
   { 
     key: 'meditation.dual.vip2.title',
-    nl : 'De Body Scan',
+    nl : 'Bodyscan',
     en : 'SESSIONS'
   },
   { 
