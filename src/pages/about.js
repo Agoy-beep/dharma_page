@@ -1,16 +1,11 @@
 import React from 'react';
 import FaqPage from './faqpage';
 import Footer from '../footer';
-import { lorem, quote, kintsugiText } from '../filler/filler';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import { containerClassName, 
     titleClassName, 
     paragraphClassName, 
-    divClassName, 
-    quoteClassName, 
-    paragraphBottomClassName, 
-    titleSubClassName,
-    sourceButtonClassName } from '../collections/layout.js';
+    } from '../collections/layout.js';
 
 
 export default function AboutPage(props){

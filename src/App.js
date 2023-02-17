@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./header";
-import Footer from "./footer";
 import SessionsPage from "./pages/sessions";
 import MainPage from "./pages/main";
 import SourcesPage from "./pages/sources";

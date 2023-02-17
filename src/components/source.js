@@ -1,9 +1,5 @@
-import { lorem } from '../filler/filler.js';
-import { containerClassName, 
-  titleClassName, 
-  paragraphClassName, 
-  divClassName, 
-  quoteClassName, 
+
+import { 
   paragraphBottomClassName, 
   titleSubClassName,
   sourceButtonClassName } from '../collections/layout.js';
@@ -16,7 +12,7 @@ export default function Source(props) {
         <img src={props.image} alt='icon' className="object-contain"></img>
         </div>
         <p className={paragraphBottomClassName}>{props.description}</p>
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
           <button className={sourceButtonClassName}>{props.button_text}</button>
         </a>
     </div> 

@@ -3,12 +3,7 @@ import Faq from '../components/faq';
 import { retrieveLabel } from '../helpers/labelhelper';
 import { containerClassName, 
   titleClassName, 
-  paragraphClassName, 
-  divClassName, 
-  quoteClassName, 
-  paragraphBottomClassName, 
-  titleSubClassName,
-  sourceButtonClassName } from '../collections/layout.js';
+  } from '../collections/layout.js';
 
 export default function FaqPage(props) {
   const faq_title = retrieveLabel('faq.title', props.lang);

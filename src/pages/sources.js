@@ -1,16 +1,7 @@
 import React from 'react';
-import { lorem } from '../filler/filler.js';
 import Source from '../components/source.js';
 import Footer from '../footer.js';
 import { retrieveLabel } from '../helpers/labelhelper.js'
-import { containerClassName, 
-    titleClassName, 
-    paragraphClassName, 
-    divClassName, 
-    quoteClassName, 
-    paragraphBottomClassName, 
-    titleSubClassName,
-    sourceButtonClassName } from '../collections/layout.js';
 
 export default function SourcesPage(props){
     const image_waking_up = 'wakingup.png';

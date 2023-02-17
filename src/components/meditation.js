@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { retrieveArrayOfLabels, retrieveLabel } from "../helpers/labelhelper";
 
 const hidden = "w-0 h-0";

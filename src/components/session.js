@@ -1,12 +1,7 @@
 import { retrieveLabel } from '../helpers/labelhelper.js';
-import { containerClassName, 
-  titleClassName, 
+import { 
   paragraphClassName, 
-  divClassName, 
-  quoteClassName, 
-  paragraphBottomClassName, 
-  titleSubClassName,
-  sourceButtonClassName } from '../collections/layout.js';
+   } from '../collections/layout.js';
 
 
 

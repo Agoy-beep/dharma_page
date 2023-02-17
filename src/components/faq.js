@@ -1,12 +1,8 @@
 import React from 'react';
-import { containerClassName, 
-  titleClassName, 
+import { 
   paragraphClassName, 
-  divClassName, 
-  quoteClassName, 
-  paragraphBottomClassName, 
   titleSubClassName,
-  sourceButtonClassName } from '../collections/layout.js';
+  } from '../collections/layout.js';
 
 export default function Faq(props) {
   return (
