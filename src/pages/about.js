@@ -1,3 +1,5 @@
+import React from 'react';
+import FaqPage from './faqpage';
 import { lorem, quote, kintsugiText } from '../filler/filler';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import { containerClassName, 
@@ -17,11 +19,16 @@ export default function AboutPage(props){
     const about_paragraph_3 = retrieveLabel('about.paragraph_3', props.lang);
 
     return( 
-        <div className= {containerClassName}>
-            <h1 className={titleClassName}>{about_title}</h1>
-            <p className={paragraphClassName}>{about_paragraph_1}</p>
-            <p className={paragraphClassName}>{about_paragraph_2}</p>
-            <p className={paragraphClassName}>{about_paragraph_3}</p>     
-        </div>
+        <React.Fragment>
+            <div className= {containerClassName}>
+                <h1 className={titleClassName}>{about_title}</h1>
+                <p className={paragraphClassName}>{about_paragraph_1}</p>
+                <p className={paragraphClassName}>{about_paragraph_2}</p>
+                <p className={paragraphClassName}>{about_paragraph_3}</p>     
+            </div>
+            <FaqPage lang={props.lang}/>
+
+        </React.Fragment>
+        
     )
 }

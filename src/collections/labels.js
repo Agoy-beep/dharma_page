@@ -406,7 +406,7 @@ export const labels = [
   },
   { 
     key: 'session.description.dual.intro',
-    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen dat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
+    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen wat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
     en : 'SESSIONS'
   },
   { 
@@ -557,6 +557,21 @@ export const labels = [
   { 
     key: 'about.paragraph_3',
     nl : 'Jezelf zo beschikbaar opstellen op het internet is niet iets waar ik naar uitkijk, maar ik hoop dat het toch zijn vruchten kan afwerpen, in een tijd waar er zoveel mensen ongelukkig lijken rond te lopen. Heb je vragen of opmerkingen over wat hier op de website te vinden is, of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar arne.goyvaerts@gmail.com.',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'faq.title',
+    nl : 'VAAK GESTELDE VRAGEN',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'faq.q1.question',
+    nl : 'Ben jij een zogenaamde lineage holder?',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'faq.q1.answer',
+    nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, guru of iets dergelijks. Ik ben eerder een spons, die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
     en : 'ABOUT ME'
   },
   { 
