@@ -571,7 +571,7 @@ export const labels = [
   },
   { 
     key: 'faq.q1.answer',
-    nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, guru of iets dergelijks. Ik ben eerder een spons, die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
+    nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, guru of iets dergelijks. Ik ben eerder een spons die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
     en : 'ABOUT ME'
   },
   { 

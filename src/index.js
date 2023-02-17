@@ -6,7 +6,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-     <App />,
+    // <div className="container bg-trees bg-fixed">
+      <App />,
+    // </div>,
   document.getElementById('root')
 );
 

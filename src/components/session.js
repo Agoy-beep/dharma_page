@@ -39,7 +39,7 @@ export default function Session(props) {
   const month = monthsOfTheYear[props.date.getMonth()].key;
   const year = props.date.getFullYear();
   return (
-      <div className="container flex flex-row items-center mx-auto my-4 pb-4 border rounded-lg border-gray-light shadow-lg">
+      <div className="container flex flex-row items-center mx-auto my-4 pb-4 bg-white border rounded-lg border-gray-light shadow-lg opacity-90">
         <div className="container flex flex-col ml-8 w-fit h-full border border-gray-light rounded-lg bg-gray bg-opacity-50">
           <div className="container flex flex-row items-center mx-8 py-2">
             <div className="mr-1 text-lg">{day}</div>

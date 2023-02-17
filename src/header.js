@@ -9,7 +9,7 @@ export default function Header(props) {
     const sources = retrieveLabel('sources', props.lang);
 // contains the logo, info, about and contact tab.
     return (
-        <div className="container fixed top-0 flex mx-auto z-10 px-16 h-28 max-w-full bg-gray-light opacity-85 text-black rounded-lg">
+        <div className="container fixed top-0 flex mx-auto z-10 px-16 h-28 max-w-full bg-gray-light opacity-85 text-black">
             <div className="container flex items-center mx-auto px-4 basis-1/5">
                 <div className="text-4xl ">{title}</div>
             </div>
