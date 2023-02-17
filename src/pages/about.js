@@ -1,5 +1,6 @@
 import React from 'react';
 import FaqPage from './faqpage';
+import Footer from '../footer';
 import { lorem, quote, kintsugiText } from '../filler/filler';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import { containerClassName, 
@@ -27,6 +28,7 @@ export default function AboutPage(props){
                 <p className={paragraphClassName}>{about_paragraph_3}</p>     
             </div>
             <FaqPage lang={props.lang}/>
+            <Footer lang={props.lang} />
 
         </React.Fragment>
         

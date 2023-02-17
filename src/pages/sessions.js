@@ -1,6 +1,7 @@
 import React from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import Session from '../components/session.js';
+import Footer from '../footer.js';
 
     const date = new Date('01-12-2025');
 
@@ -28,6 +29,7 @@ export default function SessionsPage(props){
             time="13.00-15.00" 
             location="Mortsel"
             />
+            <Footer lang={props.lang} />
         </React.Fragment>
              
     )

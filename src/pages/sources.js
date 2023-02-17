@@ -1,6 +1,7 @@
 import React from 'react';
 import { lorem } from '../filler/filler.js';
 import Source from '../components/source.js';
+import Footer from '../footer.js';
 import { retrieveLabel } from '../helpers/labelhelper.js'
 import { containerClassName, 
     titleClassName, 
@@ -59,6 +60,7 @@ export default function SourcesPage(props){
            description={lorem}
            button_text={button_bookLink}
            link={link_why_meditate} />  */}
+           <Footer lang={props.lang} />
         </React.Fragment>
     )
 }

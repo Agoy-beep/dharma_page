@@ -17,9 +17,13 @@ TODO
 - Sources pagina rederen via zo'n array.map toestand. 
 - Foto's fixen. 
 - Over mij pagina aanvullen. 
+- FAQ bijvullen
+- Achtergrondfoto? wel zeker een kleiner bestand maken. 
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
 - Fix footer (disabled until then)
 - Sessions will be a calendar. 
 - BUG: Je krijgt een flikkerend typstreepje in de header?
-- Nice to have, scroll progress bar!
+- Nice to have: scroll progress bar!
+- Nice to have: muziek, sfx
+- Nice to have: searchfunctie
 

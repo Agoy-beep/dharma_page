@@ -576,7 +576,7 @@ export const labels = [
   },
   { 
     key: 'footer',
-    nl : 'Gemaakt door AG 2023',
+    nl : 'Zo zen mogelijk gemaakt door Arne Goyvaerts',
     en : 'CONTACT'
   },
 ]
