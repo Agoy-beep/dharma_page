@@ -41,7 +41,7 @@ export default function SourcesPage(props){
            description={description_how_to_change_your_mind}
            button_text={button_bookLink}
            link={link_how_to_change_your_mind} />
-           <Source title='Who Am I - Ramana Maharshi' 
+           {/* <Source title='Who Am I - Ramana Maharshi' 
            image={image_why_meditate} 
            description={lorem}
            button_text={button_bookLink}
@@ -50,7 +50,7 @@ export default function SourcesPage(props){
            image={image_why_meditate} 
            description={lorem}
            button_text={button_bookLink}
-           link={link_why_meditate} /> 
+           link={link_why_meditate} />  */}
         </React.Fragment>
     )
 }
