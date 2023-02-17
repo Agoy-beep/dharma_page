@@ -4,7 +4,7 @@ import { containerHiddenClassName,
   titleSubClassName,
   sourceButtonClassName } from '../collections/layout.js';
 
-const containerClassName= "container my-8 pb-8 mx-auto items-center transition-all ease-in-out delay-100 duration-1000 border rounded-lg bg-white border-gray-light shadow-lg opacity-90";
+const containerClassName= "container my-8 pb-8 w-4/6 mx-auto items-center transition-all ease-in-out delay-100 duration-1000 border rounded-lg bg-white border-gray-light shadow-lg opacity-90";
 
 export default function Source(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);

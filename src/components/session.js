@@ -5,7 +5,7 @@ import { containerHiddenClassName,
    } from '../collections/layout.js';
 
 
-const containerClassName = "container flex flex-row items-center mx-auto my-4 pb-4 transition-all ease-in-out delay-100 duration-1000 bg-white border rounded-lg border-gray-light shadow-lg opacity-90";
+const containerClassName = "container flex flex-row items-center mx-auto w-4/6 my-4 pb-4 transition-all ease-in-out delay-100 duration-1000 bg-white border rounded-lg border-gray-light shadow-lg opacity-90";
 export default function Session(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
     
