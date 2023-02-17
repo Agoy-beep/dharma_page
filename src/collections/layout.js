@@ -1,4 +1,4 @@
-export const containerClassName = "container flex flex-col mx-5 my-8 pb-8 border rounded-lg border-gray-light shadow-lg";
+export const containerClassName = "container flex flex-col mx-auto my-8 pb-8 border rounded-lg border-gray-light shadow-lg";
 export const titleClassName = "text-4xl my-8 text-center";
 export const paragraphClassName = "my-3 mx-12 text-left text-lg";
 export const divClassName = "my-1 mx-12 text-left text-lg";
