@@ -16,42 +16,42 @@ export const labels = [
   },
   { 
     key: 'main.title_2',
-    nl : 'DUALISTISCH MEDITEREN',
+    nl : 'Dualistisch Mediteren',
     en : 'DUALISTIC MEDITATION'
   },
   { 
     key: 'main.title_3',
-    nl : 'NIET DUALISTISCH MEDITEREN',
+    nl : 'Niet-Dualistisch Mediteren',
     en : 'NON DUALISTIC MEDITATION'
   },
   {
     key:'main.title.sub_1',
-    nl: 'DE AAP UIT DE MOUW',
+    nl: 'De aap uit de mouw',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_2',
-    nl: 'DE BODY SCAN',
+    nl: 'De bodyscan',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_3',
-    nl: 'METTA',
+    nl: 'Metta',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_4',
-    nl: 'DE PILOOT ACHTER ONZE OGEN',
+    nl: 'De piloot achter onze ogen',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_5',
-    nl: 'HET ONGEDAAN MAKEN VAN DE ONVERANDERLIJKE PERSOON',
+    nl: 'Het ongedaan maken van de onveranderlijke persoon',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_6',
-    nl: 'HET CONCEPT IS DOOD, LEVE HET CONCEPT',
+    nl: 'Het concept is dood, leve het concept',
     en: 'The body scan'
   },
   {
@@ -426,7 +426,7 @@ export const labels = [
   },
   { 
     key: 'session.description.dual.intro',
-    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen wat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
+    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet-dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen wat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
     en : 'SESSIONS'
   },
   { 

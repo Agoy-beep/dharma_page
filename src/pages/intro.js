@@ -4,20 +4,25 @@ import { Link } from "react-router-dom";
 import { retrieveLabel } from '../helpers/labelhelper';
 import { containerClassName, 
   containerHiddenClassName,
-  titleClassName, 
   paragraphClassName, 
   divClassName, 
-  quoteClassName, 
-  paragraphBottomClassName, 
-  titleSubClassName,
   buttonClassName } from '../collections/layout.js';
+
+  // let navigate = 'false';
 
 export default function Intro(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+  // const navigateAway = () => {
+  //   navigate = 'true';
+  // }
     
-    useEffect(()=>{
-        setContainerVisibleClassName(() => containerClassName);
-    }, []);
+  useEffect(()=>{
+      setContainerVisibleClassName(() => containerClassName);
+  }, []);
+
+  // useEffect(()=>{
+  //   setContainerVisibleClassName(() => containerHiddenClassName);
+  // }, [navigate === 'true']);
 
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);
   const intro_paragraph_2 = retrieveLabel('intro.paragraph_2', props.lang);
