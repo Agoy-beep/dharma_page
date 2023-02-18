@@ -16,7 +16,7 @@ export const labels = [
   },
   { 
     key: 'main.title_2',
-    nl : 'Dualistisch Mediteren',
+    nl : `Dualistisch Mediteren`,
     en : 'DUALISTIC MEDITATION'
   },
   { 
@@ -31,12 +31,12 @@ export const labels = [
   },
   {
     key:'main.title.sub_2',
-    nl: 'De bodyscan',
+    nl: 'Aandacht als een zaklamp',
     en: 'The body scan'
   },
   {
     key:'main.title.sub_3',
-    nl: 'Metta',
+    nl: 'Beste wensen',
     en: 'The body scan'
   },
   {
@@ -51,6 +51,11 @@ export const labels = [
   },
   {
     key:'main.title.sub_6',
+    nl: 'Komen gedachten voort uit het niets?',
+    en: 'The body scan'
+  },
+  {
+    key:'main.title.sub_7',
     nl: 'Het concept is dood, leve het concept',
     en: 'The body scan'
   },
@@ -76,7 +81,7 @@ export const labels = [
   },
   { 
     key: 'intro.paragraph_2',
-    nl : 'Ik raad je aan te beginnen bij een inleidende tekst die ik heb opgesteld waar twee verschillende soorten meditatie uit de doeken worden gedaan. Enerzijds heb je de dualistische meditatie, waar er een duidelijk onderscheid bestaat tussen een persoon die observeert en een object dat geobserveerd wordt, anderzijds heb je de niet-dualistische meditatie, waarbij er alleen een bewustzijn bestaat waarin alles wat je maar kan bedenken in tevoorschijn komt en weer verdwijnt. ',
+    nl : 'Ik raad je aan te beginnen bij een inleidende tekst die ik heb opgesteld waar twee verschillende soorten meditatie uit de doeken worden gedaan. Enerzijds heb je de **dualistische** meditatie, waar er een duidelijk onderscheid bestaat tussen een *persoon* die observeert en een *object* dat geobserveerd wordt, anderzijds heb je de **niet-dualistische** meditatie, waarbij er alleen een *bewustzijn* bestaat waarin alles tevoorschijn komt en weer verdwijnt. ',
     en : 'A QUIET PLACE'
   },
   { 
@@ -91,37 +96,37 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_2',
-    nl : 'Bij een dualistische meditatie bestaat er een onderscheid tussen een mediteerder (onderwerp) en het richtpunt van de aandacht van die mediteerder (object). Men spreekt van een onderwerp als de persoon die de wereld ervaart bestaande uit objecten die anders zijn dan de persoon die er naar kijkt. Dit is een belangrijk onderscheid waar we later bij de niet-dualistische meditatie op terugkomen. Een ‘basismeditatie’ om mensen tot het mediteren te introduceren bestaat erin zich uitzonderlijk te richten op de eigen ademhaling. Een beschrijving hiervan is toegankelijk via de knoppen die je hier en daar in de tekst zal tegenkomen.  Deze zijn volledig optioneel, dus als je wil kan je de hele uitleg doorlezen, zonder de meditatievoorbeelden. ',
+    nl : 'Bij een dualistische meditatie bestaat er een onderscheid tussen een mediteerder, *onderwerp*, en het richtpunt van de aandacht van die mediteerder, *object*. Men spreekt van **een onderwerp als de persoon die de wereld ervaart bestaande uit objecten die anders zijn dan de persoon die er naar kijkt**. Dit is een belangrijk onderscheid waar we later bij de niet-dualistische meditatie op terugkomen. Een basismeditatie om mensen tot het mediteren te introduceren bestaat erin zich uitzonderlijk te richten op de eigen ademhaling. Een beschrijving hiervan is toegankelijk via de knoppen die je hier en daar in de tekst zal tegenkomen.  Deze zijn volledig optioneel, dus als je wil kan je de hele uitleg doorlezen, zonder de meditatievoorbeelden. ',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_3',
-    nl : 'Of je dit al reeds ooit elders gedaan hebt of het nu net even hebt geprobeerd, je zal ondervonden hebben dat het heel moeilijk is om de aandacht bij de ademhaling te houden. Nog voor je de vierde ademhaling geobserveerd hebt dwalen de gedachten af. De oefening bestaat erin de weg terug te vinden naar de ademhaling. Belangrijk hierbij is dat je niet kwaad of gefrustreerd wordt wanneer de gedachten afdwalen, dat doen ze namelijk altijd, zoals een aapje dat van tak naar tak springt. Men spreekt niet voor niets over ‘the monkey mind’.',
+    nl : 'Of je dit al reeds ooit elders gedaan hebt of het nu net even hebt geprobeerd, je zal ondervonden hebben dat het heel moeilijk is om de aandacht bij je ademhaling te houden. Nog voor je de vierje ademhaling geobserveerd hebt dwalen de gedachten af. De oefening bestaat erin de weg terug te vinden naar je ademhaling. Belangrijk hierbij is dat je **niet kwaad** of **gefrustreerd** raakt wanneer de gedachten afdwalen, dat doen ze namelijk altijd, zoals een aapje dat van tak naar tak springt. Men spreekt niet voor niets over *the monkey mind*.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_4',
-    nl : 'Bewust ondervinden dat we doorheen ons leven constant nadenken en dat we door onze gedachten in het rond worden gestuurd is immers een heel belangrijke stap om ons welzijn in het dagdagelijks leven aanzienlijk te vergroten. Moet dat aapje getemd worden om ons vooruitgang te laten boeken, of moet er mogelijk iets anders mee gebeuren? Eerst en vooral moet ernaar gekeken worden. Door ernaar te kijken gebeurt er namelijk iets heel frappant: gedachten kunnen ook verdwijnen wanneer het aapje bij wijze van spreken aan kracht verliest. Kan je werkelijk meegevoerd worden door iets dat je observeert? Leer een afstand creëren tussen je gedachtegang en jezelf, het onderwerp van je wereldse bestaan, en zie in dat jij en je gedachten niet één geheel vormen. Leer aan de oever staan van de rivier waardoor je gedachten stromen. Wanneer we onze gedachtegang op die manier in kaart leren brengen, kunnen we de vruchten hiervan bijna dagelijks plukken. Dat gebeurt natuurlijk niet van de ene dag op de andere. Oefening baart kunst, dus het is aangewezen om dagelijks 20 minuten jezelf af te zonderen en je op het mediteren toe te leggen.  Hopelijk worden deze momenten welgekomen rustpunten in drukke dagen.',
+    nl : 'Bewust ondervinden dat we doorheen ons leven constant nadenken en dat we door onze gedachten in het rond worden gestuurd is immers een heel belangrijke stap om ons welzijn in het dagdagelijks leven aanzienlijk te vergroten. Moet dat aapje getemd worden om ons vooruitgang te laten boeken, of moet er mogelijk iets anders mee gebeuren? Eerst en vooral moet ernaar gekeken worden. Door ernaar te kijken gebeurt er namelijk iets heel frappant: gedachten kunnen ook verdwijnen wanneer het aapje bij wijze van spreken aan kracht verliest. Kan je werkelijk meegevoerd worden door iets dat je observeert? Leer afstand creëren tussen *je gedachtegang* en *jezelf*, het onderwerp van je wereldse bestaan, en **zie in dat jij en je gedachten niet één geheel vormen**. Leer aan de oever staan van de rivier waardoor je gedachten stromen. Wanneer we onze gedachtegang op die manier in kaart leren brengen, kunnen we de vruchten hiervan bijna dagelijks plukken. Dat gebeurt natuurlijk niet van de ene dag op de andere. Oefening baart kunst, dus het is aangewezen om dagelijks 20 minuten jezelf af te zonderen en je op het mediteren toe te leggen. Hopelijk worden deze momenten welgekomen rustpunten in drukke dagen. Hopelijk, want aanvankelijk zal verleiding tot frustratie niet ver weg zijn.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_5',
-    nl : 'Concentratievermogen kan nog verder gecultiveerd worden doormiddel van een bodyscan. Hierbij gebruiken we onze aandacht als een zaklamp waarmee we verschillende onderdelen van ons lichaam belichten terwijl we proberen onze aandacht erbij te houden. Ook hier is het van uiterst belang dat we ons niet zenuwachtig maken wanneer we merken dat we na een tijdje zijn afgedwaald. Gedachten zijn als haken die hun uiterste best doen om je aandacht met hen mee te voeren. Het is onvermijdbaar dat hen dat soms lukt. Kijk naar de gedachte die je heeft meegevoerd en ervaar dan wat er met die gedachte gebeurt. ',
+    nl : 'Concentratievermogen kan nog verder gecultiveerd worden doormiddel van een **bodyscan**. Hierbij gebruiken we onze aandacht als een zaklamp waarmee we verschillende onderdelen van ons lichaam belichten terwijl we proberen onze aandacht erbij te houden. Ook hier is het van uiterst belang dat we ons **niet zenuwachtig maken** wanneer we merken dat we na een tijdje zijn afgedwaald. Gedachten zijn als haken die hun uiterste best doen om je aandacht met hen mee te voeren. Het is *onvermijdbaar* dat hen dat soms lukt. Kijk naar de gedachte die je heeft meegevoerd en ervaar dan wat er met die gedachte gebeurt. ',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_6',
-    nl : 'Een volgende grote pijler is wat in het Engels de ‘loving-kindness’ meditatie heet, ook wel bekend als ‘metta’. Hierbij wordt het concentratievermogen nogmaals aangesproken om bij wijze van spreken liefde en oprecht goede wensen door te sturen naar andere mensen. Er wordt ogenschijnlijk beroep gedaan op onze goede wil en worden we gemotiveerd om met mededogen naar onze medemens te kijken, of we die nu geweldig, gewoontjes of degoutant vinden. Voor we hierover verder gaan, is er eerst een verduidelijking aan de orde: Wat is mededogen en waarom staat er niet ‘empathie’? Er is een duidelijk onderscheid tussen de twee die vaak over het hoofd wordt gezien. Empathie is het kijken naar andere mensen waarbij men mee voelt met de gevoelens van de andere, hierdoor wordt onze eigen emotionele keuken potentieel overhoop gehaald, vooral wanneer men geconfronteerd wordt met een zwaar emotioneel lijden van iemand anders. Mededogen daarentegen, is het erkennen van een ander zijn gevoel, waarbij we actief streven naar het welzijn van de medemens, zonder de gevoelens tot zich te nemen. Dat is een groot stuk van het metta-verhaal. ',
+    nl : 'Een volgende grote pijler is wat in het Engels de **lovingkindness** meditatie heet, ook wel bekend als **metta**. Hierbij wordt het concentratievermogen nogmaals aangesproken om bij wijze van spreken liefde en oprecht goede wensen door te sturen naar andere mensen. Er wordt ogenschijnlijk beroep gedaan op onze goede wil en worden we gemotiveerd om met mededogen naar onze medemens te kijken, of we die nu geweldig, gewoontjes of degoutant vinden. Voor we hierover verder gaan, is er eerst een verduidelijking aan de orde: Wat is mededogen en waarom staat er niet empathie? Er is een duidelijk onderscheid tussen de twee die vaak over het hoofd wordt gezien. **Empathie** is het kijken naar andere mensen waarbij men **mee voelt met de gevoelens van de andere**, hierdoor wordt onze eigen emotionele keuken potentieel overhoop gehaald, vooral wanneer men geconfronteerd wordt met een zwaar emotioneel lijden van iemand anders. **Mededogen** daarentegen, is het **erkennen van een ander zijn gevoel**, waarbij we actief streven naar het welzijn van de medemens, zonder de gevoelens tot zich te nemen. Dat is een groot stuk van het metta-verhaal. ',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_7',
-    nl : 'Iedereen heeft wel eens gehoord van de uitspraak: ‘Je moet eerst jezelf graag kunnen zien, vooraleer je een ander graag kan zien.’. Zo ook begint metta bij jezelf. Vooraleer we onze liefdevolle aandacht richten op iemand anders, richten we die eerst naar onszelf. De voorbeeldmeditatie die hier beschreven is, is zowel toepasbaar op onszelf, op iemand die je graag ziet, op iemand waar je neutraal tegenover staat en, ten slotte, iemand waar je eerder negatief naar kijkt. Vaak wordt ook die volgorde gevolgd, gespreid over meerder meditaties over een lange periode. Telkens wordt ons mededogen gecultiveerd zodat we realiseren dat wanneer we bijdragen tot een anders geluk, we er zelf ook gelukkig van worden.',
+    nl : 'Iedereen heeft wel eens gehoord van de uitspraak: *Je moet eerst jezelf graag kunnen zien, vooraleer je een ander graag kan zien*. Zo ook begint metta bij jezelf. Vooraleer we onze liefdevolle aandacht richten op iemand anders, richten we die eerst naar onszelf. De voorbeeldmeditatie die hier beschreven is, is zowel toepasbaar op onszelf, op iemand die je graag ziet, op iemand waar je neutraal tegenover staat en, ten slotte, iemand waar je eerder negatief naar kijkt. Vaak wordt ook die volgorde gevolgd, gespreid over meerder meditaties over een lange periode. Telkens wordt ons mededogen gecultiveerd zodat we realiseren dat wanneer we bijdragen tot een anders geluk, we er zelf ook gelukkig van worden.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_8',
-    nl : 'De verzameling van afleidingen waarmee we tijdens het mediteren geconfronteerd worden: de afdwalende gedachten, de luide ademhaling van onze buurman wanneer je in groep mediteert, de pijn in de rug… kan je beschouwen als een deur naar het non-dualisme. Het onderwerp-loos mediteren. Het inzicht dat wij als mensen geen gedachten vormen maar dat ze zomaar tevoorschijn komen en weer verdwijnen, je het niet te kiezen hebt wat je aangenaam en onaangenaam vind, op wie je verliefd wordt, welke onderwerpen je interessant vindt of de letters die je nu leest niet te ontcijferen als de taal die je ooit, lang geleden, geleerd hebt. Je begrijpt wat hier staat en er is niets dat je kan doen om die knop nu uit te schakelen. Je kan het niet niet lezen.  Bijgevolg is er ten gronde ons niets eigen. Niet je drie favoriete films die je opsomt wanneer de vraag gesteld wordt, niet je favoriete eten en niet de naam die je kiest voor je kinderen of je huisdieren. Sterker nog: je ‘ik’, de Ervaarder Der Ervaringen, ja, jij die dit leest en tot zich neemt, bestaat eigenlijk helemaal niet...Verrassing!',
+    nl : 'De verzameling van afleidingen waarmee we tijdens het mediteren geconfronteerd worden: de afdwalende gedachten, de luije ademhaling van onze buurman wanneer je in groep mediteert, de pijn in de rug… kan je beschouwen als een deur naar het non-dualisme. *Het onderwerp-loos mediteren*. Het inzicht dat wij als mensen geen gedachten vormen maar dat ze zomaar tevoorschijn komen en weer verdwijnen, je het niet te kiezen hebt wat je aangenaam en onaangenaam vind, op wie je verliefd wordt, welke onderwerpen je interessant vindt of de letters die je nu leest niet te ontcijferen als de taal die je ooit, lang geleden, geleerd hebt. Je begrijpt wat hier staat en er is niets dat je kan doen om die knop nu uit te schakelen. Je kan het niet *niet* lezen.  Bijgevolg is er ten gronde ons niets eigen. Niet je drie favoriete films die je opsomt wanneer de vraag gesteld wordt, niet je favoriete eten en niet de naam die je kiest voor je kinderen of je huisdieren. Sterker nog: je **ik**, *de ervaarder der ervaringen*, ja, jij die dit leest en tot zich neemt, bestaat eigenlijk helemaal niet...*Verrassing!*',
     en : 'A QUIET PLACE'
   },
   { 
@@ -131,7 +136,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_10',
-    nl : 'Nu rijst de vraag: is dit de grootste zever die ik ooit in mijn leven gelezen heb? Zijn mijn gedachten dan niet van mij? Ik heb toch te kiezen wat mijn favoriete films zijn, welke naam ik de mooiste vind en welk eten ik het lekkerste vind? Ik ben wel IEMAND. Niet?',
+    nl : 'Nu rijst de vraag: is dit de grootste zever die ik ooit in mijn leven gelezen heb? Zijn mijn gedachten dan niet van mij? Ik heb toch te kiezen wat mijn favoriete films zijn, welke naam ik de mooiste vind en welk eten ik het lekkerste vind? Ik ben wel **iemand**. Niet?',
     en : 'A QUIET PLACE'
   },
   { 
@@ -151,7 +156,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_14',
-    nl : 'De piloot voelt zich aangesproken bij een belediging, zal blozen bij een genante ervaring en zich daar slecht over voelen en zal soms urenlang boos zijn over een situatie. De piloot is met andere woorden het ‘ik’, de Ervaarder der ervaringen. Het is de persoon die je vrienden en familie kennen, gevormd door de jaren heen en hopelijk immer verder evoluerend naar een betere versie van zichzelf. Ergens altijd veranderlijk maar toch ook wel onveranderlijk want je bent alleen zoals jij bent, reageert alleen zoals jij reageert en doet alleen de dingen die jij zelf als waardevol beschouwt. Soms wijken we van dat beeld af en dan wordt of doet iemand ‘anders’. Hopelijk is dat dan maar voor even want we kunnen immers nooit echt helemaal veranderen, nietwaar?',
+    nl : 'De piloot voelt zich aangesproken bij een belediging, zal blozen bij een genante ervaring en zich daar slecht over voelen en zal soms urenlang boos zijn over een situatie. De piloot is met andere woorden het ‘ik’, de ervaarder der ervaringen. Het is de persoon die je vrienden en familie kennen, gevormd door de jaren heen en hopelijk immer verder evoluerend naar een betere versie van zichzelf. Ergens altijd veranderlijk maar toch ook wel onveranderlijk want je bent alleen zoals jij bent, reageert alleen zoals jij reageert en doet alleen de dingen die jij zelf als waardevol beschouwt. Soms wijken we van dat beeld af en dan wordt of doet iemand ‘anders’. Hopelijk is dat dan maar voor even want we kunnen immers nooit echt helemaal veranderen, nietwaar?',
     en : 'A QUIET PLACE'
   },
   { 
@@ -166,12 +171,12 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_17',
-    nl : 'In de pure essentie van het bestaan, is het dualistisch mediteren gebaseerd op een misvatting. Het is allemaal ‘fake’.',
+    nl : 'In de pure essentie van het bestaan, is het dualistisch mediteren gebaseerd op een misvatting. Het is allemaal *fake*.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_18',
-    nl : 'Herinner u de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Je (onderwerp, hoofdrolspeler) kijkt naar je gedachten (het object, het andere) die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: ‘Waar komen die gedachten vandaan?’. Probeer het proces te benoemen.',
+    nl : 'Herinner u de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Jij, *onderwerp-hoofdrolspeler*, kijkt naar je gedachten, *het object-het andere*, die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: *Waar komen die gedachten vandaan?* Probeer het proces te benoemen.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -181,12 +186,12 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_20',
-    nl : 'Hoe doe je dat, je aandacht richten op je aandacht? Ben jij niet je aandacht? Hoe kan jij, het onderwerp, de hoofdrolspeler, de aandacht richten op je eigen aandacht, het object, het andere?',
+    nl : 'Hoe doe je dat, je aandacht richten op je aandacht? Ben jij niet je aandacht? Hoe kan jij, *onderwerp-hoofdrolspeler*, de aandacht richten op je eigen aandacht, *het object-het andere*?',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_21',
-    nl : 'Ik weet niet of het helemaal duidelijk is, maar het concept van onderwerp-object-gebaseerde meditatie, het dualistisch denken, begint hier onder druk te staan. Je kan niet vanuit een apart perspectief kijken naar je eigen perspectief.',
+    nl : 'Ik weet niet of het helemaal duidelijk is, maar het concept van **onderwerp-object-gebaseerde meditatie**, het dualistisch denken, begint hier onder druk te staan. Je kan niet vanuit een apart perspectief kijken naar je eigen perspectief.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -201,7 +206,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_24',
-    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, ook een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheidt tussen de ik en de Ik. De ik zonder hoofdletter is een concept, de Ik met de grote letter is de ervaring van het leven via het pure bewustzijn. Andere spreken van een ik ervaring met een zaklamp tegenover een lamp die zichzelf verlicht. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord ‘ignorance’ dat je in meditatiekringen vaak hoort vallen), kan verdrijven. ‘Emptiness’ is nog zo’n wordt dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De ‘Leegte’, is een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons. De eigenschappen die wij voorwerpen geven, worden door ons gegeven, die worden in het bestaan geroepen, ze zijn niet inherent aan het bestaan. Dat wil niet zeggen dat je vanaf nu alle concepten weg moet gooien en concept-loos moet proberen bestaan. Het gaat er om het inzicht, of herkenning, ervan. Zie in dat je levenswereld opgebouwd is rond concepten, waarbij ook je ‘ik’ een concept is dat gecreëerd is. Dat concept heb je in het dagelijkse leven nodig, hoe weet anders iemand dat mijn schoenen ‘mijn’ schoenen zijn? Maar je moet je er niet mee vereenzelvigen, want je ‘ik’ sleurt je ook de dieperik in. Samsara, het steeds terugkeren van het verlangen voor iets dat je niet hebt, heeft hier ook een oorsprong in. Wil je uit dat systeem stappen, zie dan eerst en vooral in dat je bewustzijn de deur naar de realiteit is, niet je ‘ik’. Mocht dit allemaal zeer vreemd overkomen, dan heb ik het geweldige nieuws dat het allemaal nog vreemder wordt.',
+    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, ook een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheidt tussen de ik en de Ik. De ik zonder hoofdletter is een concept, de Ik met de grote letter is de ervaring van het leven via het pure bewustzijn. Andere spreken van een ik ervaring met een zaklamp tegenover een lamp die zichzelf verlicht. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord *ignorance* dat je in meditatiekringen vaak hoort vallen), kan verdrijven. *Emptiness* is nog zo’n woord dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De *leegte*, is een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons. De eigenschappen die wij voorwerpen geven, worden door ons gegeven, die worden in het bestaan geroepen, ze zijn niet inherent aan het bestaan. Dat wil niet zeggen dat je vanaf nu alle concepten weg moet gooien en concept-loos moet proberen bestaan. Het gaat er om het inzicht, of herkenning, ervan. Zie in dat je levenswereld opgebouwd is rond concepten, waarbij ook je ‘ik’ een concept is dat gecreëerd is. Dat concept heb je in het dagelijkse leven nodig, hoe weet anders iemand dat mijn schoenen ‘mijn’ schoenen zijn? Maar je moet je er niet mee vereenzelvigen, want je ‘ik’ sleurt je ook de dieperik in. Samsara, het steeds terugkeren van het verlangen voor iets dat je niet hebt, heeft hier ook een oorsprong in. Wil je uit dat systeem stappen, zie dan eerst en vooral in dat je bewustzijn de deur naar de realiteit is, niet je ‘ik’. Mocht dit allemaal zeer vreemd overkomen, dan heb ik het geweldige nieuws dat het allemaal nog vreemder wordt.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -216,12 +221,37 @@ export const labels = [
   },
   { 
     key: 'main.quote_1',
-    nl : 'Gedachten worden zoals dieven die een leeg huis komen plunderen, zelfs de mogelijkheid om afgeleid te worden houdt op met bestaan',
+    nl : 'Gedachten worden zoals dieven die een leeg huis komen plunderen, zelfs de mogelijkheid om afgeleid te worden houdt op met bestaan.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_1_pt_2',
+    nl : ' -Padmasambhava',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_2',
+    nl : 'Uiteindelijk komt gelukkig zijn neer op de keuze tussen het ongemak van het bewust te worden van je mentale kwalen en het ongemak om erdoor geregeerd te worden.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_2_pt_2',
+    nl : ' -Yongey Mingyur Rinpoche',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.quote_3',
-    nl : 'Komen gedachten voort uit ‘het niets’?',
+    nl : 'Als je wil dat anderen gelukkig zijn, oefen in mededogen. Als je zelf gelukkig wil zijn, oefen in mededogen.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_3_pt_2',
+    nl : ' -Dalai Lama',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_4',
+    nl : 'Komen gedachten voort uit **het niets**?',
     en : 'A QUIET PLACE'
   },
   { 
@@ -266,7 +296,7 @@ export const labels = [
   },
   { 
     key: 'meditation.dual.vip1_4',
-    nl : 'Probeer het tempo van de ademhaling niet te beïnvloeden',
+    nl : 'Probeer het tempo van je ademhaling niet te beïnvloeden',
     en : 'SESSIONS'
   },
   { 
@@ -276,7 +306,7 @@ export const labels = [
   },
   { 
     key: 'meditation.dual.vip1_6',
-    nl : 'Indien je merkt dat je gedachten zijn afgedwaald, probeer terug te keren naar de ademhaling',
+    nl : 'Indien je merkt dat je gedachten zijn afgedwaald, keer je aandacht weer naar je ademhaling',
     en : 'SESSIONS'
   },
   { 
@@ -576,7 +606,7 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_3',
-    nl : 'Jezelf zo kwetsbaar opstellen op het internet is niet iets waar ik naar uitkijk, maar ik hoop dat het toch zijn vruchten kan afwerpen, in een tijd waar er zoveel mensen ongelukkig lijken rond te lopen. Heb je vragen of opmerkingen over wat hier op de website te vinden is, of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar arne.goyvaerts@gmail.com.',
+    nl : 'Jezelf zo kwetsbaar opstellen op het internet is niet iets waar ik naar uitkijk, maar ik hoop dat het toch zijn vruchten kan afwerpen, in een tijd waar er zoveel mensen ongelukkig lijken rond te lopen. Heb je vragen of opmerkingen over wat hier op de website te vinden is, of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
     en : 'ABOUT ME'
   },
   { 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState} from 'react';
 import Footer from '../footer';
 import { Link } from "react-router-dom";
-import { retrieveLabel } from '../helpers/labelhelper';
+import ReactMarkdown from 'react-markdown';
+import { retrieveLabel, markdownParser } from '../helpers/labelhelper';
 import { containerClassName, 
   containerHiddenClassName,
   paragraphClassName, 
@@ -36,8 +37,8 @@ export default function Intro(props) {
     <div className= {containerVisibleClassName}>
     {/* <h1 className={titleClassName}>{main_title_1}</h1> */}
       <div className="text-2xl my-8 text-center">{intro_div_par1_1}</div>
-      <p className={paragraphClassName}>{intro_paragraph_1}</p>
-      <p className={paragraphClassName}>{intro_paragraph_2}</p>
+      <p className={paragraphClassName}><ReactMarkdown>{intro_paragraph_1}</ReactMarkdown></p>
+      <p className={paragraphClassName}><ReactMarkdown>{intro_paragraph_2}</ReactMarkdown></p>
       <p className={paragraphClassName}>{intro_paragraph_3}</p>
       <div className={divClassName}>{intro_div_par1_2}</div>
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}

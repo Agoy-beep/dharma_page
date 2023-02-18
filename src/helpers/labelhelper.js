@@ -25,3 +25,10 @@ export const retrieveLabels = (language) => {
   return labels.map((label) =>{return {key: label.key, lang: label[language]}});
   
 }
+
+export const markdownParser = (text) => {
+  const toJSX = text
+          .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>') // bold text
+          .replace(/\*(.*)\*/gim, '<i>$1</i>'); // italic text
+  return toJSX.trim();
+}

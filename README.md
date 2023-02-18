@@ -12,7 +12,7 @@ TODO
 - Spacing tussen paragrafen moet echt wel beter. V
 - Buttons overlappen met de header? FIXED v
 - Scroll up V
-- Set up CI/CD met github. 
+- Set up CI/CD met github. (is al in orde in de deploy flow?)
 - Sources page aanvullen, pretty please.
 - Sources pagina rederen via zo'n array.map toestand. 
 - Foto's fixen. 
@@ -20,9 +20,12 @@ TODO
 - FAQ bijvullen
 - Achtergrondfoto? wel zeker een kleiner bestand maken. 
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
-- Fix footer (disabled until then)
+- Maak een beter footer.
 - Sessions will be a calendar. 
-- BUG: Je krijgt een flikkerend typstreepje in de header?
+- Sessions hebben een locatie nodig
+- Sessions benodigheden?
+- onderscheid sessie en workshop?
+- BUG: Je krijgt een flikkerend typstreepje in de header? FIXED
 - Nice to have: scroll progress bar!
 - Nice to have: muziek, sfx
 - Nice to have: searchfunctie

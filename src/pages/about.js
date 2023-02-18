@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import ReactMarkdown from 'react-markdown';
 import FaqPage from './faqpage';
 import Footer from '../footer';
 import { retrieveLabel } from '../helpers/labelhelper.js';
@@ -27,7 +28,7 @@ export default function AboutPage(props){
                 <h1 className={titleClassName}>{about_title}</h1>
                 <p className={paragraphClassName}>{about_paragraph_1}</p>
                 <p className={paragraphClassName}>{about_paragraph_2}</p>
-                <p className={paragraphClassName}>{about_paragraph_3}</p>     
+                <p className={paragraphClassName}><ReactMarkdown>{about_paragraph_3}</ReactMarkdown></p>     
             </div>
             <FaqPage lang={props.lang}/>
             <Footer lang={props.lang} />

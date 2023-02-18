@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
-import Intro from './intro.js';
+import ReactMarkdown from 'react-markdown';
 import Meditation from '../components/meditation.js';
 import Footer from "../footer.js";
 import { containerClassName,
@@ -8,7 +8,8 @@ import { containerClassName,
     titleClassName, 
     paragraphClassName, 
     divClassName, 
-    quoteClassName, 
+    quoteClassName,
+    quoterClassName, 
     paragraphBottomClassName, 
     titleSubClassName,
     buttonClassName } from '../collections/layout.js';
@@ -31,7 +32,12 @@ export default function Main(props) {
 
     const main_title_1 = retrieveLabel('main.title_1', props.lang);
     const main_quote_1 = retrieveLabel('main.quote_1', props.lang);
+    const main_quote_1_pt_2 = retrieveLabel('main.quote_1_pt_2', props.lang);
+    const main_quote_2 = retrieveLabel('main.quote_2', props.lang);
+    const main_quote_2_pt_2 = retrieveLabel('main.quote_2_pt_2', props.lang);
     const main_quote_3 = retrieveLabel('main.quote_3', props.lang);
+    const main_quote_3_pt_2 = retrieveLabel('main.quote_3_pt_2', props.lang);
+    const main_quote_4 = retrieveLabel('main.quote_4', props.lang);
     const main_title_2 = retrieveLabel('main.title_2', props.lang);
     const main_title_3 = retrieveLabel('main.title_3', props.lang);
     const main_title_sub_1 = retrieveLabel('main.title.sub_1', props.lang);
@@ -40,6 +46,7 @@ export default function Main(props) {
     const main_title_sub_4 = retrieveLabel('main.title.sub_4', props.lang);
     const main_title_sub_5 = retrieveLabel('main.title.sub_5', props.lang);
     const main_title_sub_6 = retrieveLabel('main.title.sub_6', props.lang);
+    const main_title_sub_7 = retrieveLabel('main.title.sub_7', props.lang);
     const main_paragraph_2 = retrieveLabel('main.paragraph_2', props.lang);
     const main_paragraph_3 = retrieveLabel('main.paragraph_3', props.lang);
     const main_paragraph_4 = retrieveLabel('main.paragraph_4', props.lang);
@@ -89,34 +96,39 @@ export default function Main(props) {
                 <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>
                 {/* <div className="container flex flex-col pb-5 justify-evenly"> */}
-                <p className={paragraphClassName}>{main_paragraph_2}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_2}</ReactMarkdown></p>
                 <button className={buttonClassName} onClick={toggleFirstMeditation}>
                     Ademhaling
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_1} meditation={'vip1_'} meditationTitle={'meditation.dual.vip1.title'}/>
-                <p className={paragraphClassName}>{main_paragraph_3}</p>
-                <p className={quoteClassName}>"{main_quote_1}"</p>
-                <p className={paragraphClassName}>{main_paragraph_4}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_3}</ReactMarkdown></p>
+                <p className={quoteClassName}>"{main_quote_2}"</p>
+                <p className={quoterClassName}>{main_quote_2_pt_2}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_4}</ReactMarkdown></p>
                 <h3 className={titleSubClassName}>{main_title_sub_2}</h3>
-                <p className={paragraphClassName}>{main_paragraph_5}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_5}</ReactMarkdown></p>
                 <button className={buttonClassName} onClick={toggleSecondMeditation}>
                     Bodyscan
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_2}  meditation={'vip2_'} meditationTitle={'meditation.dual.vip2.title'} />
                 <h3 className={titleSubClassName}>{main_title_sub_3}</h3>
-                <p className={paragraphClassName}>{main_paragraph_6}</p>
-                <p className={paragraphClassName}>{main_paragraph_7}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_6}</ReactMarkdown></p>
+                <p className={quoteClassName}>"{main_quote_3}"</p>
+                <p className={quoterClassName}>{main_quote_3_pt_2}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_7}</ReactMarkdown></p>
                 <button className={buttonClassName} onClick={toggleThirdMeditation}>
                     Metta
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_3}  meditation={'vip3_'} meditationTitle={'meditation.dual.vip3.title'} />
-                <p className={paragraphClassName}>{main_paragraph_8}</p>
+                <p className={quoteClassName}>"{main_quote_1}"</p>
+                <p className={quoterClassName}>{main_quote_1_pt_2}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_8}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_9}</p>
-                <p className={paragraphClassName}>{main_paragraph_10}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_10}</ReactMarkdown></p>
                 <p className={paragraphBottomClassName}>{main_paragraph_11}</p>
             </div>
             <div className= {containerClassName}>
@@ -128,15 +140,15 @@ export default function Main(props) {
                 <h3 className={titleSubClassName}>{main_title_sub_5}</h3>
                 <p className={paragraphClassName}>{main_paragraph_15}</p>
                 <p className={paragraphClassName}>{main_paragraph_16}</p>
-                <p className={paragraphClassName}>{main_paragraph_17}</p>
-                <p className={paragraphClassName}>{main_paragraph_18}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_17}</ReactMarkdown></p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_18}</ReactMarkdown></p>
                 <button className={buttonClassName} onClick={toggleFourthMeditation}>
                    De Uitdaging
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_4} meditation={'nondual1_'} meditationTitle={'meditation.nondual1.title'}/>
-                <p className={quoteClassName}>"{main_quote_3}"</p>
+                <p className={titleSubClassName}><ReactMarkdown>{main_title_sub_6}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_19}</p>
                 <button className={buttonClassName} onClick={toggleFifthMeditation}>
                     Staren, Of Niet Staren?
@@ -144,12 +156,12 @@ export default function Main(props) {
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_5} meditation={'nondual2_'} meditationTitle={'meditation.nondual2.title'}/>
-                <p className={paragraphClassName}>{main_paragraph_20}</p>
-                <p className={paragraphClassName}>{main_paragraph_21}</p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_20}</ReactMarkdown></p>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_21}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_22}</p>
                 <p className={paragraphClassName}>{main_paragraph_23}</p>
-                <h3 className={titleSubClassName}>{main_title_sub_6}</h3>
-                <p className={paragraphClassName}>{main_paragraph_24}</p>
+                <h3 className={titleSubClassName}>{main_title_sub_7}</h3>
+                <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_24}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_25}</p>
                 <p className={paragraphClassName}>{main_paragraph_26}</p>
             </div> 
