@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { containerHiddenClassName,
-  paragraphBottomClassName, 
+  paragraphClassName,
   titleSubClassName,
   sourceButtonClassName } from '../collections/layout.js';
 
@@ -16,10 +16,10 @@ export default function Source(props) {
   return (
     <div className= {containerVisibleClassName}>
         <h1 className={titleSubClassName}>{props.title}</h1>
-        <div className="container w-40 h-32 mr-12 overflow-hidden border-2 rounded-lg float-right">
+        <div className="container w-40 h-32 mr-12 ml-8 overflow-hidden border-2 rounded-lg float-right">
         <img src={props.image} alt='icon' className="object-contain"></img>
         </div>
-        <p className={paragraphBottomClassName}>{props.description}</p>
+        <p className={paragraphClassName}>{props.description}</p>
         <a href={props.link} target="_blank" rel="noopener noreferrer">
           <button className={sourceButtonClassName}>{props.button_text}</button>
         </a>

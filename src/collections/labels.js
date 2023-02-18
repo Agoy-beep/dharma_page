@@ -436,7 +436,7 @@ export const labels = [
   },
   { 
     key: 'sessions',
-    nl : 'SESSIES',
+    nl : 'KALENDER',
     en : 'SESSIONS'
   },
   { 
