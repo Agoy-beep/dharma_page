@@ -76,7 +76,7 @@ export const labels = [
   },
   { 
     key: 'intro.paragraph_1',
-    nl : 'Ze is in leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie.',
+    nl : 'Ze is in het leven geroepen om medemensen een digitale plek aan te bieden waar ze inspiratie kunnen opdoen in hun zoektocht naar rust via meditatie.',
     en : 'A QUIET PLACE'
   },
   { 
