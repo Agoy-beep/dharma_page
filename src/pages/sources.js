@@ -2,6 +2,8 @@ import React from 'react';
 import Source from '../components/source.js';
 import Footer from '../footer.js';
 import { retrieveLabel } from '../helpers/labelhelper.js'
+import { sourceImageClassNameWide,
+    sourceImageClassNameBook } from '../collections/layout.js';
 
 export default function SourcesPage(props){
     const image_waking_up = 'wakingup.png';
@@ -23,21 +25,25 @@ export default function SourcesPage(props){
             {/* <div className={titleClassName}>BRONNEN</div> */}
            <Source title='Waking Up App' 
            image={image_waking_up} 
-           description={description_waking_up} 
+           image_styling={sourceImageClassNameWide}
+           description={description_waking_up}
            button_text={button_appLink}
            link={link_waking_up} /> 
            <Source title='Why Meditate - Matthieu Ricard' 
-           image={image_why_meditate} 
+           image={image_why_meditate}
+           image_styling={sourceImageClassNameBook}
            description={description_why_meditate}
            button_text={button_bookLink}
            link={link_why_meditate} />
            <Source title='How To Change Your Mind - Michael Pollan' 
-           image={image_how_to_change_your_mind} 
+           image={image_how_to_change_your_mind}
+           image_styling={sourceImageClassNameBook}
            description={description_how_to_change_your_mind}
            button_text={button_bookLink}
            link={link_how_to_change_your_mind} />
            <Source title='In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov' 
-           image={image_in_love_with_the_world} 
+           image={image_in_love_with_the_world}
+           image_styling={sourceImageClassNameBook}
            description={description_in_love_with_the_world}
            button_text={button_bookLink}
            link={link_in_love_with_the_world} />
