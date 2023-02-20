@@ -27,7 +27,7 @@ export default function App() {
           setToEnglish={setLanguageToEnglish}
           />
           { 
-            <div id='pages-container' className="flex-auto content-center h-full min-h-screen mt-12 pt-8 bg-darkyellowtrees bg-fixed bg-repeat-y">
+            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-16 bg-darkyellowtrees bg-fixed bg-repeat-y">
               <Routes>
                 <Route path='/' element={<IntroPage lang={language}/>} />
                 <Route path='/sessions' element={<SessionsPage lang={language}/>} />

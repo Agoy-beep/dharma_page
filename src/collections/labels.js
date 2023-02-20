@@ -626,7 +626,7 @@ export const labels = [
   },
   { 
     key: 'footer',
-    nl : 'Zo zen mogelijk gemaakt door Arne Goyvaerts',
+    nl : 'Zo aangenaam mogelijk gemaakt door Arne Goyvaerts',
     en : 'CONTACT'
   },
 ]
