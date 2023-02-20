@@ -13,6 +13,7 @@ export default function SessionsPage(props){
 
     return (
         <React.Fragment>
+            <div className="mt-24 md:mt-0"></div>
             <Session 
             lang={props.lang} 
             subject={subject_non_dual_intro} 

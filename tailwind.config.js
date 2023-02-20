@@ -5,11 +5,10 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
-      md: '768px',
+      // sm: '480px',
+      md: '1000px',
       lg: '1080px',
       xl: '1440px',
-      xxl: '1920px',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

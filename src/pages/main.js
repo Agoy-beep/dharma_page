@@ -92,6 +92,7 @@ export default function Main(props) {
     return (
         <React.Fragment>
             {/* <Intro lang={props.lang} /> */}
+            <div className="mt-24 md:mt-0"></div>
             <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>

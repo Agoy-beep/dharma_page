@@ -34,6 +34,7 @@ export default function Intro(props) {
   const to_the_text = retrieveLabel('intro.button', props.lang);
  return (
   <React.Fragment>
+  <div className="mt-24 md:mt-0"></div>
     <div className= {containerVisibleClassName}>
     {/* <h1 className={titleClassName}>{main_title_1}</h1> */}
       <div className="text-2xl my-8 text-center">{intro_div_par1_1}</div>
