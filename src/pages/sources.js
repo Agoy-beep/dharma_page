@@ -171,7 +171,7 @@ export default function SourcesPage(props){
                     link={source.link}
                     clickIcon={source.clickIcon}
                     showCard={source.showCard}
-                    hasBackButton={showAsGrid}
+                    hasBackButton={window.innerWidth < '1000'}
                 />
             ))}
             </div>
