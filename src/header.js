@@ -34,8 +34,6 @@ export default function Header(props) {
     }
     useEffect(()=> {
         props.buttonMain ? clickMainLink() : clickHomeLink();
-        console.log('useEffect?');
-        console.log(props.buttonMain)
     },[props.buttonMain])
     const clickSessionsLink = () => {
         setClickState((prevState) =>{

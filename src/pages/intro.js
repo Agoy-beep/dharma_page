@@ -9,11 +9,9 @@ import { containerClassName,
   divClassName, 
   buttonClassName } from '../collections/layout.js';
 
-  // let navigate = 'false';
-
 export default function Intro(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
-
+  
     
   useEffect(()=>{
       setContainerVisibleClassName(() => containerClassName);
