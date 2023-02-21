@@ -91,7 +91,7 @@ export const labels = [
   },
   {
     key:'intro.button',
-    nl: 'NAAR DE INLEIDING =>',
+    nl: 'NAAR DE INLEIDING',
     en: 'The body scan'
   },
   { 
@@ -591,7 +591,7 @@ export const labels = [
   },
   { 
     key: 'about',
-    nl : 'OVER MIJ',
+    nl : 'Over Mij',
     en : 'ABOUT ME'
   },
   { 
@@ -611,7 +611,7 @@ export const labels = [
   },
   { 
     key: 'faq.title',
-    nl : 'VAAK GESTELDE VRAGEN',
+    nl : 'Vaak gestelde vragen',
     en : 'ABOUT ME'
   },
   { 

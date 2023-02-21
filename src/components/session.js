@@ -44,17 +44,17 @@ export default function Session(props) {
       <div className={containerVisibleClassName}>
         <div className="container flex-auto flex-row md:flex-col md:ml-8 w-full md:w-fit h-full  border border-gray-light rounded-lg bg-gray bg-opacity-50">
           <div className="container flex flex-row justify-center md:justify-start md:mx-8 py-2">
-            <div className="mr-1 text-lg">{day}</div>
-            <div className="mx-1 text-lg">{month}</div>
-            <div className="mx-1 text-lg">{year}</div>
+            <div className="mr-1 text-4xl md:text-lg">{day}</div>
+            <div className="mx-1 text-4xl md:text-lg">{month}</div>
+            <div className="mx-1 text-4xl md:text-lg">{year}</div>
           </div>
           <div className="container flex flex-row justify-center m-auto w-full md:ml-8 md:mr-2 md:w-fit py-2 border border-gray-light rounded-lg bg-gray ">
-            <div className="mx-2 min-w-fit">{dayName}</div>
-              <div className="mr-2 min-w-fit">{props.time}</div>
+            <div className="mx-2 text-4xl md:text-lg min-w-fit">{dayName}</div>
+              <div className="mr-2 text-4xl md:text-lg min-w-fit">{props.time}</div>
             </div>
          </div>
         <div className="container w-full md:w-4/5">
-          <div className="text-2xl my-4 ml-4 md:ml-12 text-left">{props.subject}</div>
+          <div className="text-4xl md:text-2xl my-4 ml-4 md:ml-12 text-left">{props.subject}</div>
           <div className={paragraphClassName}>{props.description}</div>
         </div>
       </div>

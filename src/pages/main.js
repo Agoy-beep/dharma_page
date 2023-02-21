@@ -12,7 +12,8 @@ import { containerClassName,
     quoterClassName, 
     paragraphBottomClassName, 
     titleSubClassName,
-    buttonClassName } from '../collections/layout.js';
+    buttonClassName, 
+    buttonClassNameClicked} from '../collections/layout.js';
 
 const meditationStarterBools = {
     meditation_1: false,
@@ -92,15 +93,13 @@ export default function Main(props) {
     return (
         <React.Fragment>
             {/* <Intro lang={props.lang} /> */}
-            <div className="mt-24 md:mt-0"></div>
+            <div className="mt-32 h-4 md:mt-0"></div>
             <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>
-                {/* <div className="container flex flex-col pb-5 justify-evenly"> */}
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_2}</ReactMarkdown></p>
-                <button className={buttonClassName} onClick={toggleFirstMeditation}>
+                <button className={meditationBools.meditation_1 ? buttonClassNameClicked : buttonClassName} onClick={toggleFirstMeditation}>
                     Ademhaling
-                    {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_1} meditation={'vip1_'} meditationTitle={'meditation.dual.vip1.title'}/>
@@ -110,7 +109,7 @@ export default function Main(props) {
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_4}</ReactMarkdown></p>
                 <h3 className={titleSubClassName}>{main_title_sub_2}</h3>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_5}</ReactMarkdown></p>
-                <button className={buttonClassName} onClick={toggleSecondMeditation}>
+                <button className={meditationBools.meditation_2 ? buttonClassNameClicked : buttonClassName} onClick={toggleSecondMeditation}>
                     Bodyscan
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
@@ -120,7 +119,7 @@ export default function Main(props) {
                 <p className={quoteClassName}>"{main_quote_3}"</p>
                 <p className={quoterClassName}>{main_quote_3_pt_2}</p>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_7}</ReactMarkdown></p>
-                <button className={buttonClassName} onClick={toggleThirdMeditation}>
+                <button className={meditationBools.meditation_3 ? buttonClassNameClicked : buttonClassName} onClick={toggleThirdMeditation}>
                     Metta
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
@@ -143,7 +142,7 @@ export default function Main(props) {
                 <p className={paragraphClassName}>{main_paragraph_16}</p>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_17}</ReactMarkdown></p>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_18}</ReactMarkdown></p>
-                <button className={buttonClassName} onClick={toggleFourthMeditation}>
+                <button className={meditationBools.meditation_4 ? buttonClassNameClicked : buttonClassName} onClick={toggleFourthMeditation}>
                    De Uitdaging
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
@@ -151,7 +150,7 @@ export default function Main(props) {
                 <Meditation lang={props.lang} show={meditationBools.meditation_4} meditation={'nondual1_'} meditationTitle={'meditation.nondual1.title'}/>
                 <p className={titleSubClassName}><ReactMarkdown>{main_title_sub_6}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_19}</p>
-                <button className={buttonClassName} onClick={toggleFifthMeditation}>
+                <button className={meditationBools.meditation_5 ? buttonClassNameClicked : buttonClassName} onClick={toggleFifthMeditation}>
                     Staren, Of Niet Staren?
                     {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>

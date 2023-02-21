@@ -25,8 +25,8 @@ export default function SessionsPage(props){
 
     return (
         <React.Fragment>
-            <div className="mt-24 md:mt-0"></div>
-            <div className="container grid w-full h-32 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase "></div>
+            <div className="mt-24 h-4 md:mt-0"></div>
+            <div className="container grid w-full h-12 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase "></div>
             {sessions.map(session =>(
                 <Session
                     key={session.id}

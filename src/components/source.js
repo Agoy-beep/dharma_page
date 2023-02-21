@@ -34,7 +34,8 @@ export default function Source(props) {
         <img src={props.image} alt='icon' className="object-cover" onClick={props.clickIcon}></img>
         </div>
         <p className={paragraphClassNameSource}>{props.description}</p>
-      <div className="flex m-auto justify-center md:justify-start">
+      <div className="flex m-auto justify-start md:justify-start">
+      {props.hasBackButton ? <button className={sourceButtonClassName} onClick={props.clickIcon}>Naar menu</button> : <div></div>}
         <a href={props.link} target="_blank" rel="noopener noreferrer" >
           <button className={sourceButtonClassName}>{props.button_text}</button>
         </a>

@@ -24,7 +24,7 @@ export default function AboutPage(props){
 
     return( 
         <React.Fragment>
-        <div className="mt-24 md:mt-0"></div>
+        <div className="mt-32 h-4 md:mt-0"></div>
             <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{about_title}</h1>
                 <p className={paragraphClassName}>{about_paragraph_1}</p>

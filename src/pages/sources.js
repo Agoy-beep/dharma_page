@@ -3,7 +3,13 @@ import Source from '../components/source.js';
 import Footer from '../footer.js';
 import { retrieveLabel } from '../helpers/labelhelper.js'
 import { sourceImageClassNameWide,
-    sourceImageClassNameBook, sourceImageClassNameBookOnly, sourceImageClassNameWideOnly, containerClassNameSource } from '../collections/layout.js';
+    sourceImageClassNameBook, 
+    sourceImageClassNameBookOnly, 
+    sourceImageClassNameWideOnly, 
+    containerClassNameSource, 
+    sourceButtonClassName,
+    headerLinkClassName,
+    sourceSwitchButtonClassName } from '../collections/layout.js';
 
 
 const notClicked = {
@@ -18,6 +24,10 @@ const notClicked = {
 
 export default function SourcesPage(props){
     const [whichImageClicked, setwhichImageClicked] = useState(notClicked);
+    const [showAsGrid, setShowAsGrid] = useState(false);
+    const changeLook = () => {
+        setShowAsGrid((prevState) => !prevState);
+    }
     const sources=[
         {
             id: '1',
@@ -136,11 +146,19 @@ export default function SourcesPage(props){
     }});
     return(
         <React.Fragment>
-            <div className="mt-24 md:mt-0"></div>
-            <div className="container grid w-full h-32 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase "></div>
-            {window.innerWidth < '1000' ? (whichImageClicked.showIconsOnly ? 
+            <div className="mt-24 h-4 md:mt-0"></div>
+            <div className="container grid h-12 mb-4 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase ">
+                {window.innerWidth > '1000' ? 
+                <button className={sourceSwitchButtonClassName} onClick={changeLook}>
+                    {showAsGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
+                </button>
+                :
+                <div></div>
+                }
+            </div>
+            {window.innerWidth < '1000' || showAsGrid === true ? (whichImageClicked.showIconsOnly ? 
             <React.Fragment>
-            <div className="container grid grid-flow-col gap-2 items-center mr-2">
+            <div className="container grid grid-flow-col gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto">
             {sources.map((source) => (
                 <Source 
                     key={source.id}
@@ -153,6 +171,7 @@ export default function SourcesPage(props){
                     link={source.link}
                     clickIcon={source.clickIcon}
                     showCard={source.showCard}
+                    hasBackButton={showAsGrid}
                 />
             ))}
             </div>
@@ -170,6 +189,7 @@ export default function SourcesPage(props){
                     link={filter[0].link}
                     clickIcon={filter[0].clickIcon}
                     showCard={true}
+                    hasBackButton={showAsGrid}
                 />
             </div>)
             :
@@ -186,6 +206,7 @@ export default function SourcesPage(props){
                     link={source.link}
                     clickIcon={source.clickIcon}
                     showCard={true}
+                    hasBackButton={showAsGrid}
                 />
             ))}
             </div>

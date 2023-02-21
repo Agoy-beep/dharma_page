@@ -5,7 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import { retrieveLabel, markdownParser } from '../helpers/labelhelper';
 import { containerClassName, 
   containerHiddenClassName,
-  paragraphClassName, 
+  paragraphClassName,
+  titleSubClassName,
   divClassName, 
   buttonClassName } from '../collections/layout.js';
 
@@ -31,14 +32,14 @@ export default function Intro(props) {
   const to_the_text = retrieveLabel('intro.button', props.lang);
  return (
   <React.Fragment>
-  <div className="mt-24 md:mt-0"></div>
+  <div className="mt-32 h-4 md:mt-0"></div>
     <div className= {containerVisibleClassName}>
     {/* <h1 className={titleClassName}>{main_title_1}</h1> */}
-      <div className="text-2xl my-8 text-center">{intro_div_par1_1}</div>
+      <div className={paragraphClassName}>{intro_div_par1_1}</div>
       <p className={paragraphClassName}><ReactMarkdown>{intro_paragraph_1}</ReactMarkdown></p>
       <p className={paragraphClassName}><ReactMarkdown>{intro_paragraph_2}</ReactMarkdown></p>
       <p className={paragraphClassName}>{intro_paragraph_3}</p>
-      <div className={divClassName}>{intro_div_par1_2}</div>
+      <div className={paragraphClassName}>{intro_div_par1_2}</div>
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
       <button className={buttonClassName} onClick={props.buttonClick}><Link to= "/main">{to_the_text}</Link></button>
     </div>
