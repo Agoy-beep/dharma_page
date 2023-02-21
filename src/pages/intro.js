@@ -13,12 +13,11 @@ import { containerClassName,
 
 export default function Intro(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
-  // const navigateAway = () => {
-  //   navigate = 'true';
-  // }
+
     
   useEffect(()=>{
       setContainerVisibleClassName(() => containerClassName);
+      props.buttonClick()
   }, []);
 
   // useEffect(()=>{
@@ -43,7 +42,7 @@ export default function Intro(props) {
       <p className={paragraphClassName}>{intro_paragraph_3}</p>
       <div className={divClassName}>{intro_div_par1_2}</div>
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
-      <button className={buttonClassName}><Link to= "/main">{to_the_text}</Link></button>
+      <button className={buttonClassName} onClick={props.buttonClick}><Link to= "/main">{to_the_text}</Link></button>
     </div>
     <Footer lang={props.lang}/>
   </React.Fragment>

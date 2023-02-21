@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { retrieveLabel } from './helpers/labelhelper.js';
 import { headerLinkClassName, 
@@ -32,6 +32,11 @@ export default function Header(props) {
             }
         });
     }
+    useEffect(()=> {
+        props.buttonMain ? clickMainLink() : clickHomeLink();
+        console.log('useEffect?');
+        console.log(props.buttonMain)
+    },[props.buttonMain])
     const clickSessionsLink = () => {
         setClickState((prevState) =>{
             return {

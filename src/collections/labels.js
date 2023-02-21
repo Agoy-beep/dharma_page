@@ -626,7 +626,7 @@ export const labels = [
   },
   { 
     key: 'footer',
-    nl : 'Zo aangenaam mogelijk gemaakt door Arne Goyvaerts',
+    nl : 'Zo aangenaam mogelijk gemaakt met Tailwind CSS en React',
     en : 'CONTACT'
   },
 ]
