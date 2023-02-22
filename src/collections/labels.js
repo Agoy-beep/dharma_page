@@ -101,7 +101,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_3',
-    nl : 'Of je dit al reeds ooit elders gedaan hebt of het nu net even hebt geprobeerd, je zal ondervonden hebben dat het heel moeilijk is om de aandacht bij je ademhaling te houden. Nog voor je de vierje ademhaling geobserveerd hebt dwalen de gedachten af. De oefening bestaat erin de weg terug te vinden naar je ademhaling. Belangrijk hierbij is dat je **niet kwaad** of **gefrustreerd** raakt wanneer de gedachten afdwalen, dat doen ze namelijk altijd, zoals een aapje dat van tak naar tak springt. Men spreekt niet voor niets over *the monkey mind*.',
+    nl : 'Of je dit al reeds ooit elders gedaan hebt of het nu net even hebt geprobeerd, je zal ondervonden hebben dat het heel moeilijk is om de aandacht bij je ademhaling te houden. Nog voor je de vierde ademhaling geobserveerd hebt dwalen de gedachten af. De oefening bestaat erin de weg terug te vinden naar je ademhaling. Belangrijk hierbij is dat je **niet kwaad** of **gefrustreerd** raakt wanneer de gedachten afdwalen, dat doen ze namelijk altijd, zoals een aapje dat van tak naar tak springt. Men spreekt niet voor niets over *the monkey mind*.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -176,7 +176,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_18',
-    nl : 'Herinner u de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Jij, *onderwerp-hoofdrolspeler*, kijkt naar je gedachten, *het object-het andere*, die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: *Waar komen die gedachten vandaan?* Probeer het proces te benoemen.',
+    nl : 'Herinner je de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Jij, *onderwerp-hoofdrolspeler*, kijkt naar je gedachten, *het object-het andere*, die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: *Waar komen die gedachten vandaan?* Probeer het proces te benoemen.',
     en : 'A QUIET PLACE'
   },
   { 
