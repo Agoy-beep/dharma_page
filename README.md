@@ -16,7 +16,7 @@ TODO
 - Sources page aanvullen, pretty please.
 - Sources pagina rederen via zo'n array.map toestand. 
 - Foto's fixen. 
-- Over mij pagina aanvullen. 
+- Over mij pagina aanvullen. V
 - FAQ bijvullen
 - Achtergrondfoto? wel zeker een kleiner bestand maken. 
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
