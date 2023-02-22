@@ -42,7 +42,7 @@ export default function SourcesPage(props){
 
     const sources=[
         {
-            id: '1',
+            id: 'App_1',
             title: 'Waking Up App',
             image: 'wakingup.png',
             imageCardStyling: sourceImageClassNameWide,
@@ -67,7 +67,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: '2',
+            id: 'Book_1',
             title: 'Why Meditate - Matthieu Ricard',
             image: 'whymeditate.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -92,7 +92,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: '3',
+            id: 'Book_2',
             title: 'How To Change Your Mind - Michael Pollan',
             image: 'how_to_change_your_mind.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -117,7 +117,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: '4',
+            id: 'Book_3',
             title: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov',
             image: 'in_love_with_the_world.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -142,7 +142,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: '5',
+            id: 'Book_5',
             title: 'Who Am I - Ramana Maharshi',
             image: 'who_am_i.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -168,7 +168,7 @@ export default function SourcesPage(props){
         },
     ]
 
-
+    // Beslis welk detail wordt getoond 
     const filterByKey = sources.filter(source => {
         if(source.title === whichImageClicked.key){
             return (
@@ -190,7 +190,7 @@ export default function SourcesPage(props){
     });
 
     const sourcesAppOnly = sources.filter(source => {
-        if(source.title.includes('App')){
+        if(source.id.includes('App')){
             return (
                 <Source 
                     key={source.id}
@@ -210,7 +210,7 @@ export default function SourcesPage(props){
     });
 
     const sourcesBookOnly = sources.filter(source => {
-        if(!source.title.includes('App')){
+        if(source.id.includes('Book')){
             return (
                 <Source 
                     key={source.id}
@@ -358,101 +358,6 @@ export default function SourcesPage(props){
                 }
             </div>
             {decideOnWhatToShow()}
-            {/* {isSmartphoneScreen || isFullScreenWithGrid
-            ? 
-                (isBookFilterOn
-                ?
-                <div className={isFullScreenWithGrid ? sourceContainerGridMode : undefined }>
-                        {sourcesBookOnly.map((source) => (
-                            <Source 
-                                key={source.id}
-                                title={source.title}
-                                image={source.image}
-                                image_card_styling={source.imageCardStyling}
-                                image_icon_styling={source.imageIconStyling}
-                                description={source.description}
-                                button_text={source.buttonText}
-                                link={source.link}
-                                clickIcon={source.clickIcon}
-                                showCard={source.showCard}
-                                hasBackButton={isFullScreenWithGrid}
-                            />
-                    ))}
-                </div>
-                :
-                <div>
-                    {sources.map((source) => (
-                        <Source 
-                            key={source.id}
-                            title={source.title}
-                            image={source.image}
-                            image_card_styling={source.imageCardStyling}
-                            image_icon_styling={source.imageIconStyling}
-                            description={source.description}
-                            button_text={source.buttonText}
-                            link={source.link}
-                            clickIcon={source.clickIcon}
-                            showCard={true}
-                            hasBackButton={isFullScreenWithGrid}
-                            />
-                    ))}
-                </div>
-                )
-                (whichImageClicked.showIconsOnly 
-                ? 
-                    <div className={sourceContainerGridMode}>
-                        {sources.map((source) => (
-                            <Source 
-                                key={source.id}
-                                title={source.title}
-                                image={source.image}
-                                image_card_styling={source.imageCardStyling}
-                                image_icon_styling={source.imageIconStyling}
-                                description={source.description}
-                                button_text={source.buttonText}
-                                link={source.link}
-                                clickIcon={source.clickIcon}
-                                showCard={source.showCard}
-                                hasBackButton={isFullScreenWithGrid}
-                            />
-                    ))}
-                    </div>
-                :
-                <Source 
-                        key={filterByKey[0].id}
-                        title={filterByKey[0].title}
-                        image={filterByKey[0].image}
-                        image_card_styling={filterByKey[0].imageCardStyling}
-                        image_icon_styling={filterByKey[0].imageIconStyling}
-                        description={filterByKey[0].description}
-                        button_text={filterByKey[0].buttonText}
-                        link={filterByKey[0].link}
-                        clickIcon={filterByKey[0].clickIcon}
-                        showCard={true}
-                        hasBackButton={isFullScreenWithGrid || isSmartphoneScreen}
-                    />
-                 )
-            :
-            <div>
-                {sources.map((source) => (
-                    <Source 
-                        key={source.id}
-                        title={source.title}
-                        image={source.image}
-                        image_card_styling={source.imageCardStyling}
-                        image_icon_styling={source.imageIconStyling}
-                        description={source.description}
-                        button_text={source.buttonText}
-                        link={source.link}
-                        clickIcon={source.clickIcon}
-                        showCard={true}
-                        hasBackButton={isFullScreenWithGrid}
-                        />
-                ))}
-            </div>
-            }
-            */}
-           
            {/* <Source title='I Am That - Nisagardatta' 
            image={image_why_meditate} 
            description={lorem}
