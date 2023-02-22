@@ -5,7 +5,7 @@ import { headerLinkClassName,
     headerLinkClassNameClicked, 
     headerLinkContainerClassName,
     headerLinksContainerClassName,
-    HeaderHomeLinkContainer } from "./collections/layout.js";
+    headerHomeLinkContainer } from "./collections/layout.js";
 
 const startClickState = {
     isMainActive: false,
@@ -28,7 +28,7 @@ export default function Header(props) {
                 isMainActive: !prevState.isMainActive,
                 isSessionsActive: false,
                 isSourcesActive: false,
-                isAboutMeActive: false
+                isAboutMeActive: false,
             }
         });
     }
@@ -69,18 +69,22 @@ export default function Header(props) {
 // contains the logo, info, about and contact tab.
     return (
         <div className={headerLinksContainerClassName}>
-            <div className={HeaderHomeLinkContainer}>
-                <div className="text-4xl mx-auto " onClick={clickHomeLink}><Link to= "/">{title}</Link></div>
+            <div className={headerHomeLinkContainer}>
+            <Link to= "/" className="text-4xl mx-auto " onClick={clickHomeLink}>{title}</Link>
             </div>
             <div className={headerLinkContainerClassName}>
-            <div className={clickState.isMainActive ? headerLinkClassNameClicked : headerLinkClassName}>
-                <Link to= "/main" onClick={clickMainLink}>{main}</Link></div>
-            <div className={clickState.isSessionsActive ? headerLinkClassNameClicked : headerLinkClassName}>
-                    <Link to= "/sessions" onClick={clickSessionsLink}>{sessions}</Link></div>
-            <div className={clickState.isSourcesActive ? headerLinkClassNameClicked : headerLinkClassName}>
-                    <Link to= "/sources" onClick={clickSourcesLink}>{sources}</Link></div>
-            <div className={clickState.isAboutMeActive ? headerLinkClassNameClicked : headerLinkClassName}>
-                    <Link to= "/about" onClick={clickAboutMeLink}>{about}</Link></div>
+            <Link to= "/main" className={clickState.isMainActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickMainLink}>
+                {main}
+            </Link>
+            <Link to= "/sessions" className={clickState.isSessionsActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickSessionsLink}>
+                {sessions}
+            </Link>
+            <Link to= "/sources" className={clickState.isSourcesActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickSourcesLink}>
+                {sources}
+            </Link>
+            <Link to= "/about" className={clickState.isAboutMeActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickAboutMeLink} >
+                {about}      
+            </Link>
                 {/* <div className="container flex-row-reverse space-x-2 basis-1/5">
                 <button className="p-2 w-12 bg-orange opacity-70 rounded-lg transition ease-in-out delay-100 hover:scale-110 hover:underline-offset-1 duration-200" onClick={props.setToEnglish}>ENG</button>
                 <button className="p-2 w-12 bg-orange opacity-70 rounded-lg transition ease-in-out delay-100 hover:scale-110 hover:underline-offset-1 duration-200" onClick={props.setToDutch}>NL</button>

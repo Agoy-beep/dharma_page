@@ -1,7 +1,7 @@
 export const labels = [
   { 
     key: 'title',
-    nl : 'Meditaties',
+    nl : 'Welkom',
     en : 'Meditations'
   },
   { 
@@ -596,17 +596,17 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_1',
-    nl : 'Mijn naam is Arne Goyvaerts, geboren op 12 januari 1986. Gelukkig verloofd en vader van twee prachtige kinderen, wonende in Mortsel, nabij Antwerpen. Om mijn kost te verdienen werk ik als IT-er voor de Christelijke Mutualiteiten.  Eerder avontuurlijk aangelegd, die soms de commentaar krijgt dat ‘alles zo extreem moet zijn bij jou’. Zelf ervaar ik zelden wat ik doe als extreem, probeer dat zelfs altijd te vermijden, maar neem eerder berekende risico’s die gedreven zijn door een nieuwsgierigheid die maar al te graag wil weten wat er achter de volgende heuvel ligt. Ik zou mij nooit introduceren als een spiritueel iemand, maar iemand die eerder allergisch reageert op alles wat met zweverige dingen te maken heeft.',
+    nl : 'Mijn naam is Arne Goyvaerts, geboren op 12 januari 1986. Gelukkig verloofd en vader van twee jonge kinderen, wonende in Mortsel, nabij Antwerpen. Om mijn kost te verdienen werk ik als IT-er voor de Christelijke Mutualiteiten. ',
     en : 'ABOUT ME'
   },
   { 
     key: 'about.paragraph_2',
-    nl : 'Ik heb een geschiedenis met veel faalangst en paniekaanvallen die het mij vooral in mijn tienerjaren erg zwaar hebben gemaakt. Deels omdat ik nooit begreep waarom ze mij overvielen en omdat ik merkte dat ik mijn leven op een andere manier ging leven om ze uit te weg te gaan, ging ik op zoek naar antwoorden die buiten de conventionele behandelingsmethodes lagen. Hiermee uit ik geen verwijt naar de disciplines van de psychiatrie of psychologie, zij hebben mij met momenten de handvaten gegeven die ik nodig hand om mijn dag door te raken. Toch bleef ik met het gevoel zitten dat aan de kern van de zaak nooit geraakt werd. Ik wist tot voor kort eigenlijk ook niet wat die kern was. Nu ik die meen gevonden te hebben, ik verwijs jullie graag door naar de tekst op de hoofdpagina voor meer uitleg, voel ik een sterke drang om die, voor mij relatief nieuwe, handvaten te delen en makkelijk beschikbaar te maken. ',
+    nl : 'Ik heb een geschiedenis met veel faalangst en paniekaanvallen die het mij vooral in mijn tienerjaren erg zwaar hebben gemaakt. Deels omdat ik nooit begreep waarom ze mij overvielen en omdat ik merkte dat ik mijn leven op een andere manier ging leven om ze uit te weg te gaan, ging ik op zoek naar antwoorden die buiten de conventionele behandelingsmethodes lagen. Hiermee uit ik geen verwijt naar de disciplines van de psychiatrie of psychologie, zij hebben mij met momenten de handvaten gegeven die ik nodig hand om mijn dag door te raken. Toch bleef ik met het gevoel zitten dat aan de kern van de zaak nooit geraakt werd. Nu ik die meen gevonden te hebben, besloot ik deze pagina te maken en mij meer te richten op het uitdragen van die kennis. ',
     en : 'ABOUT ME'
   },
   { 
     key: 'about.paragraph_3',
-    nl : 'Jezelf zo kwetsbaar opstellen op het internet is niet iets waar ik naar uitkijk, maar ik hoop dat het toch zijn vruchten kan afwerpen, in een tijd waar er zoveel mensen ongelukkig lijken rond te lopen. Heb je vragen of opmerkingen over wat hier op de website te vinden is, of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
+    nl : 'Heb je vragen of opmerkingen over wat hier op de website te vinden is of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
     en : 'ABOUT ME'
   },
   { 

@@ -7,6 +7,7 @@ import { containerClassName,
   containerHiddenClassName,
   paragraphClassName,
   titleSubClassName,
+  titleClassName,
   divClassName, 
   buttonClassName } from '../collections/layout.js';
 
@@ -42,6 +43,24 @@ export default function Intro(props) {
       <div className={paragraphClassName}>{intro_div_par1_2}</div>
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
       <button className={buttonClassName} onClick={props.buttonClick}><Link to= "/main">{to_the_text}</Link></button>
+    </div>
+    <div className={containerVisibleClassName}>
+      <div className={titleClassName}>Werken aan de website</div>
+      <p className={titleSubClassName}>Verbeteringen die feedback kunnen gebruiken</p>
+      <p className={paragraphClassName}><ol>
+        <li>- Uitzicht voor smartphones</li>
+        <li>- Rooster/lijst van bronnen bij pc schermen</li>
+        <li>- Algemene lay-out</li>
+      </ol></p>
+      <p className={titleSubClassName}>Verbeteringen waar op dit moment aan gewerkt wordt</p>
+      <p className={paragraphClassName}><ol>
+        <li>- Inleidingtekst wordt nog verder aangepast, zowel qua inhoud als lay-out</li>
+        <li>- FAQ/bronnen worden uitgebreid</li>
+        <li>- Filterknoppen voor kalender en bronnen</li>
+        <li>- Samenstelling van kalenderelementen wordt nog uitgebreid</li>
+        <li>- Paginaovergangen</li>
+        <li>- Plaats van de footer</li>
+      </ol></p>
     </div>
     <Footer lang={props.lang}/>
   </React.Fragment>

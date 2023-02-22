@@ -6,11 +6,12 @@ import { sourceImageClassNameWide,
     sourceImageClassNameBook, 
     sourceImageClassNameBookOnly, 
     sourceImageClassNameWideOnly, 
-    containerClassNameSource, 
+    sourceContainerClassName, 
     sourceButtonClassName,
     headerLinkClassName,
-    sourceSwitchButtonClassName } from '../collections/layout.js';
-
+    sourceSwitchButtonClassName, 
+    topFiller,
+    sourceContainerGridMode} from '../collections/layout.js';
 
 const notClicked = {
     isWakingUpClicked: false,
@@ -19,8 +20,7 @@ const notClicked = {
     isInLoveClicked: false,
     showIconsOnly: true
 }
-
-
+const isSmartphoneScreen = window.innerWidth < '1000';
 
 export default function SourcesPage(props){
     const [whichImageClicked, setwhichImageClicked] = useState(notClicked);
@@ -55,7 +55,7 @@ export default function SourcesPage(props){
         },
         {
             id: '2',
-            title: 'Why Meditate',
+            title: 'Why Meditate - Matthieu Ricard',
             image: 'whymeditate.png',
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookOnly,
@@ -70,7 +70,7 @@ export default function SourcesPage(props){
                     isChangeYourMindClicked: false,
                     isInLoveClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
-                    key: 'Why Meditate',
+                    key: 'Why Meditate - Matthieu Ricard',
                     }
                 })
             },
@@ -144,11 +144,12 @@ export default function SourcesPage(props){
             />
         )
     }});
+    
     return(
         <React.Fragment>
-            <div className="mt-24 h-4 md:mt-0"></div>
-            <div className="container grid h-12 mb-4 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase ">
-                {window.innerWidth > '1000' ? 
+            <div className={topFiller}></div>
+            <div className={sourceContainerGridMode}>
+                {!isSmartphoneScreen ? 
                 <button className={sourceSwitchButtonClassName} onClick={changeLook}>
                     {showAsGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
                 </button>
@@ -156,7 +157,7 @@ export default function SourcesPage(props){
                 <div></div>
                 }
             </div>
-            {window.innerWidth < '1000' || showAsGrid === true ? (whichImageClicked.showIconsOnly ? 
+            {isSmartphoneScreen || showAsGrid === true ? (whichImageClicked.showIconsOnly ? 
             <React.Fragment>
             <div className="container grid grid-flow-col gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto">
             {sources.map((source) => (
@@ -171,13 +172,12 @@ export default function SourcesPage(props){
                     link={source.link}
                     clickIcon={source.clickIcon}
                     showCard={source.showCard}
-                    hasBackButton={window.innerWidth < '1000'}
+                    hasBackButton={showAsGrid}
                 />
             ))}
             </div>
             </React.Fragment>
             :
-            <div className="container grid grid-flow-row items-left">
             <Source 
                     key={filter[0].id}
                     title={filter[0].title}
@@ -189,9 +189,9 @@ export default function SourcesPage(props){
                     link={filter[0].link}
                     clickIcon={filter[0].clickIcon}
                     showCard={true}
-                    hasBackButton={showAsGrid}
+                    hasBackButton={showAsGrid || isSmartphoneScreen}
                 />
-            </div>)
+            )
             :
             <div>
             {sources.map((source) => (
@@ -211,80 +211,6 @@ export default function SourcesPage(props){
             ))}
             </div>
             }
-            {/* <div className={titleClassName}>BRONNEN</div> */}
-            {/* <div className="mt-24 md:mt-0"></div>
-            {whichImageClicked.showIconsOnly ? <div className="container grid grid-flow-col items-center ">
-                <Source title='Waking Up App' 
-                    image={image_waking_up} 
-                    image_styling={sourceImageClassNameWide}
-                    image_single_styling={sourceImageClassNameWideOnly}
-                    clickIcon={clickWakingUp}
-                    showText={isImageClicked.isWakingUpClicked}
-                    description={description_waking_up}
-                    button_text={button_appLink}
-                    link={link_waking_up} /> 
-                <Source title='Why Meditate - Matthieu Ricard' 
-                    image={image_why_meditate}
-                    image_styling={sourceImageClassNameBook}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    showText={isImageClicked.isWhyMeditateClicked}
-                    clickIcon={clickWhyMeditateUp}
-                    description={description_why_meditate}
-                    button_text={button_bookLink}
-                    link={link_why_meditate} />
-                <Source title='How To Change Your Mind - Michael Pollan' 
-                    image={image_how_to_change_your_mind}
-                    image_styling={sourceImageClassNameBook}
-                    showText={isImageClicked.isChangeYourMindClicked}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    description={description_how_to_change_your_mind}
-                    button_text={button_bookLink}
-                    link={link_how_to_change_your_mind} />
-                <Source title='In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov' 
-                    image={image_in_love_with_the_world}
-                    image_styling={sourceImageClassNameBook}
-                    showText={isImageClicked.isInLoveClicked}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    description={description_in_love_with_the_world}
-                    button_text={button_bookLink}
-                    link={link_in_love_with_the_world} />
-            </div>
-            : 
-            <React.Fragment>
-            <Source title='Waking Up App' 
-                    image={image_waking_up} 
-                    image_styling={sourceImageClassNameWide}
-                    image_single_styling={sourceImageClassNameWideOnly}
-                    clickIcon={clickWakingUp}
-                    showText={isImageClicked.isWakingUpClicked}
-                    description={description_waking_up}
-                    button_text={button_appLink}
-                    link={link_waking_up} /> 
-                <Source title='Why Meditate - Matthieu Ricard' 
-                    image={image_why_meditate}
-                    image_styling={sourceImageClassNameBook}
-                    showText={isImageClicked.isWhyMeditateClicked}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    description={description_why_meditate}
-                    button_text={button_bookLink}
-                    link={link_why_meditate} />
-                <Source title='How To Change Your Mind - Michael Pollan' 
-                    image={image_how_to_change_your_mind}
-                    image_styling={sourceImageClassNameBook}
-                    showText={isImageClicked.isChangeYourMindClicked}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    description={description_how_to_change_your_mind}
-                    button_text={button_bookLink}
-                    link={link_how_to_change_your_mind} />
-                <Source title='In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov' 
-                    image={image_in_love_with_the_world}
-                    image_styling={sourceImageClassNameBook}
-                    showText={isImageClicked.isInLoveClicked}
-                    image_single_styling={sourceImageClassNameBookOnly}
-                    description={description_in_love_with_the_world}
-                    button_text={button_bookLink}
-                    link={link_in_love_with_the_world} />
-                </React.Fragment>} */}
            
            {/* <Source title='Who Am I - Ramana Maharshi' 
            image={image_why_meditate} 
@@ -296,7 +222,8 @@ export default function SourcesPage(props){
            description={lorem}
            button_text={button_bookLink}
            link={link_why_meditate} />  */}
-           {/* <Footer lang={props.lang} /> */}
+           <div className="container h-32 bg-transparent "></div>
+           <Footer lang={props.lang} />
         </React.Fragment>
     )
 }

@@ -13,7 +13,8 @@ import { containerClassName,
     paragraphBottomClassName, 
     titleSubClassName,
     buttonClassName, 
-    buttonClassNameClicked} from '../collections/layout.js';
+    buttonClassNameClicked,
+    topFiller} from '../collections/layout.js';
 
 const meditationStarterBools = {
     meditation_1: false,
@@ -92,8 +93,7 @@ export default function Main(props) {
 
     return (
         <React.Fragment>
-            {/* <Intro lang={props.lang} /> */}
-            <div className="mt-32 h-4 md:mt-0"></div>
+            <div className={topFiller}></div>
             <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_2}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_1}</h3>
@@ -101,7 +101,6 @@ export default function Main(props) {
                 <button className={meditationBools.meditation_1 ? buttonClassNameClicked : buttonClassName} onClick={toggleFirstMeditation}>
                     Ademhaling
                 </button>
-                {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_1} meditation={'vip1_'} meditationTitle={'meditation.dual.vip1.title'}/>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_3}</ReactMarkdown></p>
                 <p className={quoteClassName}>"{main_quote_2}"</p>
@@ -111,7 +110,6 @@ export default function Main(props) {
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_5}</ReactMarkdown></p>
                 <button className={meditationBools.meditation_2 ? buttonClassNameClicked : buttonClassName} onClick={toggleSecondMeditation}>
                     Bodyscan
-                    {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_2}  meditation={'vip2_'} meditationTitle={'meditation.dual.vip2.title'} />
                 <h3 className={titleSubClassName}>{main_title_sub_3}</h3>
@@ -121,7 +119,6 @@ export default function Main(props) {
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_7}</ReactMarkdown></p>
                 <button className={meditationBools.meditation_3 ? buttonClassNameClicked : buttonClassName} onClick={toggleThirdMeditation}>
                     Metta
-                    {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_3}  meditation={'vip3_'} meditationTitle={'meditation.dual.vip3.title'} />
                 <p className={quoteClassName}>"{main_quote_1}"</p>
@@ -144,17 +141,13 @@ export default function Main(props) {
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_18}</ReactMarkdown></p>
                 <button className={meditationBools.meditation_4 ? buttonClassNameClicked : buttonClassName} onClick={toggleFourthMeditation}>
                    De Uitdaging
-                    {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
-                {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_4} meditation={'nondual1_'} meditationTitle={'meditation.nondual1.title'}/>
                 <p className={titleSubClassName}><ReactMarkdown>{main_title_sub_6}</ReactMarkdown></p>
                 <p className={paragraphClassName}>{main_paragraph_19}</p>
                 <button className={meditationBools.meditation_5 ? buttonClassNameClicked : buttonClassName} onClick={toggleFifthMeditation}>
                     Staren, Of Niet Staren?
-                    {/* <img src='medbutton.png' alt='voorbeeld' className="object-cover float-right"></img> */}
                 </button>
-                {/* </div> */}
                 <Meditation lang={props.lang} show={meditationBools.meditation_5} meditation={'nondual2_'} meditationTitle={'meditation.nondual2.title'}/>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_20}</ReactMarkdown></p>
                 <p className={paragraphClassName}><ReactMarkdown>{main_paragraph_21}</ReactMarkdown></p>

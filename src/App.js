@@ -40,7 +40,7 @@ export default function App() {
           buttonMain={isMainButtonClicked}
           />
           { 
-            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 lg:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y">
+            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y">
               <Routes>
                 <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton}/>}/>
                 <Route path='/sessions' element={<SessionsPage lang={language}/>} />

@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { containerHiddenClassName,
-  containerClassNameSource,
-  containerHiddenClassNameSourceCard,
-  containerClassNameSourceImageOnly,
-  paragraphClassNameSource,
-  titleSubClassNameSource,
-  sourceButtonClassName } from '../collections/layout.js';
+  sourceContainerClassName,
+  sourceContainerHiddenClassNameCard,
+  sourceContainerClassNameImageOnly,
+  sourceParagraphClassName,
+  sourceTitleSubClassName,
+  sourceButtonClassName, 
+  sourceButtonsContainer} from '../collections/layout.js';
 
   const notClicked = false;
 export default function Source(props) {
@@ -15,13 +16,13 @@ export default function Source(props) {
     
   useEffect(()=>{
       setContainerImageOnlyVisibleClassName(() => containerHiddenClassName);
-        setContainerImageOnlyVisibleClassName(() => containerClassNameSourceImageOnly);
+        setContainerImageOnlyVisibleClassName(() => sourceContainerClassNameImageOnly);
     }, [props.showCard === false]);
 
     useEffect(()=>{
-        setContainerVisibleClassName(() => containerHiddenClassNameSourceCard);
+        setContainerVisibleClassName(() => sourceContainerHiddenClassNameCard);
         if(props.showCard === true){
-          setContainerVisibleClassName(() => containerClassNameSource);
+          setContainerVisibleClassName(() => sourceContainerClassName);
         }  
     }, [props.showCard]);
 
@@ -29,12 +30,12 @@ export default function Source(props) {
     <React.Fragment>
     {props.showCard ? 
     <div className= {containerVisibleClassName}>
-        <div className={titleSubClassNameSource}>{props.title}</div>
+        <div className={sourceTitleSubClassName}>{props.title}</div>
         <div className={props.image_card_styling}>
         <img src={props.image} alt='icon' className="object-cover" onClick={props.clickIcon}></img>
         </div>
-        <p className={paragraphClassNameSource}>{props.description}</p>
-      <div className="flex m-auto justify-start md:justify-start">
+        <p className={sourceParagraphClassName}>{props.description}</p>
+      <div className={sourceButtonsContainer}>
       {props.hasBackButton ? <button className={sourceButtonClassName} onClick={props.clickIcon}>Naar menu</button> : <div></div>}
         <a href={props.link} target="_blank" rel="noopener noreferrer" >
           <button className={sourceButtonClassName}>{props.button_text}</button>
