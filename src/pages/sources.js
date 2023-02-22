@@ -312,7 +312,6 @@ export default function SourcesPage(props){
             }
 
         }else {
-            console.log('Weeeeeee');
             return (
                 <div>
                     {sources.map((source) => (
