@@ -10,7 +10,8 @@ import { sourceImageClassNameWide,
     topFiller,
     bottomFiller,
     sourceContainerGridMode,
-    sourceContainerSwitchButtons} from '../collections/layout.js';
+    sourceContainerSwitchButtons,
+    sourceFilterButtonClassName} from '../collections/layout.js';
 
 const notClicked = {
     isWakingUpClicked: false,
@@ -24,14 +25,21 @@ const isSmartphoneScreen = window.innerWidth < '1000';
 
 export default function SourcesPage(props){
     const [whichImageClicked, setwhichImageClicked] = useState(notClicked);
-    const [showAsGrid, setShowAsGrid] = useState(false);
+    const [isFullScreenWithGrid, setIsFullScreenWithGrid] = useState(false);
     const [isAppFilterOn, setIsAppFilterOn] = useState(false);
+    const [isBookFilterOn, setIsBookFilterOn] = useState(false);
     const changeLook = () => {
-        setShowAsGrid((prevState) => !prevState);
+        setIsFullScreenWithGrid((prevState) => !prevState);
     }
     const filterApps = () => {
         setIsAppFilterOn((prevState) => !prevState);
+        setIsBookFilterOn(() => false);
     }
+    const filterBooks = () => {
+        setIsBookFilterOn((prevState) => !prevState);
+        setIsAppFilterOn(() => false);
+    }
+
     const sources=[
         {
             id: '1',
@@ -159,69 +167,72 @@ export default function SourcesPage(props){
 
         },
     ]
-    
+
+
     const filterByKey = sources.filter(source => {
         if(source.title === whichImageClicked.key){
-        return (
-            <Source 
-                key={source.id}
-                title={source.title}
-                image={source.image}
-                image_card_styling={source.imageCardStyling}
-                image_icon_styling={source.imageIconStyling}
-                description={source.description}
-                button_text={source.buttonText}
-                link={source.link}
-                clickIcon={source.clickIcon}
-                showCard={source.showCard}
-            />
-        )
-    }});
+            return (
+                <Source 
+                    key={source.id}
+                    title={source.title}
+                    image={source.image}
+                    image_card_styling={source.imageCardStyling}
+                    image_icon_styling={source.imageIconStyling}
+                    description={source.description}
+                    button_text={source.buttonText}
+                    link={source.link}
+                    clickIcon={source.clickIcon}
+                    showCard={source.showCard}
+                />
+            )
+        }
+        return undefined;
+    });
 
     const sourcesAppOnly = sources.filter(source => {
         if(source.title.includes('App')){
-        return (
-            <Source 
-                key={source.id}
-                title={source.title}
-                image={source.image}
-                image_card_styling={source.imageCardStyling}
-                image_icon_styling={source.imageIconStyling}
-                description={source.description}
-                button_text={source.buttonText}
-                link={source.link}
-                clickIcon={source.clickIcon}
-                showCard={source.showCard}
-            />
-        )
-    }});
-    
-    return(
-        <React.Fragment>
-            <div className={topFiller}></div>
-            <div className={sourceContainerSwitchButtons}>
-                {!isSmartphoneScreen 
-                ? 
-                <React.Fragment>
-                    <button className={sourceSwitchButtonClassName} onClick={changeLook}>
-                        {showAsGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
-                    </button>
-                    <button className={sourceSwitchButtonClassName} onClick={filterApps}>
-                        App filter
-                    </button>
+            return (
+                <Source 
+                    key={source.id}
+                    title={source.title}
+                    image={source.image}
+                    image_card_styling={source.imageCardStyling}
+                    image_icon_styling={source.imageIconStyling}
+                    description={source.description}
+                    button_text={source.buttonText}
+                    link={source.link}
+                    clickIcon={source.clickIcon}
+                    showCard={source.showCard}
+                />
+            )
+        }
+        return undefined;
+    });
 
-                </React.Fragment>
-                :
-                <div></div>
-                }
-            </div>
-            {isSmartphoneScreen || showAsGrid === true 
-            ? 
-                (whichImageClicked.showIconsOnly 
-                ? 
-                    (isAppFilterOn 
-                    ?
-                    <div className={sourceContainerGridMode}>
+    const sourcesBookOnly = sources.filter(source => {
+        if(!source.title.includes('App')){
+            return (
+                <Source 
+                    key={source.id}
+                    title={source.title}
+                    image={source.image}
+                    image_card_styling={source.imageCardStyling}
+                    image_icon_styling={source.imageIconStyling}
+                    description={source.description}
+                    button_text={source.buttonText}
+                    link={source.link}
+                    clickIcon={source.clickIcon}
+                    showCard={source.showCard}
+                />
+            )
+        }
+        return undefined;
+    });
+
+    const decideOnWhatToShow = () => {
+        if(isAppFilterOn){
+            return (
+                <div className={isFullScreenWithGrid ? sourceContainerGridMode : undefined }>
                         {sourcesAppOnly.map((source) => (
                             <Source 
                                 key={source.id}
@@ -233,12 +244,37 @@ export default function SourcesPage(props){
                                 button_text={source.buttonText}
                                 link={source.link}
                                 clickIcon={source.clickIcon}
-                                showCard={source.showCard}
-                                hasBackButton={showAsGrid}
+                                showCard={!isFullScreenWithGrid}
+                                hasBackButton={isFullScreenWithGrid}
                             />
                     ))}
-                    </div>
-                    :
+                </div>
+            )
+        }
+        if(isBookFilterOn){
+            return (
+                <div className={isFullScreenWithGrid ? sourceContainerGridMode : undefined }>
+                        {sourcesBookOnly.map((source) => (
+                            <Source 
+                                key={source.id}
+                                title={source.title}
+                                image={source.image}
+                                image_card_styling={source.imageCardStyling}
+                                image_icon_styling={source.imageIconStyling}
+                                description={source.description}
+                                button_text={source.buttonText}
+                                link={source.link}
+                                clickIcon={source.clickIcon}
+                                showCard={!isFullScreenWithGrid}
+                                hasBackButton={isFullScreenWithGrid}
+                            />
+                    ))}
+                </div>
+            )
+        }
+        if(isSmartphoneScreen || isFullScreenWithGrid){
+            if(whichImageClicked.showIconsOnly ){
+                return (
                     <div className={sourceContainerGridMode}>
                         {sources.map((source) => (
                             <Source 
@@ -252,11 +288,135 @@ export default function SourcesPage(props){
                                 link={source.link}
                                 clickIcon={source.clickIcon}
                                 showCard={source.showCard}
-                                hasBackButton={showAsGrid}
+                                hasBackButton={isFullScreenWithGrid}
+                            />
+                        ))}
+                    </div>
+                )
+            } else{
+                return (
+                    <Source 
+                        key={filterByKey[0].id}
+                        title={filterByKey[0].title}
+                        image={filterByKey[0].image}
+                        image_card_styling={filterByKey[0].imageCardStyling}
+                        image_icon_styling={filterByKey[0].imageIconStyling}
+                        description={filterByKey[0].description}
+                        button_text={filterByKey[0].buttonText}
+                        link={filterByKey[0].link}
+                        clickIcon={filterByKey[0].clickIcon}
+                        showCard={true}
+                        hasBackButton={isFullScreenWithGrid || isSmartphoneScreen}
+                    />
+                 )
+            }
+
+        }else {
+            console.log('Weeeeeee');
+            return (
+                <div>
+                    {sources.map((source) => (
+                        <Source 
+                            key={source.id}
+                            title={source.title}
+                            image={source.image}
+                            image_card_styling={source.imageCardStyling}
+                            image_icon_styling={source.imageIconStyling}
+                            description={source.description}
+                            button_text={source.buttonText}
+                            link={source.link}
+                            clickIcon={source.clickIcon}
+                            showCard={true}
+                            hasBackButton={isFullScreenWithGrid}
+                            />
+                    ))}
+                </div>
+            )
+        }
+    }
+    
+    return(
+        <React.Fragment>
+            <div className={topFiller}></div>
+            <div className={sourceContainerSwitchButtons}>
+                {!isSmartphoneScreen 
+                ? 
+                <React.Fragment>
+                    <button className={sourceSwitchButtonClassName} onClick={changeLook}>
+                        {isFullScreenWithGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
+                    </button>
+                    <button className={sourceFilterButtonClassName} onClick={filterApps}>
+                        {isAppFilterOn ? 'App filter aan' : 'App filter uit'} 
+                    </button>
+                    <button className={sourceFilterButtonClassName} onClick={filterBooks}>
+                        {isBookFilterOn ? 'Boek filter aan' : 'Boek filter uit'} 
+                    </button>
+
+                </React.Fragment>
+                :
+                <div></div>
+                }
+            </div>
+            {decideOnWhatToShow()}
+            {/* {isSmartphoneScreen || isFullScreenWithGrid
+            ? 
+                (isBookFilterOn
+                ?
+                <div className={isFullScreenWithGrid ? sourceContainerGridMode : undefined }>
+                        {sourcesBookOnly.map((source) => (
+                            <Source 
+                                key={source.id}
+                                title={source.title}
+                                image={source.image}
+                                image_card_styling={source.imageCardStyling}
+                                image_icon_styling={source.imageIconStyling}
+                                description={source.description}
+                                button_text={source.buttonText}
+                                link={source.link}
+                                clickIcon={source.clickIcon}
+                                showCard={source.showCard}
+                                hasBackButton={isFullScreenWithGrid}
+                            />
+                    ))}
+                </div>
+                :
+                <div>
+                    {sources.map((source) => (
+                        <Source 
+                            key={source.id}
+                            title={source.title}
+                            image={source.image}
+                            image_card_styling={source.imageCardStyling}
+                            image_icon_styling={source.imageIconStyling}
+                            description={source.description}
+                            button_text={source.buttonText}
+                            link={source.link}
+                            clickIcon={source.clickIcon}
+                            showCard={true}
+                            hasBackButton={isFullScreenWithGrid}
+                            />
+                    ))}
+                </div>
+                )
+                (whichImageClicked.showIconsOnly 
+                ? 
+                    <div className={sourceContainerGridMode}>
+                        {sources.map((source) => (
+                            <Source 
+                                key={source.id}
+                                title={source.title}
+                                image={source.image}
+                                image_card_styling={source.imageCardStyling}
+                                image_icon_styling={source.imageIconStyling}
+                                description={source.description}
+                                button_text={source.buttonText}
+                                link={source.link}
+                                clickIcon={source.clickIcon}
+                                showCard={source.showCard}
+                                hasBackButton={isFullScreenWithGrid}
                             />
                     ))}
                     </div>
-                    )
                 :
                 <Source 
                         key={filterByKey[0].id}
@@ -269,7 +429,7 @@ export default function SourcesPage(props){
                         link={filterByKey[0].link}
                         clickIcon={filterByKey[0].clickIcon}
                         showCard={true}
-                        hasBackButton={showAsGrid || isSmartphoneScreen}
+                        hasBackButton={isFullScreenWithGrid || isSmartphoneScreen}
                     />
                  )
             :
@@ -286,12 +446,12 @@ export default function SourcesPage(props){
                         link={source.link}
                         clickIcon={source.clickIcon}
                         showCard={true}
-                        hasBackButton={showAsGrid}
+                        hasBackButton={isFullScreenWithGrid}
                         />
                 ))}
             </div>
             }
-           
+            */}
            
            {/* <Source title='I Am That - Nisagardatta' 
            image={image_why_meditate} 
