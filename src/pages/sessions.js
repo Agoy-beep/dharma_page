@@ -2,7 +2,7 @@ import React from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import Session from '../components/session.js';
 import Footer from '../footer.js';
-import { topFiller } from '../collections/layout.js';
+import { bottomFiller, topFiller } from '../collections/layout.js';
 
 export default function SessionsPage(props){
     const sessions= [
@@ -27,7 +27,6 @@ export default function SessionsPage(props){
     return (
         <React.Fragment>
             <div className={topFiller}></div>
-            {/* <div className="container grid w-full h-12 bg-transparent rounded-lg text-white text-4xl place-content-center uppercase "></div> */}
             {sessions.map(session =>(
                 <Session
                     key={session.id}
@@ -39,7 +38,7 @@ export default function SessionsPage(props){
                     lang={props.lang}
                     />
             ))}
-            <div className="container h-32 bg-transparent "></div>
+            <div className={bottomFiller}></div>
             <Footer lang={props.lang} />
         </React.Fragment>
              

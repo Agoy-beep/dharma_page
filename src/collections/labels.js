@@ -580,6 +580,11 @@ export const labels = [
     en : 'SOURCE MATERIAL'
   },
   { 
+    key: 'source_5',
+    nl : 'Nadat hij verlamd werd door een plotse angst voor de dood, vroeg een jonge Ramana Maharshi zich af welk deel van zichzelf zou sterven, mocht hij komen te overlijden. Het antwoord op die vraag leidde hem naar de berg Arunachala waar hij het grootste deel van zijn leven zou doorbrengen. Daar werd hij door veel mensen omringd, zowel bezoekers als aanbidders. Who Am I is een korte tekst waarin het idee van een ik en een Ik op een overzichtelijke manier uit de doeken wordt gedaan in de vorm van vragen en antwoorden. Voor mensen met niet veel tijd en een hoge drang naar verlichting.',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
     key: 'source.button.link.app',
     nl : 'Naar de website',
     en : 'SOURCE MATERIAL'

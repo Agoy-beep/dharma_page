@@ -6,18 +6,18 @@ import { sourceImageClassNameWide,
     sourceImageClassNameBook, 
     sourceImageClassNameBookOnly, 
     sourceImageClassNameWideOnly, 
-    sourceContainerClassName, 
-    sourceButtonClassName,
-    headerLinkClassName,
     sourceSwitchButtonClassName, 
     topFiller,
-    sourceContainerGridMode} from '../collections/layout.js';
+    bottomFiller,
+    sourceContainerGridMode,
+    sourceContainerSwitchButtons} from '../collections/layout.js';
 
 const notClicked = {
     isWakingUpClicked: false,
     isWhyMeditateClicked: false,
     isChangeYourMindClicked: false,
     isInLoveClicked: false,
+    isWhoAmIClicked: false,
     showIconsOnly: true
 }
 const isSmartphoneScreen = window.innerWidth < '1000';
@@ -25,8 +25,12 @@ const isSmartphoneScreen = window.innerWidth < '1000';
 export default function SourcesPage(props){
     const [whichImageClicked, setwhichImageClicked] = useState(notClicked);
     const [showAsGrid, setShowAsGrid] = useState(false);
+    const [isAppFilterOn, setIsAppFilterOn] = useState(false);
     const changeLook = () => {
         setShowAsGrid((prevState) => !prevState);
+    }
+    const filterApps = () => {
+        setIsAppFilterOn((prevState) => !prevState);
     }
     const sources=[
         {
@@ -45,6 +49,7 @@ export default function SourcesPage(props){
                     isWhyMeditateClicked: false,
                     isChangeYourMindClicked: false,
                     isInLoveClicked: false,
+                    isWhoAmIClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Waking Up App',
                     }
@@ -69,6 +74,7 @@ export default function SourcesPage(props){
                     isWhyMeditateClicked: !whichImageClicked.isWhyMeditateClicked,
                     isChangeYourMindClicked: false,
                     isInLoveClicked: false,
+                    isWhoAmIClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Why Meditate - Matthieu Ricard',
                     }
@@ -93,6 +99,7 @@ export default function SourcesPage(props){
                     isWhyMeditateClicked: false,
                     isChangeYourMindClicked: !whichImageClicked.isChangeYourMindClicked,
                     isInLoveClicked: false,
+                    isWhoAmIClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'How To Change Your Mind - Michael Pollan',
                     }
@@ -117,6 +124,7 @@ export default function SourcesPage(props){
                     isWhyMeditateClicked: false,
                     isChangeYourMindClicked: false,
                     isInLoveClicked: !whichImageClicked.isInLoveClicked,
+                    isWhoAmIClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov'
                     }
@@ -125,10 +133,53 @@ export default function SourcesPage(props){
             showCard: whichImageClicked.isInLoveClicked
 
         },
+        {
+            id: '5',
+            title: 'Who Am I - Ramana Maharshi',
+            image: 'who_am_i.png',
+            imageCardStyling: sourceImageClassNameBook,
+            imageIconStyling: sourceImageClassNameBookOnly,
+            description: retrieveLabel('source_5', props.lang),
+            buttonText: retrieveLabel('source.button.link.book', props.lang),
+            link: 'https://www.goodreads.com/book/show/551750.Who_Am_I_',
+            clickIcon: function clickInLoveWithTheWorld() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: !whichImageClicked.isWhoAmIClicked,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'Who Am I - Ramana Maharshi'
+                    }
+                })
+            },
+            showCard: whichImageClicked.isWhoAmIClicked
+
+        },
     ]
     
-    const filter = sources.filter(source => {
+    const filterByKey = sources.filter(source => {
         if(source.title === whichImageClicked.key){
+        return (
+            <Source 
+                key={source.id}
+                title={source.title}
+                image={source.image}
+                image_card_styling={source.imageCardStyling}
+                image_icon_styling={source.imageIconStyling}
+                description={source.description}
+                button_text={source.buttonText}
+                link={source.link}
+                clickIcon={source.clickIcon}
+                showCard={source.showCard}
+            />
+        )
+    }});
+
+    const sourcesAppOnly = sources.filter(source => {
+        if(source.title.includes('App')){
         return (
             <Source 
                 key={source.id}
@@ -148,81 +199,106 @@ export default function SourcesPage(props){
     return(
         <React.Fragment>
             <div className={topFiller}></div>
-            <div className={sourceContainerGridMode}>
-                {!isSmartphoneScreen ? 
-                <button className={sourceSwitchButtonClassName} onClick={changeLook}>
-                    {showAsGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
-                </button>
+            <div className={sourceContainerSwitchButtons}>
+                {!isSmartphoneScreen 
+                ? 
+                <React.Fragment>
+                    <button className={sourceSwitchButtonClassName} onClick={changeLook}>
+                        {showAsGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
+                    </button>
+                    <button className={sourceSwitchButtonClassName} onClick={filterApps}>
+                        App filter
+                    </button>
+
+                </React.Fragment>
                 :
                 <div></div>
                 }
             </div>
-            {isSmartphoneScreen || showAsGrid === true ? (whichImageClicked.showIconsOnly ? 
-            <React.Fragment>
-            <div className="container grid grid-flow-col gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto">
-            {sources.map((source) => (
+            {isSmartphoneScreen || showAsGrid === true 
+            ? 
+                (whichImageClicked.showIconsOnly 
+                ? 
+                    (isAppFilterOn 
+                    ?
+                    <div className={sourceContainerGridMode}>
+                        {sourcesAppOnly.map((source) => (
+                            <Source 
+                                key={source.id}
+                                title={source.title}
+                                image={source.image}
+                                image_card_styling={source.imageCardStyling}
+                                image_icon_styling={source.imageIconStyling}
+                                description={source.description}
+                                button_text={source.buttonText}
+                                link={source.link}
+                                clickIcon={source.clickIcon}
+                                showCard={source.showCard}
+                                hasBackButton={showAsGrid}
+                            />
+                    ))}
+                    </div>
+                    :
+                    <div className={sourceContainerGridMode}>
+                        {sources.map((source) => (
+                            <Source 
+                                key={source.id}
+                                title={source.title}
+                                image={source.image}
+                                image_card_styling={source.imageCardStyling}
+                                image_icon_styling={source.imageIconStyling}
+                                description={source.description}
+                                button_text={source.buttonText}
+                                link={source.link}
+                                clickIcon={source.clickIcon}
+                                showCard={source.showCard}
+                                hasBackButton={showAsGrid}
+                            />
+                    ))}
+                    </div>
+                    )
+                :
                 <Source 
-                    key={source.id}
-                    title={source.title}
-                    image={source.image}
-                    image_card_styling={source.imageCardStyling}
-                    image_icon_styling={source.imageIconStyling}
-                    description={source.description}
-                    button_text={source.buttonText}
-                    link={source.link}
-                    clickIcon={source.clickIcon}
-                    showCard={source.showCard}
-                    hasBackButton={showAsGrid}
-                />
-            ))}
-            </div>
-            </React.Fragment>
-            :
-            <Source 
-                    key={filter[0].id}
-                    title={filter[0].title}
-                    image={filter[0].image}
-                    image_card_styling={filter[0].imageCardStyling}
-                    image_icon_styling={filter[0].imageIconStyling}
-                    description={filter[0].description}
-                    button_text={filter[0].buttonText}
-                    link={filter[0].link}
-                    clickIcon={filter[0].clickIcon}
-                    showCard={true}
-                    hasBackButton={showAsGrid || isSmartphoneScreen}
-                />
-            )
+                        key={filterByKey[0].id}
+                        title={filterByKey[0].title}
+                        image={filterByKey[0].image}
+                        image_card_styling={filterByKey[0].imageCardStyling}
+                        image_icon_styling={filterByKey[0].imageIconStyling}
+                        description={filterByKey[0].description}
+                        button_text={filterByKey[0].buttonText}
+                        link={filterByKey[0].link}
+                        clickIcon={filterByKey[0].clickIcon}
+                        showCard={true}
+                        hasBackButton={showAsGrid || isSmartphoneScreen}
+                    />
+                 )
             :
             <div>
-            {sources.map((source) => (
-                <Source 
-                    key={source.id}
-                    title={source.title}
-                    image={source.image}
-                    image_card_styling={source.imageCardStyling}
-                    image_icon_styling={source.imageIconStyling}
-                    description={source.description}
-                    button_text={source.buttonText}
-                    link={source.link}
-                    clickIcon={source.clickIcon}
-                    showCard={true}
-                    hasBackButton={showAsGrid}
-                />
-            ))}
+                {sources.map((source) => (
+                    <Source 
+                        key={source.id}
+                        title={source.title}
+                        image={source.image}
+                        image_card_styling={source.imageCardStyling}
+                        image_icon_styling={source.imageIconStyling}
+                        description={source.description}
+                        button_text={source.buttonText}
+                        link={source.link}
+                        clickIcon={source.clickIcon}
+                        showCard={true}
+                        hasBackButton={showAsGrid}
+                        />
+                ))}
             </div>
             }
            
-           {/* <Source title='Who Am I - Ramana Maharshi' 
-           image={image_why_meditate} 
-           description={lorem}
-           button_text={button_bookLink}
-           link={link_why_meditate} />
-           <Source title='I Am That - Nisagardatta' 
+           
+           {/* <Source title='I Am That - Nisagardatta' 
            image={image_why_meditate} 
            description={lorem}
            button_text={button_bookLink}
            link={link_why_meditate} />  */}
-           <div className="container h-32 bg-transparent "></div>
+           <div className={bottomFiller}></div>
            <Footer lang={props.lang} />
         </React.Fragment>
     )
