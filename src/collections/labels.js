@@ -440,23 +440,53 @@ export const labels = [
     en : 'SESSIONS'
   },
   { 
+    key: 'session.type_1',
+    nl : 'sessie',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.type_2',
+    nl : 'workshop',
+    en : 'SESSIONS'
+  },
+  { 
     key: 'session.subject.nondual.intro',
-    nl : 'INTRODUCTIE NIET-DUALISTISCHE MEDITATIE',
+    nl : 'Introductie Niet-Dualistische Meditatie',
     en : 'SESSIONS'
   },
   { 
     key: 'session.description.nondual.intro',
-    nl : 'Hier baseren we ons voornamelijk op de meditaties die afkomstig zijn uit de Vipassana traditie. Na een korte verwelkoming en voorstelronde beginnen we eerst met een praktijkoefening en volgen daarna deelcirkels, uitleg, meer oefeningen en een uitgebreide mogelijkheid om vragen te stellen. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur. ',
+    nl : 'Hier baseren we ons voornamelijk op de meditaties die afkomstig zijn uit de Vipassana traditie. Na een korte verwelkoming en voorstelronde beginnen we eerst met een praktijkoefening en volgen daarna deelcirkels, uitleg, meer oefeningen en een uitgebreide mogelijkheid om vragen te stellen.',
     en : 'SESSIONS'
   },
   { 
     key: 'session.subject.dual.intro',
-    nl : 'INTRODUCTIE DUALISTISCHE MEDITATIE',
+    nl : 'Introductie Dualistische Meditatie',
     en : 'SESSIONS'
   },
   { 
     key: 'session.description.dual.intro',
-    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet-dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen wat niet te benoemen valt. Benodigdheden: yogamat, dekentje, meditatiekussen, goed humeur.',
+    nl : 'We nemen afstand van onszelf en herontdekken de wereld door de blik van het bewustzijn. Ervaring in niet-dualistisch mediteren is niet verplicht maar wel erg handig bij deze sessie. Verwacht je aan veel denkwerk, meditatie, metaforen en nobele pogingen om net dat te benoemen wat niet te benoemen valt.',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.subject.meditation.recurring',
+    nl : 'Groepsessie Meditatie',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.description.meditation.recurring_1hr',
+    nl : 'Bij deze sessie doen we drie meditaties: twee van 20 minuten en een van 10, met telkens een korte pauze tussen. Zowel dualistisch als niet-dualistisch, telkens andere accenten en onderwerpen.',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.subject.meditation.recurring',
+    nl : 'Groepsessie Mediatie',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'session.description.meditation.recurring_2hr',
+    nl : 'Bij deze sessie doen we drie meditaties: twee van 20 minuten en een van 10, met telkens een korte pauze tussen. Zowel dualistisch als niet-dualistisch, telkens andere accenten en onderwerpen. Ruime tijd voor vragen en verdere uiteenzettingen na een deelcirkel.',
     en : 'SESSIONS'
   },
   { 
