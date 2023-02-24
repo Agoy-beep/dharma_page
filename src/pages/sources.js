@@ -187,7 +187,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_7',
             title: 'I Am That: Talks With Nisagradatta Maharaj',
-            image: 'i_am_that.png',
+            image: 'I_am_that.png',
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookOnly,
             description: retrieveLabel('source_7', props.lang),
