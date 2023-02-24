@@ -14,7 +14,7 @@ TODO
 - Scroll up V
 - Set up CI/CD met github. (is al in orde in de deploy flow?)
 - Sources page aanvullen, pretty please.
-- Sources pagina rederen via zo'n array.map toestand. 
+- Sources pagina rederen via zo'n array.map toestand. v
 - Foto's fixen. 
 - Over mij pagina aanvullen. V
 - FAQ bijvullen
@@ -24,11 +24,12 @@ TODO
 - Sessions will be a calendar. 
 - Sessions hebben een locatie nodig
 - Sessions benodigheden?
-- onderscheid sessie en workshop?
+- onderscheid sessie en workshop? V
 - BUG: Je krijgt een flikkerend typstreepje in de header? FIXED
 - Nice to have: scroll progress bar!
 - Nice to have: muziek, sfx
 - Nice to have: searchfunctie
-- Add ALAN WATTS' BOOK
+- Add ALAN WATTS' BOOK V
 - Remove questions from main text, make a 'question of the day' section
+- Look for a font
 

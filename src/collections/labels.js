@@ -216,7 +216,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_24',
-    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, *ook* een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheid tussen de **ik** en de **Ik** of *self* en *Self*. De ik zonder hoofdletter is *een concept dat we zelf maken* en wat versterkt wordt door je omgeving, de Ik met de grote letter is de ervaring van het leven via het **pure bewustzijn**. Anderen spreken van een ik ervaring, waarbij *je aandacht wordt gericht als een zaklamp*, tegenover *een lamp die zichzelf verlicht*. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord **ignorance** dat je in meditatiekringen vaak hoort vallen), kan verdrijven. **Emptiness** is nog zo’n woord dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De *leegte*, is niet een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons.',
+    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, *ook* een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheid tussen **zelf** en **Zelf** of *self* en *Self*. De zelf zonder hoofdletter is *een concept dat we zelf maken* en wat versterkt wordt door je omgeving, de Zelf met de grote letter is de ervaring van het leven via het **pure bewustzijn**. Anderen spreken van een ik ervaring, waarbij *je aandacht wordt gericht als een zaklamp*, tegenover *een lamp die zichzelf verlicht*. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord **ignorance** dat je in meditatiekringen vaak hoort vallen), kan verdrijven. **Emptiness** is nog zo’n woord dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De *leegte*, is niet een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -660,6 +660,21 @@ export const labels = [
     nl : 'Nadat hij verlamd werd door een plotse angst voor de dood, vroeg een jonge Ramana Maharshi zich af welk deel van zichzelf zou sterven, mocht hij komen te overlijden. Het antwoord op die vraag leidde hem naar de berg Arunachala waar hij het grootste deel van zijn leven zou doorbrengen. Daar werd hij door veel mensen omringd, zowel bezoekers als aanbidders. Who Am I is een korte tekst waarin het idee van een ik en een Ik op een overzichtelijke manier uit de doeken wordt gedaan in de vorm van vragen en antwoorden. Voor mensen met niet veel tijd en een hoge drang naar verlichting.',
     en : 'SOURCE MATERIAL'
   },
+  { 
+    key: 'source_6',
+    nl : 'Alan Watts was, en is, een invloedrijk figuur die tijdens zijn leven de Oosterse filosofieën probeerde te introduceren in het Westen. Zijn lezingen zijn nog steeds immens populair en makkelijk te vinden. De Waking Up App stelt een uitgebreide verzameling van die lezingen beschikbaar voor haar gebruikers.  Eens je zijn stem hebt gehoord, merk je dat hij waarschijnlijk een van de meest geciteerde sprekers is die het internet rijk is. The Book gaat over persoonlijke identiteit en connectie, maatschappelijke uitdagingen en de onduurzaamheid van het Westerse wereldbeeld.',
+    en : 'SOURCE MATERIAL'
+  },  
+  { 
+    key: 'source_7',
+    nl : 'Nisargadatta wordt vaak in een adem genoemd met Ramana Maharshi. Net zoals Who Am I, is I Am That een verzameling van dialogen die Nisargadatta voert met bezoekers en volgelingen van alle nationaliteiten. Non-dualisme staat centraal, volgens de visie van Advaita Vedanta. Zijn bedoeling was mensen te ontdoen van de illusie van een zelf en de introductie tot een Zelf. Voor mensen met veel tijd en een hoge drang naar verlichting, daar waar dit boek lijviger is dan Who Am I. ',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source_8',
+    nl : 'Een praktijkboek voor niet-dualisme. Loch Kelly reisde de halve wereld af op zoek naar leraars die een verklaring konden geven voor een revelatie die Kelly als tiener onderging. Zelf beschouwt hij een niet-dualistische kijk naar de wereld als de volgende stap in de menselijke ontwikkeling aangezien het resultaat steeds mededogen en geluk zal zijn. Hij biedt ook online cursusse aan en organiseert ook retraites in de Verenigde Staten.',
+    en : 'SOURCE MATERIAL'
+  },    
   { 
     key: 'source.button.link.app',
     nl : 'Naar de website',

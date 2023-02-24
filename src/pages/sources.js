@@ -19,6 +19,9 @@ const notClicked = {
     isChangeYourMindClicked: false,
     isInLoveClicked: false,
     isWhoAmIClicked: false,
+    isTheBookClicked: false,
+    isIAmThatClicked: false,
+    isTheWayOfEffortlessMindfulnessClicked: false,
     showIconsOnly: true
 }
 const isSmartphoneScreen = window.innerWidth < '1000';
@@ -42,31 +45,6 @@ export default function SourcesPage(props){
 
     const sources=[
         {
-            id: 'App_1',
-            title: 'Waking Up App',
-            image: 'wakingup.png',
-            imageCardStyling: sourceImageClassNameWide,
-            imageIconStyling: sourceImageClassNameWideOnly,
-            description: retrieveLabel('source_1', props.lang),
-            buttonText: retrieveLabel('source.button.link.app', props.lang),
-            link: 'https://app.wakingup.com/',
-            clickIcon: function clickWakingUp() {
-                setwhichImageClicked(()=> { 
-                    return {
-                    isWakingUpClicked: !whichImageClicked.isWakingUpClicked,
-                    isWhyMeditateClicked: false,
-                    isChangeYourMindClicked: false,
-                    isInLoveClicked: false,
-                    isWhoAmIClicked: false,
-                    showIconsOnly: !whichImageClicked.showIconsOnly,
-                    key: 'Waking Up App',
-                    }
-                })
-            },
-            showCard: whichImageClicked.isWakingUpClicked
-
-        },
-        {
             id: 'Book_1',
             title: 'Why Meditate - Matthieu Ricard',
             image: 'whymeditate.png',
@@ -83,6 +61,9 @@ export default function SourcesPage(props){
                     isChangeYourMindClicked: false,
                     isInLoveClicked: false,
                     isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Why Meditate - Matthieu Ricard',
                     }
@@ -108,6 +89,9 @@ export default function SourcesPage(props){
                     isChangeYourMindClicked: !whichImageClicked.isChangeYourMindClicked,
                     isInLoveClicked: false,
                     isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'How To Change Your Mind - Michael Pollan',
                     }
@@ -133,6 +117,9 @@ export default function SourcesPage(props){
                     isChangeYourMindClicked: false,
                     isInLoveClicked: !whichImageClicked.isInLoveClicked,
                     isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov'
                     }
@@ -158,6 +145,9 @@ export default function SourcesPage(props){
                     isChangeYourMindClicked: false,
                     isInLoveClicked: false,
                     isWhoAmIClicked: !whichImageClicked.isWhoAmIClicked,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Who Am I - Ramana Maharshi'
                     }
@@ -165,6 +155,115 @@ export default function SourcesPage(props){
             },
             showCard: whichImageClicked.isWhoAmIClicked
 
+        },
+        {
+            id: 'Book_6',
+            title: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts',
+            image: 'the_book.png',
+            imageCardStyling: sourceImageClassNameBook,
+            imageIconStyling: sourceImageClassNameBookOnly,
+            description: retrieveLabel('source_6', props.lang),
+            buttonText: retrieveLabel('source.button.link.book', props.lang),
+            link: 'https://www.goodreads.com/book/show/60551.The_Book',
+            clickIcon: function clickTheBook() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: !whichImageClicked.isTheBookClicked,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts'
+                    }
+                })
+            },
+            showCard: whichImageClicked.isTheBookClicked
+
+        },
+        {
+            id: 'Book_7',
+            title: 'I Am That: Talks With Nisagradatta Maharaj',
+            image: 'i_am_that.png',
+            imageCardStyling: sourceImageClassNameBook,
+            imageIconStyling: sourceImageClassNameBookOnly,
+            description: retrieveLabel('source_7', props.lang),
+            buttonText: retrieveLabel('source.button.link.book', props.lang),
+            link: 'https://www.goodreads.com/book/show/299869.I_Am_That',
+            clickIcon: function clickIAmThat() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: !whichImageClicked.isIAmThatClicked,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'I Am That: Talks With Nisagradatta Maharaj'
+                    }
+                })
+            },
+            showCard: whichImageClicked.isIAmThatClicked
+        },
+        {
+            id: 'Book_8',
+            title: 'The Way Of Effortless Mindfulness - Loch Kelly',
+            image: 'the_way_of_effortless_mindfulness.png',
+            imageCardStyling: sourceImageClassNameBook,
+            imageIconStyling: sourceImageClassNameBookOnly,
+            description: retrieveLabel('source_8', props.lang),
+            buttonText: retrieveLabel('source.button.link.book', props.lang),
+            link: 'https://www.goodreads.com/book/show/40899270-the-way-of-effortless-mindfulness',
+            clickIcon: function clickIAmThat() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: !whichImageClicked.isIAmThatClicked,
+                    isTheWayOfEffortlessMindfulnessClicked: !whichImageClicked.isTheWayOfEffortlessMindfulnessClicked,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'The Way Of Effortless Mindfulness - Loch Kelly'
+                    }
+                })
+            },
+            showCard: whichImageClicked.isTheWayOfEffortlessMindfulnessClicked
+        },
+        {
+            id: 'App_1',
+            title: 'Waking Up App',
+            image: 'wakingup.png',
+            imageCardStyling: sourceImageClassNameWide,
+            imageIconStyling: sourceImageClassNameWideOnly,
+            description: retrieveLabel('source_1', props.lang),
+            buttonText: retrieveLabel('source.button.link.app', props.lang),
+            link: 'https://app.wakingup.com/',
+            clickIcon: function clickWakingUp() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: !whichImageClicked.isWakingUpClicked,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'Waking Up App',
+                    }
+                })
+            },
+            showCard: whichImageClicked.isWakingUpClicked
         },
     ]
 
