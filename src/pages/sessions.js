@@ -7,7 +7,26 @@ import { bottomFiller, topFiller } from '../collections/layout.js';
 export default function SessionsPage(props){
     const sessions= [
         {
-            id: '1',
+            id: 'Session_1',
+            type: retrieveLabel('session.type_1', props.lang),
+            subject: retrieveLabel('session.subject.meditation.recurring', props.lang),
+            description: retrieveLabel('session.description.meditation.recurring_1hr', props.lang),
+            date: new Date('01-15-2025'),
+            time:'20.00-21.00',
+            location:'Mortsel'
+        },
+        {
+            id: 'Session_2',
+            type: retrieveLabel('session.type_1', props.lang),
+            subject: retrieveLabel('session.subject.meditation.recurring', props.lang),
+            description: retrieveLabel('session.description.meditation.recurring_2hr', props.lang),
+            date: new Date('01-15-2025'),
+            time:'9.00-11.00',
+            location:'Mortsel'
+        },
+        {
+            id: 'Workshop_1',
+            type: retrieveLabel('session.type_2', props.lang),
             subject: retrieveLabel('session.subject.nondual.intro', props.lang),
             description: retrieveLabel('session.description.nondual.intro', props.lang),
             date: new Date('01-12-2025'),
@@ -15,7 +34,8 @@ export default function SessionsPage(props){
             location:'Mortsel'
         },
         {
-            id: '2',
+            id: 'Workshop_2',
+            type: retrieveLabel('session.type_2', props.lang),
             subject: retrieveLabel('session.subject.dual.intro', props.lang),
             description: retrieveLabel('session.description.dual.intro', props.lang),
             date: new Date('01-12-2025'),
@@ -30,6 +50,7 @@ export default function SessionsPage(props){
             {sessions.map(session =>(
                 <Session
                     key={session.id}
+                    type={session.type}
                     subject={session.subject}
                     description={session.description}
                     date={session.date}

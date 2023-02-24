@@ -29,4 +29,5 @@ TODO
 - Nice to have: scroll progress bar!
 - Nice to have: muziek, sfx
 - Nice to have: searchfunctie
+- Add ALAN WATTS' BOOK
 
