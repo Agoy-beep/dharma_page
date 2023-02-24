@@ -40,6 +40,7 @@ export default function Main(props) {
     const main_quote_3 = retrieveLabel('main.quote_3', props.lang);
     const main_quote_3_pt_2 = retrieveLabel('main.quote_3_pt_2', props.lang);
     const main_quote_4 = retrieveLabel('main.quote_4', props.lang);
+    const main_quote_4_pt_2 = retrieveLabel('main.quote_4_pt_2', props.lang);
     const main_quote_5 = retrieveLabel('main.quote_5', props.lang);
     const main_quote_5_pt_2 = retrieveLabel('main.quote_5_pt_2', props.lang);
     const main_quote_6 = retrieveLabel('main.quote_6', props.lang);
@@ -133,16 +134,18 @@ export default function Main(props) {
                 <div className={quoteClassName}>"{main_quote_1}"</div>
                 <div className={quoterClassName}>{main_quote_1_pt_2}</div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_8}</ReactMarkdown></div>
-                <div className={paragraphClassName}>{main_paragraph_9}</div>
-                <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_10}</ReactMarkdown></div>
-                <div className={paragraphBottomClassName}>{main_paragraph_11}</div>
+                {/* <div className={paragraphClassName}>{main_paragraph_9}</div> */}
+                {/* <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_10}</ReactMarkdown></div>
+                <div className={paragraphBottomClassName}>{main_paragraph_11}</div> */}
             </div>
             <div className= {containerClassName}>
                 <h1 className={titleClassName}>{main_title_3}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_4}</h3>
-                <div className={paragraphClassName}>{main_paragraph_12}</div>
-                <div className={paragraphClassName}>{main_paragraph_13}</div>
-                <div className={paragraphClassName}>{main_paragraph_14}</div>
+                {/* <div className={paragraphClassName}>{main_paragraph_12}</div> */}
+                <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_13}</ReactMarkdown></div>
+                <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_14}</ReactMarkdown></div>
+                <div className={quoteClassName}>"{main_quote_4}"</div>
+                <div className={quoterClassName}>{main_quote_4_pt_2}</div>
                 <h3 className={titleSubClassName}>{main_title_sub_5}</h3>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_15}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_16}</ReactMarkdown></div>
@@ -152,10 +155,8 @@ export default function Main(props) {
                    De Uitdaging
                 </button>
                 <Meditation lang={props.lang} show={meditationBools.meditation_4} meditation={'nondual1_'} meditationTitle={'meditation.nondual1.title'}/>
-                <div className={titleSubClassName}><ReactMarkdown>{main_title_sub_6}</ReactMarkdown></div>
                 <div className={paragraphClassName}>{main_paragraph_19}</div>
-                <div className={quoteClassName}>"{main_quote_5}"</div>
-                <div className={quoterClassName}>{main_quote_5_pt_2}</div>
+                <div className={titleSubClassName}><ReactMarkdown>{main_title_sub_6}</ReactMarkdown></div>
                 <button className={meditationBools.meditation_5 ? buttonClassNameClicked : buttonClassName} onClick={toggleFifthMeditation}>
                     Staren, Of Niet Staren?
                 </button>
@@ -163,10 +164,11 @@ export default function Main(props) {
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_20}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_21}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_22}</ReactMarkdown></div>
-                <div className={divClassName}><ReactMarkdown>{main_paragraph_22_div_2}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_23}</ReactMarkdown></div>
                 <h3 className={titleSubClassName}>{main_title_sub_7}</h3>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_24}</ReactMarkdown></div>
+                <div className={quoteClassName}>"{main_quote_5}"</div>
+                <div className={quoterClassName}>{main_quote_5_pt_2}</div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_25}</ReactMarkdown></div>
                 <div className={quoteClassName}>"{main_quote_6}"</div>
                 <div className={quoterClassName}>{main_quote_6_pt_2}</div>

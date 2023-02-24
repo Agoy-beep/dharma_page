@@ -30,4 +30,5 @@ TODO
 - Nice to have: muziek, sfx
 - Nice to have: searchfunctie
 - Add ALAN WATTS' BOOK
+- Remove questions from main text, make a 'question of the day' section
 

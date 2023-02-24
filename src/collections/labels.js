@@ -51,7 +51,7 @@ export const labels = [
   },
   {
     key:'main.title.sub_6',
-    nl: 'Komen gedachten voort uit het niets?',
+    nl: 'Richt je aandacht op je aandacht',
     en: 'The body scan'
   },
   {
@@ -126,7 +126,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_8',
-    nl : 'De verzameling van afleidingen waarmee we tijdens het mediteren geconfronteerd worden: de afdwalende gedachten, de luije ademhaling van onze buurman wanneer je in groep mediteert, de pijn in de rug… kan je beschouwen als een deur naar het non-dualisme. *Het onderwerp-loos mediteren*. Het inzicht dat wij als mensen geen gedachten vormen maar dat ze zomaar tevoorschijn komen en weer verdwijnen, je het niet te kiezen hebt wat je aangenaam en onaangenaam vind, op wie je verliefd wordt, welke onderwerpen je interessant vindt of de letters die je nu leest niet te ontcijferen als de taal die je ooit, lang geleden, geleerd hebt. Je begrijpt wat hier staat en er is niets dat je kan doen om die knop nu uit te schakelen. Je kan het niet *niet* lezen.  Bijgevolg is er ten gronde ons niets eigen. Niet je drie favoriete films die je opsomt wanneer de vraag gesteld wordt, niet je favoriete eten en niet de naam die je kiest voor je kinderen of je huisdieren. Sterker nog: je **ik**, *de ervaarder der ervaringen*, ja, jij die dit leest en tot zich neemt, bestaat eigenlijk helemaal niet...*Verrassing!*',
+    nl : 'De verzameling van afleidingen waarmee we tijdens het mediteren geconfronteerd worden: de afdwalende gedachten, de luide ademhaling van onze buurman wanneer je in groep mediteert, de pijn in de rug… kan je beschouwen als een deur naar het non-dualisme. *Het onderwerp-loos mediteren*. Het inzicht dat wij als mensen geen gedachten vormen maar dat ze zomaar tevoorschijn komen en weer verdwijnen, je het niet te kiezen hebt wat je aangenaam en onaangenaam vind, op wie je verliefd wordt, welke onderwerpen je interessant vindt of de letters die je nu leest niet te ontcijferen als de taal die je ooit, lang geleden, geleerd hebt. Je begrijpt wat hier staat en er is niets dat je kan doen om die knop nu uit te schakelen. Je kan het niet *niet* lezen.  Bijgevolg is er ten gronde ons niets eigen. Niet je drie favoriete films die je opsomt wanneer de vraag gesteld wordt, niet je favoriete eten en niet de naam die je kiest voor je kinderen of je huisdieren. Sterker nog: je **ik**, *de ervaarder der ervaringen*, ja, jij die dit leest en tot zich neemt, bestaat eigenlijk helemaal niet.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -151,12 +151,12 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_13',
-    nl : 'Ieders ervaring van de wereld is verschillend. Ik kan niet in jullie hoofd kruipen en ondervinden hoe jullie de wereld ervaren, net zoals jullie dat niet bij mij kunnen. Toch denk ik dat de ervaring van een piloot achter onze ogen redelijk universeel is. Van achter je ogen interpreteer je de wereld, van daaruit worden de meningen gevormd, de geluiden opgevangen, de rozengeur geroken en daar worden de conversaties gevoerd, al dan niet met een andere persoon. Zo praat iedereen wel eens tegen zichzelf. Perfect normaal, maar zal je raar of zelden die interne dialoog externaliseren waar andere mensen bij zijn. Ooit al eens afgevraagd of je ervoor kiest om tegen jezelf te spreken, en waarom? Het is misschien een mooi voornemen om daar een volgende keer eens bij stil te staan. Was je misschien, ik zeg maar iets, een ruzie aan het herbeleven met je zus van 3 weken geleden, nog boos op die ene chauffeur die van rij vak veranderde zonder te pinken of blij voor je zoon die voor het eerst een lengte overzwom in het zwembad? Jezelf betrappen op een interne dialoog. Leuk, leuk!',
+    nl : 'Ieders ervaring van de wereld is verschillend. Ik kan niet in jullie hoofd kruipen en ondervinden hoe jullie de wereld ervaren, net zoals jullie dat niet bij mij kunnen. Toch denk ik dat de ervaring van een piloot achter onze ogen redelijk universeel is. Van achter je ogen interpreteer je de wereld, van daaruit worden de meningen gevormd, de geluiden opgevangen, de rozengeur geroken en daar worden de conversaties gevoerd, al dan niet met een andere persoon.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_14',
-    nl : 'De piloot voelt zich aangesproken bij een belediging, zal blozen bij een genante ervaring en zich daar slecht over voelen en zal soms urenlang boos zijn over een situatie. De piloot is met andere woorden het ‘ik’, de ervaarder der ervaringen. Het is de persoon die je vrienden en familie kennen, gevormd door de jaren heen en hopelijk immer verder evoluerend naar een betere versie van zichzelf. Ergens altijd veranderlijk maar toch ook wel onveranderlijk want je bent alleen zoals jij bent, reageert alleen zoals jij reageert en doet alleen de dingen die jij zelf als waardevol beschouwt. Soms wijken we van dat beeld af en dan wordt of doet iemand ‘anders’. Hopelijk is dat dan maar voor even want we kunnen immers nooit echt helemaal veranderen, nietwaar?',
+    nl : 'De piloot voelt zich aangesproken bij een belediging, zal blozen bij een genante ervaring en zich daar slecht over voelen en zal soms urenlang boos zijn over een situatie. De piloot is met andere woorden het **ik**. Het is de persoon die je vrienden en familie kennen, gevormd door de jaren heen en hopelijk immer verder evoluerend naar een betere versie van zichzelf. Ergens altijd veranderlijk maar toch ook wel onveranderlijk want je bent alleen zoals jij bent, reageert alleen zoals jij reageert en doet alleen de dingen die jij zelf als waardevol beschouwt. Soms wijken we van dat beeld af en dan wordt of doet iemand ‘anders’. Hopelijk is dat dan maar voor even want we kunnen immers nooit echt helemaal veranderen, nietwaar?',
     en : 'A QUIET PLACE'
   },
   { 
@@ -166,7 +166,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_16',
-    nl : 'Dit alles gezegd zijnde, denk ik dat we nu aan een splitsing staan: ofwel keer je nu terug en wijd je zoveel tijd je wil aan het dualistisch mediteren en al de voordelen die erbij komen kijken, ofwel lees je voort en wie weet wat er dan gebeurt. Het goede nieuws is dat wat je zoekt bij non-dualisme, op de oppervlakte ligt te sluimeren. *Hidden in plain sight*, zoals men in het Engels zo mooi zegt. Je zou het kunnen vertalen als *verstopt in je gewone gezichtsveld*. Het minder goede nieuws is dat ik moet proberen om een concept-loos bestaan te beschrijven, dat je als lezer dat ergens moet proberen begrijpen om tot de mogelijkheid te komen om het te ervaren. In de traditionele manier van handelen, is daar veel voorbereiding voor nodig en heb je een begeleider nodig die je actief kan ondersteunen tijdens je zoektocht. Dit is een tekst. De voorbereiding is erg summier, daar waar hierboven een erg beknopte uitleg staat wat dualistisch mediteren inhoudt. En niemand kan je vertellen of je goed bezig bent. Daarom is het vooral nu de bedoeling om je nieuwsgierigheid te prikkelen, je op weg te helpen naar een immens boeiende zoektocht naar je eigen natuur. Daarvoor moeten we nu ogenschijnlijk een bocht maken:',
+    nl : 'Het goede nieuws is dat wat je zoekt bij non-dualisme, op de oppervlakte ligt te sluimeren. *Hidden in plain sight*, zoals men in het Engels zo mooi zegt. Het minder goede nieuws is dat ik moet proberen om een concept-loos bestaan te beschrijven, dat je als lezer dat ergens moet proberen begrijpen om tot de mogelijkheid te komen om het te ervaren. In de traditionele manier van handelen, is daar veel voorbereiding voor nodig en heb je een begeleider nodig die je actief kan ondersteunen tijdens je zoektocht. Dit is een tekst. De voorbereiding is erg summier, daar waar hierboven een erg beknopte uitleg staat wat dualistisch mediteren inhoudt. En niemand kan je vertellen of je goed bezig bent. Daarom is het vooral nu de bedoeling om je nieuwsgierigheid te prikkelen, je op weg te helpen naar een immens boeiende zoektocht naar je eigen natuur. Daarvoor moeten we nu ogenschijnlijk een bocht maken:',
     en : 'A QUIET PLACE'
   },
   { 
@@ -176,12 +176,12 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_18',
-    nl : 'Herinner je de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Jij, *onderwerp-hoofdrolspeler*, kijkt naar je gedachten, *het object-het andere*, die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een impuls en een reactie, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan, terwijl de rivierenmetafoor even links laten liggen: *Waar komen die gedachten vandaan?* Probeer het proces te benoemen.',
+    nl : 'Herinner je de gedachtenrivier. De dualistische meditatie stelt je in staat om ernaar te kijken vanuit een piloot-achter-de-oren perspectief. Jij, *onderwerp-hoofdrolspeler*, kijkt naar je gedachten, *het object-het andere*, die tevoorschijn komen en je ziet ze ook terug verdwijnen. Je leert speling opbouwen tussen een **impuls** en een **reactie**, terwijl je concentratievermogen erop vooruit gaat. Win-win. Nu nodig ik je uit om na deze zin even weg te kijken en hier even bij stil te staan: *Waar komen die gedachten vandaan?* Probeer het proces te benoemen.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_19',
-    nl : 'Het is allemaal nog niet moeilijk genoeg, dus hier een hoop vragen waar je eens bij stil kan staan: Wat onderscheidt een gedachte van een geluid dat je hoort? Of van een geur die je opvangt? Of van je eigen hand dat je ziet? Is er iets helemaal ‘eigen’ aan het creëren van een gedachte? Nu we toch een hand vernoemd hebben: kijk eens naar je hand en vervolgens naar je pols. Waar eindigt je hand en begint een pols? Is dat een universeel gegeven, stopt die voor iedereen exact op de zelfde plaats, of zijn een hand en een pols concepten die helpen om je door de wereld te navigeren? Is de boom die je deze ochtend bent tegengekomen nog altijd dezelfde boom wanneer je hem later op de dag terug ziet? Is hij misschien gegroeid? Waar begint en eindigt het concept boom, in de kruin, bij de wortels of nog ergens anders? Is het een spar, een berk of een hazelaar? Het aan elkaar naaien van een wereldbeeld dat opgebouwd is uit concepten en het al dan niet eigen zijn van gedachten lijkt misschien een moeilijke opdracht, maar dat hoeft het niet te zijn. ',
+    nl : 'Gedachten komen en gaan. Hoelang ze blijven bestaan hangt af van hoe goed ze zijn in onze aandacht naar zich toe te trekken en bij hen te houden door veel emoties in ons los te maken. Een eerder negatieve gedachte die hierin uitblinkt kan ons doen piekeren en zo uren of zelfs dagen in het hoofd blijven spoken. Gelukkig staan we hier niet helemaal machteloos tegenover. Zoals eerder aangehaald kunnen we leren kijken naar de gedachte, wat vaak de levensduur  aanzienlijk zal inperken. Verder kunnen we ons toespitsen op het geboorteproces van een gedachte. Als individu heb je geen invloed op wat er tevoorschijn komt. Plots denken we wat we denken. Een gedachte komt, net zoals een geluid of een beeld, op ons af. ',
     en : 'A QUIET PLACE'
   },
   { 
@@ -191,7 +191,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_21',
-    nl : 'Ik weet niet of het helemaal duidelijk is, maar het concept van **onderwerp-object-gebaseerde meditatie**, het dualistisch denken, begint hier onder druk te staan. Je kan niet vanuit een apart perspectief kijken naar je eigen perspectief.',
+    nl : 'Het concept van **onderwerp-object-gebaseerde meditatie**, het dualistisch denken, begint hier onder druk te staan. Je kan niet vanuit een apart perspectief kijken naar je eigen perspectief.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -216,18 +216,18 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_24',
-    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, *ook* een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheid tussen de **ik** en de **Ik** of *self* en *Self*. De ik zonder hoofdletter is *een concept dat we zelf maken* en wat versterkt wordt door je omgeving, de Ik met de grote letter is de ervaring van het leven via het **pure bewustzijn**. Anderen spreken van een ik ervaring, waarbij *je aandacht wordt gericht als een zaklamp*, tegenover *een lamp die zichzelf verlicht*. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord *ignorance* dat je in meditatiekringen vaak hoort vallen), kan verdrijven. *Emptiness* is nog zo’n woord dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De *leegte*, is een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons.',
+    nl : 'Ik heb jullie eerder uitgenodigd om het meditatieproject niet helemaal weg te gooien, nu nodig ik jullie uit om de mogelijkheid te overwegen dat datgene dat je ervaart als jezelf, die piloot in je hoofd die je eigenlijk niet echt kan aanduiden wanneer je hem zoekt, *ook* een concept is dat vooraf wordt gegaan door je bewustzijn, de eigenlijke poort waardoor je het leven ervaart. Een bepaalde strekking binnen de spirituele wereld maakt het onderscheid tussen de **ik** en de **Ik** of *self* en *Self*. De ik zonder hoofdletter is *een concept dat we zelf maken* en wat versterkt wordt door je omgeving, de Ik met de grote letter is de ervaring van het leven via het **pure bewustzijn**. Anderen spreken van een ik ervaring, waarbij *je aandacht wordt gericht als een zaklamp*, tegenover *een lamp die zichzelf verlicht*. Het is een lamp die de duisternis, de onwetendheid (dat befaamde woord **ignorance** dat je in meditatiekringen vaak hoort vallen), kan verdrijven. **Emptiness** is nog zo’n woord dat het Boeddhisme een nihilistisch kantje durft geven, naargelang de interpretatie van het woord. De *leegte*, is niet een leegte van het bestaan in de zin dat die zinloos zou zijn, het is de afwezigheid van conceptualisatie van de wereld rondom ons.',
     en : 'A QUIET PLACE'
   },
   { 
     key: 'main.paragraph_25',
-    nl : 'De eigenschappen die voorwerpen hebben, worden door *ons* gegeven, door *ons* in het bestaan geroepen. Dat wil niet zeggen dat je vanaf nu alle concepten weg moet gooien en conceptloos moet proberen bestaan. Het gaat er om het inzicht, of *herkenning*, ervan. Zie in dat je levenswereld opgebouwd is rond concepten, waarbij ook je *ik* een concept is dat gecreëerd is. Dat concept heb je in het dagelijkse leven nodig, hoe weet anders iemand dat jouw schoenen *jouw* schoenen zijn? De opdracht is je er niet mee te vereenzelvigen, want je *ik* sleurt je zo de dieperik in. *Samsara*, het steeds terugkeren van het verlangen voor iets dat je niet hebt, heeft hier ook een oorsprong in. Wil je uit dat systeem stappen, zie dan eerst en vooral in dat je *bewustzijn* de deur naar de realiteit is, **niet** je *ik*.',
+    nl : 'De eigenschappen die voorwerpen hebben, worden door *ons* gegeven, door *ons* in het bestaan geroepen. Dat wil niet zeggen dat je vanaf nu alle concepten weg moet gooien en conceptloos moet proberen bestaan. Het gaat er om het inzicht, of *herkenning*, ervan. Zie in dat je levenswereld opgebouwd is rond concepten, waarbij ook je *ik* een concept is dat gecreëerd is. Dat concept heb je in het dagelijkse leven nodig, hoe weet anders iemand dat jouw schoenen *jouw* schoenen zijn? De opdracht is je er niet mee te vereenzelvigen, want je *ik* sleurt je zo de dieperik in. **Samsara**, het steeds terugkeren van het verlangen voor iets dat je niet hebt, heeft hier ook een oorsprong in. Wil je uit dat systeem stappen, zie dan eerst en vooral in dat je *bewustzijn* de deur naar de realiteit is, **niet** je *ik*.',
     en : 'A QUIET PLACE'
   },
   
   { 
     key: 'main.paragraph_26',
-    nl : '**Het concept van een concept-loos bestaan** begrijpen is één ding, de ondervinding ervan is een ander. Het kan goed zijn dat er korte momenten zijn doorheen je dag waarin je merkt dat er een breuk ontstaat tussen hoe je de wereld vroeger ervaarde en nu. Soms wordt je leven schijnbaar geleefd, rafelt het voor je ogen af zonder dat je eigenlijk iets aan het doen bent, dan zijn er momenten die kunnen binnenkomen als diepe spirituele ervaringen. Je kan overvallen worden door een cascade-effect, waarbij je inziet dat het bewustzijn al hetgeen is dat er bestaat en je op onverklaarbare manier bij je hart terechtkomt en je jezelf verbonden voelt met alles en iedereen. Er komt een gevoel van warmte boven dat je uitdraagt naar iedereen rondom je. *Het lijkt alsof je alles en iedereen graag ziet.*',
+    nl : 'Het concept van een concept-loos bestaan begrijpen is één ding, de ondervinding ervan is een ander. Het kan goed zijn dat er korte momenten zijn doorheen je dag waarin je merkt dat er een breuk ontstaat tussen hoe je de wereld vroeger ervaarde en nu. Soms wordt je leven schijnbaar geleefd, rafelt het voor je ogen af zonder dat je eigenlijk iets aan het doen bent, dan zijn er momenten die kunnen binnenkomen als diepe spirituele ervaringen. Je kan overvallen worden door een cascade-effect, waarbij je inziet dat het bewustzijn al hetgeen is dat er bestaat en je op onverklaarbare manier bij je hart terechtkomt en je jezelf verbonden voelt met alles en iedereen. Er komt een gevoel van warmte boven dat je uitdraagt naar iedereen rondom je. Het lijkt alsof je alles en iedereen graag ziet.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -268,6 +268,16 @@ export const labels = [
   { 
     key: 'main.quote_3_pt_2',
     nl : ' -Dalai Lama',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_4',
+    nl : 'Alles is verandering. Je kan niets blijven vasthouden. In de mate dat je met de stroming meegaat, merk je dat je geen weerstand hebt. In de mate dat je je tegen de stroom verzet, dan merk je dat de stroming voorbij raast en dat je ermee in gevecht gaat. Dus zwem mee, laat je meevoeren en dan ben je er.',
+    en : 'A QUIET PLACE'
+  },
+  { 
+    key: 'main.quote_4_pt_2',
+    nl : ' -Alan Watts',
     en : 'A QUIET PLACE'
   },
   { 
@@ -667,7 +677,7 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_1',
-    nl : 'Mijn naam is Arne Goyvaerts, geboren op 12 januari 1986. Gelukkig verloofd en vader van twee jonge kinderen, wonende in Mortsel, nabij Antwerpen. Om mijn kost te verdienen werk ik als IT-er voor de Christelijke Mutualiteiten. ',
+    nl : 'Mijn naam is Arne Goyvaerts. Gelukkig verloofd en vader van twee jonge kinderen, wonende in Mortsel, nabij Antwerpen. Om mijn kost te verdienen werk ik als IT-er. ',
     en : 'ABOUT ME'
   },
   { 
@@ -693,6 +703,36 @@ export const labels = [
   { 
     key: 'faq.q1.answer',
     nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, guru of iets dergelijks. Ik ben eerder een spons die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_1',
+    nl : 'Wat onderscheidt een gedachte van een geluid dat je hoort? ',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_2',
+    nl : 'Wat onderscheidt een gedachte van een geur dat je opmerkt? ',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_3',
+    nl : 'Creëer je zelf je gedachten? ',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_4',
+    nl : 'Kijk eens naar je hand en vervolgens naar je pols. Waar eindigt je hand en begint een pols? Zou iedereen dezelfde plek aanduiden? ',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_5',
+    nl : 'Is de boom die je deze ochtend bent tegengekomen nog altijd dezelfde boom wanneer je hem later op de dag terug ziet? ',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'random_question_6',
+    nl : 'Waar begint en eindigt het concept boom, in de kruin, bij de wortels of nog ergens anders? ',
     en : 'ABOUT ME'
   },
   { 
