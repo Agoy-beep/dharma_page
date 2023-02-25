@@ -52,15 +52,12 @@ export default function Intro(props) {
         <li>- Uitzicht voor smartphones</li>
         <li>- Rooster/lijst van bronnen bij pc schermen</li>
         <li>- Algemene lay-out</li>
+        <li>- Aangepaste inleidingstekst</li>
       </ol></div>
       <h3 className={titleSubClassName}>Verbeteringen waar op dit moment aan gewerkt wordt</h3>
       <div className={paragraphClassName}><ol>
-        <li>- Inleidingtekst wordt nog verder aangepast, zowel qua inhoud als lay-out</li>
-        <li>- FAQ/bronnen worden uitgebreid</li>
-        <li>- Filterknoppen voor kalender en bronnen</li>
         <li>- Samenstelling van kalenderelementen wordt nog uitgebreid</li>
         <li>- Paginaovergangen</li>
-        <li>- Plaats van de footer</li>
       </ol></div>
     </div>
     <Footer lang={props.lang}/>

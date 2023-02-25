@@ -11,8 +11,9 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Oswald', 'sans-serif'],
+      serif: ['Ubuntu', 'serif'],
+      mono: ['Nunito', 'mono'],
     },
     extend: {
       colors: {

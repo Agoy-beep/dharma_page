@@ -702,7 +702,7 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_3',
-    nl : 'Heb je vragen of opmerkingen over wat hier op de website te vinden is of wil je mij graag contacteren rond het organiseren van sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
+    nl : 'Heb je vragen of opmerkingen over wat hier op de website te vinden is, wil je mij graag contacteren rond het organiseren van workshops of ben je geinteresseerd in de sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
     en : 'ABOUT ME'
   },
   { 

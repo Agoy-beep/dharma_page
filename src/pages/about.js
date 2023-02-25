@@ -31,7 +31,7 @@ export default function AboutPage(props){
                 <div className={paragraphClassName}>{about_paragraph_2}</div>
                 <div className={paragraphClassName}><ReactMarkdown>{about_paragraph_3}</ReactMarkdown></div>     
             </div>
-            <FaqPage lang={props.lang}/>
+            {/* <FaqPage lang={props.lang}/> */}
             <Footer lang={props.lang} />
 
         </React.Fragment>

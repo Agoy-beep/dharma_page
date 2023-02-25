@@ -11,7 +11,9 @@ import { sourceImageClassNameWide,
     bottomFiller,
     sourceContainerGridMode,
     sourceContainerSwitchButtons,
-    sourceFilterButtonClassName} from '../collections/layout.js';
+    sourceFilterButtonClassName,
+    sourceFilterButtonClassNameActive,
+    containerHiddenClassName } from '../collections/layout.js';
 
 const notClicked = {
     isWakingUpClicked: false,
@@ -31,6 +33,11 @@ export default function SourcesPage(props){
     const [isFullScreenWithGrid, setIsFullScreenWithGrid] = useState(false);
     const [isAppFilterOn, setIsAppFilterOn] = useState(false);
     const [isBookFilterOn, setIsBookFilterOn] = useState(false);
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    
+    useEffect(()=>{
+        setContainerVisibleClassName(() => sourceContainerSwitchButtons);
+    }, []);
     const changeLook = () => {
         setIsFullScreenWithGrid((prevState) => !prevState);
     }
@@ -436,33 +443,32 @@ export default function SourcesPage(props){
     return(
         <React.Fragment>
             <div className={topFiller}></div>
-            <div className={sourceContainerSwitchButtons}>
-                {!isSmartphoneScreen 
-                ? 
-                <React.Fragment>
-                    <button className={sourceSwitchButtonClassName} onClick={changeLook}>
-                        {isFullScreenWithGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
-                    </button>
-                    <button className={sourceFilterButtonClassName} onClick={filterApps}>
-                        {isAppFilterOn ? 'App filter aan' : 'App filter uit'} 
-                    </button>
-                    <button className={sourceFilterButtonClassName} onClick={filterBooks}>
-                        {isBookFilterOn ? 'Boek filter aan' : 'Boek filter uit'} 
-                    </button>
+            <div className="container md:grid md:grid-cols-4">
+                <div className={containerVisibleClassName}>
+                    {!isSmartphoneScreen 
+                    ? 
+                    <React.Fragment>
+                        <button className={sourceSwitchButtonClassName} onClick={changeLook}>
+                            {isFullScreenWithGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
+                        </button>
+                        <button className={isAppFilterOn ? sourceFilterButtonClassNameActive : sourceFilterButtonClassName } onClick={filterApps}>
+                            Appfilter
+                        </button>
+                        <button className={isBookFilterOn ? sourceFilterButtonClassNameActive : sourceFilterButtonClassName} onClick={filterBooks}>
+                            Boekfilter 
+                        </button>
 
-                </React.Fragment>
-                :
-                <div></div>
-                }
+                    </React.Fragment>
+                    :
+                    <div></div>
+                    }
+                </div>
+                <div className="container col-span-3">
+                    {decideOnWhatToShow()}
+                </div>
             </div>
-            {decideOnWhatToShow()}
-           {/* <Source title='I Am That - Nisagardatta' 
-           image={image_why_meditate} 
-           description={lorem}
-           button_text={button_bookLink}
-           link={link_why_meditate} />  */}
-           <div className={bottomFiller}></div>
-           <Footer lang={props.lang} />
-        </React.Fragment>
+            <div className={bottomFiller}></div>
+            <Footer lang={props.lang} />
+    </React.Fragment>
     )
 }

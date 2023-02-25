@@ -56,7 +56,7 @@ export default function Session(props) {
               </React.Fragment>
             }
           </div>
-          <div className="container flex flex-row justify-center m-auto w-full md:ml-6 md:mr-2 md:mb-0 md:w-52 py-2 px-4 border border-gray-light rounded-lg bg-gray ">
+          <div className="container flex flex-row justify-center m-auto w-full md:ml-6 md:mr-2 md:mb-0 md:w-56 py-2 px-4 border border-gray-light rounded-lg bg-gray ">
               <div className="mx-8 md:mx-2 pl-2 text-4xl md:text-lg min-w-fit">{dayName}</div>
               <div className=" md:mr-2 pr-2 text-4xl md:text-lg min-w-fit">{props.time}</div>
           </div>

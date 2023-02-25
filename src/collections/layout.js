@@ -15,9 +15,9 @@ export const buttonClassNameClicked = "w-fit h-fit mx-auto my-4 p-6 md:p-3 overf
 
 export const sessionContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition-all ease-in-out delay-100 duration-1000 bg-white border rounded-md border-gray-light shadow-md opacity-90";
 
-export const sourceContainerSwitchButtons = "container flex flex-row place-content-center h-12 mb-4 bg-transparent rounded-lg ";
+export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px bg-transparent rounded-lg transition-all ease-in-out delay-100 duration-1000";
 export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto";
-export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-4/6 xl:w-6/12 mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";
+export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceContainerHiddenClassNameCard = "container flex flex-col w-11/12 opacity-0";
 export const sourceContainerClassNameImageOnly = "container w-fit h-fit mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceTitleSubClassName = "text-4xl md:text-2xl my-4 md:ml-8 py-2 px-4 w-fit mx-auto text-center md:text-left normal-case bg-gray-light opacity-80 md:bg-transparent rounded-lg";
@@ -28,8 +28,9 @@ export const sourceImageClassNameBook = "md:w-24 md:h-42 mr-4 ml-2 my-2 md:mr-12
 export const sourceImageClassNameBookOnly = "md:w-24 md:h-42 overflow-hidden border rounded-lg"
 export const sourceButtonsContainer = "flex m-auto justify-start md:justify-start";
 export const sourceButtonClassName = "w-52 h-16 md:w-48 md:h-12 ml-14 md:ml-12 md:my-4 my-6 overflow-hidden text-center text-2xl md:text-base uppercase bg-orange opacity-80 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
-export const sourceSwitchButtonClassName = "w-52 h-12 mx-12 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-amber-500 opacity-70 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
-export const sourceFilterButtonClassName = "w-52 h-12 mx-12 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-green-500 opacity-70 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
+export const sourceSwitchButtonClassName = "w-52 h-12 mb-4 ml-12 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-amber-500 opacity-70 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
+export const sourceFilterButtonClassName = "w-52 h-12 my-4 ml-12 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-green-500 opacity-70 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
+export const sourceFilterButtonClassNameActive = "w-52 h-12 ml-12 my-4 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-blue opacity-70 rounded-md transition ease-in-out delay-100 hover:scale-110 duration-200 select-none"
 
 export const headerLinksContainerClassName = "container fixed top-0 flex flex-col md:flex-row  mx-auto z-10 md:px-16 h-fit md:h-16 max-w-full md:max-w-7xl items-center bg-darktrees bg-transparent bg-center md:bg-gray-light md:opacity-85 md:rounded-b-md text-black"
 export const headerHomeLinkContainer = "container flex-1 text-white items-center text-center mx-auto px-4 py-2 basis-full md:basis-1/5 opacity-50 ";
