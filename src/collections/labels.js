@@ -81,7 +81,7 @@ export const labels = [
   },
   { 
     key: 'intro.paragraph_2',
-    nl : 'Ik raad je aan te beginnen bij een inleidende tekst die ik heb opgesteld waar twee verschillende soorten meditatie uit de doeken worden gedaan. Enerzijds heb je de **dualistische** meditatie, waar er een duidelijk onderscheid bestaat tussen een *persoon* die observeert en een *object* dat geobserveerd wordt, anderzijds heb je de **niet-dualistische** meditatie, waarbij er alleen een *bewustzijn* bestaat waarin alles tevoorschijn komt en weer verdwijnt. ',
+    nl : 'Ik raad je aan te beginnen bij een inleidende tekst waar twee verschillende soorten meditatie uit de doeken worden gedaan. Enerzijds heb je de **dualistische** meditatie, waar er een duidelijk onderscheid bestaat tussen een *persoon* die observeert en een *object* dat geobserveerd wordt, anderzijds heb je de **niet-dualistische** meditatie, waarbij er alleen een *bewustzijn* bestaat waarin alles tevoorschijn komt en weer verdwijnt. ',
     en : 'A QUIET PLACE'
   },
   { 
@@ -237,7 +237,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_28',
-    nl : 'Proficiat, je bent aan het einde geraakt! Hopelijk is dit het begin of voortzetting van een boeiende reis en niet een abrupte botsing met De Muur Van Frustratie, Hoongelach En Bitterheid, of zoiets. Als je jezelf wil verdiepen in de materie kan je terecht bij het bronmateriaal. Wil je graag een workshop of een sessie volgen? Raadpleeg de kalender!',
+    nl : 'Proficiat, je bent aan het einde geraakt! Hopelijk is dit het begin of voortzetting van een boeiende reis en niet een abrupte botsing met De Muur Van Frustratie, Hoongelach En Bitterheid, of zoiets. Als je jezelf wil verdiepen in de materie kan je terecht bij het bronmateriaal.',
     en : 'A QUIET PLACE'
   },
   { 
@@ -486,6 +486,11 @@ export const labels = [
     en : 'SESSIONS'
   },
   { 
+    key: 'session.type_0',
+    nl : '?',
+    en : 'SESSIONS'
+  },
+  { 
     key: 'session.type_1',
     nl : 'sessie',
     en : 'SESSIONS'
@@ -493,6 +498,16 @@ export const labels = [
   { 
     key: 'session.type_2',
     nl : 'workshop',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'nosession.subject',
+    nl : 'Deze kalender is helemaal leeg',
+    en : 'SESSIONS'
+  },
+  { 
+    key: 'nosession.description',
+    nl : 'Op dit ogenblik zijn er geen sessies of workshops gepland. Wanneer mijn agenda het toelaat, zullen hier sessies met vaste regelmaat ingepland worden. Heb je interesse en wil je op de hoogte gehouden worden? Stuur een mailtje naar **arne.goyvaerts@gmail.com**.',
     en : 'SESSIONS'
   },
   { 
@@ -642,7 +657,7 @@ export const labels = [
   },
   { 
     key: 'source_2',
-    nl : 'De beschrijving hoeft hier niet moeilijk te zijn, daar waar de titel perfect beschrijft waar het over gaat. Dit boek heeft mij aangezet tot de stap te wagen en een meditatieretraite te doen. Elf dagen mediteren in stilte, twaalf uur per dag. Ik kijk met veel nostalgie terug naar die periode en het heeft mij heel hard veranderd. Matthieu Ricard is een Franse Boeddhistische monnik die ook zeer goede boeken geschreven heeft over onder andere dierenleed. Voor de liefhebbers is het boek ook beschikbaar in het Frans.',
+    nl : 'De beschrijving hoeft hier niet moeilijk te zijn, daar waar de titel perfect beschrijft waar het over gaat. Mocht je jezelf de vraag ooit gesteld hebben, dit boek zal je redenen genoeg geven om toch een poging te wagen. Matthieu Ricard is een Franse Boeddhistische monnik die ook zeer goede boeken geschreven heeft over onder andere dierenleed. Voor de liefhebbers is het boek ook beschikbaar in het Frans.',
     en : 'SOURCE MATERIAL'
   },
   { 
@@ -652,12 +667,12 @@ export const labels = [
   },
   { 
     key: 'source_4',
-    nl : 'Yongey Mingyur Rinpoche is al een tijdje abt van een klooster wanneer hij besluit om op een nacht de grote poort achter zich dicht te trekken en zonder enige bezitting buiten zijn kledij en de inhoud van zijn zakken de wijde wereld in te trekken. Een ‘dwalende retraite’, zoals hij dat noemt. Het zou zonde zijn om te verklappen wat er in dit boek gebeurt, maar ergens kan je het al raden. Mingyur Rinpoche is opgegroeid in zeer beschermde omstandigheden en voor hij deze expeditie ondernam, nog nooit onbegeleid buiten zijn klooster geweest. Het boek is een mooie introductie tot non-dualistisch denken. Ook zijn andere boeken ‘Joyful Wisdom’ en ‘Joy Of Living’ zijn aan te raden. Hij is de initiator van de Tergar Meditation Community. Ik heb enkele van zijn cursussen reeds doorlopen maar ik moet toegeven dat het tegenwoordig op een laag pitje staat.',
+    nl : 'Yongey Mingyur Rinpoche is al een tijdje abt van een klooster wanneer hij besluit om op een nacht de grote poort achter zich dicht te trekken en zonder enige bezitting buiten zijn kledij en de inhoud van zijn zakken de wijde wereld in te trekken. Een ‘dwalende retraite’, zoals hij dat noemt. Het zou zonde zijn om te verklappen wat er in dit boek gebeurt, maar ergens kan je het al raden. Mingyur Rinpoche is opgegroeid in zeer beschermde omstandigheden en voor hij deze expeditie ondernam, nog nooit onbegeleid buiten zijn klooster geweest. Het boek is een mooie introductie tot non-dualistisch denken. Ook zijn andere boeken ‘Joyful Wisdom’ en ‘Joy Of Living’ zijn aan te raden. Hij is de initiator van de Tergar Meditation Community.',
     en : 'SOURCE MATERIAL'
   },
   { 
     key: 'source_5',
-    nl : 'Nadat hij verlamd werd door een plotse angst voor de dood, vroeg een jonge Ramana Maharshi zich af welk deel van zichzelf zou sterven, mocht hij komen te overlijden. Het antwoord op die vraag leidde hem naar de berg Arunachala waar hij het grootste deel van zijn leven zou doorbrengen. Daar werd hij door veel mensen omringd, zowel bezoekers als aanbidders. Who Am I is een korte tekst waarin het idee van een ik en een Ik op een overzichtelijke manier uit de doeken wordt gedaan in de vorm van vragen en antwoorden. Voor mensen met niet veel tijd en een hoge drang naar verlichting.',
+    nl : 'Nadat hij verlamd werd door een plotse angst voor de dood, vroeg een jonge Ramana Maharshi zich af welk deel van zichzelf zou sterven, mocht hij komen te overlijden. Het antwoord op die vraag leidde hem naar de berg Arunachala waar hij het grootste deel van zijn leven zou doorbrengen. Daar werd hij door veel mensen omringd, zowel bezoekers als aanbidders. Who Am I is een korte tekst waarin het idee van een zelf en een Zelf op een overzichtelijke manier uit de doeken wordt gedaan in de vorm van vragen en antwoorden. Voor mensen met niet veel tijd en een hoge drang naar verlichting.',
     en : 'SOURCE MATERIAL'
   },
   { 
@@ -697,7 +712,7 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_2',
-    nl : 'Ik heb een geschiedenis met veel faalangst en paniekaanvallen die het mij vooral in mijn tienerjaren erg zwaar hebben gemaakt. Deels omdat ik nooit begreep waarom ze mij overvielen en omdat ik merkte dat ik mijn leven op een andere manier ging leven om ze uit te weg te gaan, ging ik op zoek naar antwoorden die buiten de conventionele behandelingsmethodes lagen. Hiermee uit ik geen verwijt naar de disciplines van de psychiatrie of psychologie, zij hebben mij met momenten de handvaten gegeven die ik nodig hand om mijn dag door te raken. Toch bleef ik met het gevoel zitten dat aan de kern van de zaak nooit geraakt werd. Nu ik die meen gevonden te hebben, besloot ik deze pagina te maken en mij meer te richten op het uitdragen van die kennis. ',
+    nl : 'Omdat mijn tienerjaren beheerst werden door faalangst en paniekaanvallen, ben ik op zoek gegaan naar een duurzame manier om hiermee om te gaan. Uiteindelijk ben ik bij meditatie terecht gekomen en dat is het enige dat na al die jaren is overgebleven. Het anders leren kijken naar gedachten en emoties geeft mij de ademruimte om als mens beter te functioneren en gelukkig te zijn. Daar waar er vaak enkel de nadruk gelegd wordt op mindfulness, wil ik graag een alternatief bieden dat het spectrum wat uitbreidt en daarom heb ik besloten een eerste stap te zetten met het maken van deze website. ',
     en : 'ABOUT ME'
   },
   { 
@@ -707,17 +722,27 @@ export const labels = [
   },
   { 
     key: 'faq.title',
-    nl : 'Vaak gestelde vragen',
+    nl : 'Mogelijke vragen',
     en : 'ABOUT ME'
   },
   { 
     key: 'faq.q1.question',
-    nl : 'Ben jij een zogenaamde lineage holder?',
+    nl : 'Ben jij een lineage holder?',
     en : 'ABOUT ME'
   },
   { 
     key: 'faq.q1.answer',
-    nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, guru of iets dergelijks. Ik ben eerder een spons die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
+    nl : 'Nee dat ben ik niet. Een lineage holder is iemand die zijn/haar kennis vergaart dankzij transmissie van een meester, goeroe of iets dergelijks. Ik ben eerder een spons die hier en daar kennis en ervaring opdoet en al dan niet met wat geluk tot bepaalde inzichten komt. Ik besef dat dit niet veel voorstelt op een CV.',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'faq.q2.question',
+    nl : 'Wat mag het kosten?',
+    en : 'ABOUT ME'
+  },
+  { 
+    key: 'faq.q2.answer',
+    nl : 'Ik ben te vinden voor een model met vrijwillige bijdrage. De insteek daar is dat je bijdraagt naarmate anderen baat zouden hebben bij een workshop of sessie. Bij een workshop op vraag wordt er over de prijs overlegd omdat er transportkosten komen bij kijken en het afhankelijk is van het aantal voorziene deelnemers. ',
     en : 'ABOUT ME'
   },
   { 

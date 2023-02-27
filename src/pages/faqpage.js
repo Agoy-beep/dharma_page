@@ -14,14 +14,32 @@ export default function FaqPage(props) {
     }, []);
 
   const faq_title = retrieveLabel('faq.title', props.lang);
-  const faq_q1_question = retrieveLabel('faq.q1.question', props.lang);
-  const faq_q1_answer = retrieveLabel('faq.q1.answer', props.lang);
+  // const faq_q1_question = retrieveLabel('faq.q1.question', props.lang);
+  // const faq_q1_answer = retrieveLabel('faq.q1.answer', props.lang);
 
+  const faqs = [
+    {
+      id: 'faq_1',
+      question: retrieveLabel('faq.q1.question', props.lang),
+      answer: retrieveLabel('faq.q1.answer', props.lang)
+    },
+    {
+      id: 'faq_2',
+      question: retrieveLabel('faq.q2.question', props.lang),
+      answer: retrieveLabel('faq.q2.answer', props.lang)
+    },
+  ]
   return (
     <React.Fragment>
     <div className={containerVisibleClassName}>
       <div className={titleClassName}>{faq_title}</div>
-      <Faq question={faq_q1_question} answer={faq_q1_answer} />
+      {faqs.map((faq) => (
+        <Faq 
+          key={faq.id}
+          question= {faq.question}
+          answer={faq.answer}
+        />
+      ))}
     </div>
 
     </React.Fragment>

@@ -27,11 +27,17 @@ export default function AboutPage(props){
         <div className="mt-32 h-4 md:mt-0"></div>
             <div className= {containerVisibleClassName}>
                 {/* <h1 className={titleClassName}>{about_title}</h1> */}
+                
+                <div className="mt-4 ">
+                <div className="container float-right w-52 h-52 mr-10 ml-4 mt-4">
+                    <img src='me.png' alt='icon' className="object-cover rounded-2xl"></img>
+                </div>
                 <div className={paragraphClassName}>{about_paragraph_1}</div>
                 <div className={paragraphClassName}>{about_paragraph_2}</div>
+                </div>
                 <div className={paragraphClassName}><ReactMarkdown>{about_paragraph_3}</ReactMarkdown></div>     
             </div>
-            {/* <FaqPage lang={props.lang}/> */}
+            <FaqPage lang={props.lang}/>
             <Footer lang={props.lang} />
 
         </React.Fragment>

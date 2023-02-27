@@ -3,6 +3,7 @@ import { retrieveLabel } from '../helpers/labelhelper.js';
 import Session from '../components/session.js';
 import Footer from '../footer.js';
 import { bottomFiller, topFiller } from '../collections/layout.js';
+import NoSession from '../components/nosession.js';
 
 export default function SessionsPage(props){
     const sessions= [
@@ -44,10 +45,25 @@ export default function SessionsPage(props){
         },
     ];
 
+    const noSession = {
+        id: 'NoSession_1',
+            type: retrieveLabel('session.type_0', props.lang),
+            subject: retrieveLabel('nosession.subject', props.lang),
+            description: retrieveLabel('nosession.description', props.lang),
+            date: new Date('01-15-2025'),
+            time:'20.00-21.00',
+            location:'Mortsel'
+    }
+
     return (
         <React.Fragment>
             <div className={topFiller}></div>
-            {sessions.map(session =>(
+            <NoSession 
+                key={noSession.id}
+                subject={noSession.subject}
+                description={noSession.description}
+            />
+            {/* {sessions.map(session =>(
                 <Session
                     key={session.id}
                     type={session.type}
@@ -58,7 +74,7 @@ export default function SessionsPage(props){
                     location={session.location}
                     lang={props.lang}
                     />
-            ))}
+            ))} */}
             <div className={bottomFiller}></div>
             <Footer lang={props.lang} />
         </React.Fragment>

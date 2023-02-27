@@ -81,34 +81,6 @@ export default function SourcesPage(props){
         },
         {
             id: 'Book_2',
-            title: 'How To Change Your Mind - Michael Pollan',
-            image: 'how_to_change_your_mind.png',
-            imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
-            description: retrieveLabel('source_3', props.lang),
-            buttonText: retrieveLabel('source.button.link.book', props.lang),
-            link: 'https://www.standaardboekhandel.be/p/how-to-change-your-mind-9781594204227',
-            clickIcon: function clickHowToChangeYourMind() {
-                setwhichImageClicked(()=> { 
-                    return {
-                    isWakingUpClicked: false,
-                    isWhyMeditateClicked: false,
-                    isChangeYourMindClicked: !whichImageClicked.isChangeYourMindClicked,
-                    isInLoveClicked: false,
-                    isWhoAmIClicked: false,
-                    isTheBookClicked: false,
-                    isIAmThatClicked: false,
-                    isTheWayOfEffortlessMindfulnessClicked: false,
-                    showIconsOnly: !whichImageClicked.showIconsOnly,
-                    key: 'How To Change Your Mind - Michael Pollan',
-                    }
-                })
-            },
-            showCard: whichImageClicked.isChangeYourMindClicked
-
-        },
-        {
-            id: 'Book_3',
             title: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov',
             image: 'in_love_with_the_world.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -136,7 +108,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: 'Book_5',
+            id: 'Book_3',
             title: 'Who Am I - Ramana Maharshi',
             image: 'who_am_i.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -164,7 +136,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: 'Book_6',
+            id: 'Book_4',
             title: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts',
             image: 'the_book.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -192,7 +164,7 @@ export default function SourcesPage(props){
 
         },
         {
-            id: 'Book_7',
+            id: 'Book_5',
             title: 'I Am That: Talks With Nisagradatta Maharaj',
             image: 'I_am_that.png',
             imageCardStyling: sourceImageClassNameBook,
@@ -219,7 +191,35 @@ export default function SourcesPage(props){
             showCard: whichImageClicked.isIAmThatClicked
         },
         {
-            id: 'Book_8',
+            id: 'Book_6',
+            title: 'How To Change Your Mind - Michael Pollan',
+            image: 'how_to_change_your_mind.png',
+            imageCardStyling: sourceImageClassNameBook,
+            imageIconStyling: sourceImageClassNameBookOnly,
+            description: retrieveLabel('source_3', props.lang),
+            buttonText: retrieveLabel('source.button.link.book', props.lang),
+            link: 'https://www.standaardboekhandel.be/p/how-to-change-your-mind-9781594204227',
+            clickIcon: function clickHowToChangeYourMind() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: !whichImageClicked.isChangeYourMindClicked,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'How To Change Your Mind - Michael Pollan',
+                    }
+                })
+            },
+            showCard: whichImageClicked.isChangeYourMindClicked
+
+        },
+        {
+            id: 'Book_7',
             title: 'The Way Of Effortless Mindfulness - Loch Kelly',
             image: 'the_way_of_effortless_mindfulness.png',
             imageCardStyling: sourceImageClassNameBook,

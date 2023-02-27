@@ -3,8 +3,8 @@ export const bottomFiller = "container h-32 bg-transparent";
 
 export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-all ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const containerHiddenClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 h-0 my-12 pb-8 pt-4 opacity-0";
-export const titleClassName = "text-5xl md:text-4xl my-2 mx-auto p-4 text-center normal-case bg-gray-light rounded-lg";
-export const titleSubClassName = "text-4xl md:text-2xl my-2 mx-8 md:ml-4 md:mr-4 md:ml-12 xl:mr-8 xl:ml-8 text-left normal-case";
+export const titleClassName = "text-5xl md:text-4xl my-4 mx-auto p-4 text-center normal-case bg-gray-light rounded-lg";
+export const titleSubClassName = "text-4xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase";
 export const paragraphClassName = "my-2 mx-8 md:mr-4 md:ml-4 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
 export const paragraphBottomClassName = "my-2 mx-12 md:mr-4 md:ml-4 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
 export const divClassName = "my-2 mx-8 md:ml-4 md:mr-4 md:ml-12 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
@@ -15,7 +15,7 @@ export const buttonClassNameClicked = "w-fit h-fit mx-auto my-4 p-6 md:p-3 overf
 
 export const sessionContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition-all ease-in-out delay-100 duration-1000 bg-white border rounded-md border-gray-light shadow-md opacity-90";
 
-export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px bg-transparent rounded-lg transition-all ease-in-out delay-100 duration-1000";
+export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px mt-10 bg-transparent rounded-lg transition-all ease-in-out delay-100 duration-1000";
 export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto";
 export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceContainerHiddenClassNameCard = "container flex flex-col w-11/12 opacity-0";
