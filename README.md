@@ -12,12 +12,12 @@ TODO
 - Spacing tussen paragrafen moet echt wel beter. V
 - Buttons overlappen met de header? FIXED v
 - Scroll up V
-- Set up CI/CD met github. (is al in orde in de deploy flow?)
-- Sources page aanvullen, pretty please.
+- Set up CI/CD met github. (is al in orde in de deploy flow?) V
+- Sources page aanvullen, pretty please. V
 - Sources pagina rederen via zo'n array.map toestand. v
 - Foto's fixen. 
 - Over mij pagina aanvullen. V
-- FAQ bijvullen
+- FAQ bijvullen V
 - Achtergrondfoto? wel zeker een kleiner bestand maken. 
 - Blogpagina? Zal wel van de niet dynamische soort zijn.
 - Maak een beter footer.
@@ -32,5 +32,5 @@ TODO
 - Add ALAN WATTS' BOOK V
 - Remove questions from main text, make a 'question of the day' section
 - Look for a font
-- Rewrite Why Meditate
-
+- Rewrite Why Meditate V
+- Add retreats to sources

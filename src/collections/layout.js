@@ -16,7 +16,7 @@ export const buttonClassNameClicked = "w-fit h-fit mx-auto my-4 p-6 md:p-3 overf
 export const sessionContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition-all ease-in-out delay-100 duration-1000 bg-white border rounded-md border-gray-light shadow-md opacity-90";
 
 export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px mt-10 bg-transparent rounded-lg transition-all ease-in-out delay-100 duration-1000";
-export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto";
+export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto transition-all ease-in-out delay-100 duration-1000";
 export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceContainerHiddenClassNameCard = "container flex flex-col w-11/12 opacity-0";
 export const sourceContainerClassNameImageOnly = "container w-fit h-fit mx-auto items-center overflow-hidden transition-opacity ease-in-out delay-100 duration-1000 border rounded-md bg-white border-gray-light shadow-md opacity-90";

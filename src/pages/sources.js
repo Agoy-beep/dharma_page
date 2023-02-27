@@ -38,13 +38,16 @@ export default function SourcesPage(props){
     useEffect(()=>{
         setContainerVisibleClassName(() => sourceContainerSwitchButtons);
     }, []);
+
     const changeLook = () => {
+      
         setIsFullScreenWithGrid((prevState) => !prevState);
     }
     const filterApps = () => {
         setIsAppFilterOn((prevState) => !prevState);
         setIsBookFilterOn(() => false);
     }
+
     const filterBooks = () => {
         setIsBookFilterOn((prevState) => !prevState);
         setIsAppFilterOn(() => false);
@@ -419,7 +422,7 @@ export default function SourcesPage(props){
 
         }else {
             return (
-                <div>
+                <React.Fragment>
                     {sources.map((source) => (
                         <Source 
                             key={source.id}
@@ -435,7 +438,7 @@ export default function SourcesPage(props){
                             hasBackButton={isFullScreenWithGrid}
                             />
                     ))}
-                </div>
+                </React.Fragment>
             )
         }
     }

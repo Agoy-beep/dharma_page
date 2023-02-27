@@ -45,7 +45,7 @@ export default function Intro(props) {
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
       <button className={buttonClassName} onClick={props.buttonClick}><Link to= "/main">{to_the_text}</Link></button>
     </div>
-    <div className={containerVisibleClassName}>
+    {/* <div className={containerVisibleClassName}>
       <h1 className={titleClassName}>Werken aan de website</h1>
       <h3 className={titleSubClassName}>Verbeteringen die feedback kunnen gebruiken</h3>
       <div className={paragraphClassName}><ol>
@@ -59,7 +59,7 @@ export default function Intro(props) {
         <li>- Samenstelling van kalenderelementen wordt nog uitgebreid</li>
         <li>- Paginaovergangen</li>
       </ol></div>
-    </div>
+    </div> */}
     <Footer lang={props.lang}/>
   </React.Fragment>
  )
