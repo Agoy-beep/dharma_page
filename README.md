@@ -26,6 +26,7 @@ TODO
 - Sessions benodigheden?
 - onderscheid sessie en workshop? V
 - BUG: Je krijgt een flikkerend typstreepje in de header? FIXED
+- BUG: headerknoppen lichten niet altijd op wanner ze moeten. 
 - Nice to have: scroll progress bar!
 - Nice to have: muziek, sfx
 - Nice to have: searchfunctie
