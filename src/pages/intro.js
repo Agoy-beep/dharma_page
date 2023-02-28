@@ -1,24 +1,16 @@
-import React, { useEffect, useState, createRef} from 'react';
+import React, { useEffect, useState} from 'react';
 import  { useNavigate } from 'react-router-dom';
 import Footer from '../footer';
-import { Link } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
-import { retrieveLabel, markdownParser } from '../helpers/labelhelper';
+import { retrieveLabel } from '../helpers/labelhelper';
 import { containerClassName, 
   containerHiddenClassName,
   paragraphClassName,
-  titleSubClassName,
-  titleClassName,
-  divClassName, 
   buttonClassName, 
   topFiller,
-  introContainerHiddenClassName,
-  footerContainerClassName} from '../collections/layout.js';
-
-  //setInterval?
+  introContainerHiddenClassName } from '../collections/layout.js';
 
 export default function Intro(props) {
-  const [canNavigate, setCanNavigate] = useState(true);
   const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
   const navigate = useNavigate();
@@ -55,16 +47,12 @@ export default function Intro(props) {
   <React.Fragment>
   <div className={topFiller}></div>
     <div className= {containerVisibleClassName}>
-    {/* <h1 className={titleClassName}>{main_title_1}</h1> */}
       <div className={paragraphClassName}>{intro_div_par1_1}</div>
       <div className={paragraphClassName}><ReactMarkdown>{intro_paragraph_1}</ReactMarkdown></div>
       <div className={paragraphClassName}><ReactMarkdown>{intro_paragraph_2}</ReactMarkdown></div>
       <div className={paragraphClassName}>{intro_paragraph_3}</div>
       <div className={paragraphClassName}>{intro_div_par1_2}</div>
-      {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
-        {/* <a href='/dharma_page/main' className={buttonClassName} onClick={props.button} ref={linkRef} id="bob">{to_the_text} */}
           <button className={buttonClassName} onClick={buttonClick} >{to_the_text}</button>
-         {/* </a> */}
     </div>
     {/* <div className={containerVisibleClassName}>
       <h1 className={titleClassName}>Werken aan de website</h1>

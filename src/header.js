@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import  { useNavigate } from 'react-router-dom';
 import { retrieveLabel } from './helpers/labelhelper.js';
 import { headerLinkClassName, 
     headerLinkClassNameClicked, 
@@ -7,84 +8,45 @@ import { headerLinkClassName,
     headerLinksContainerClassName,
     headerHomeLinkContainer } from "./collections/layout.js";
 
-const startClickState = {
-    isMainActive: false,
-    isSessionsActive: false,
-    isSourcesActive: false,
-    isAboutMeActive: false
-}
-
 export default function Header(props) {
-    const [clickState, setClickState] = useState(startClickState);
+    const navigate = useNavigate();
+
     const title = retrieveLabel('title', props.lang);
     const main = retrieveLabel('main', props.lang);
     const sessions = retrieveLabel('sessions', props.lang);
     const about = retrieveLabel('about', props.lang);
     const sources = retrieveLabel('sources', props.lang);
-    const clickHomeLink = () => setClickState(() => startClickState);
-    const clickMainLink = () => {
-        setClickState((prevState) =>{
-            return {
-                isMainActive: !prevState.isMainActive,
-                isSessionsActive: false,
-                isSourcesActive: false,
-                isAboutMeActive: false,
-            }
-        });
-    }
-    useEffect(()=> {
-        props.buttonMain ? clickMainLink() : clickHomeLink();
-    },[props.buttonMain])
-    const clickSessionsLink = () => {
-        setClickState((prevState) =>{
-            return {
-                isMainActive: false,
-                isSessionsActive: !prevState.isSessionsActive,
-                isSourcesActive: false,
-                isAboutMeActive: false
-            }
-        });
-    }
-    const clickSourcesLink = () => {
-        setClickState((prevState) =>{
-            return {
-                isMainActive: false,
-                isSessionsActive: false,
-                isSourcesActive: !prevState.isAboutMeActive,
-                isAboutMeActive: false,
-            }
-        });
-    }
-    const clickAboutMeLink = () => {
-        setClickState((prevState) =>{
-            return {
-                isMainActive: false,
-                isSessionsActive: false,
-                isSourcesActive: false,
-                isAboutMeActive: !prevState.isAboutMeActive,
-            }
-        });
-    }
+
+    // useEffect(()=> {
+    //     props.buttonMain ? props.clickMainLink : props.clickHomeLink;
+    // },[props.buttonMain]);
+
+    useEffect(() => {
+        if(props.destination !== undefined) {
+            return navigate(props.destination);
+        }
+    }, [props.destination]);
+
 
 // contains the logo, info, about and contact tab.
     return (
         <div className={headerLinksContainerClassName}>
             <div className={headerHomeLinkContainer}>
-            <Link to= "/" className="text-4xl mx-auto " onClick={clickHomeLink}>{title}</Link>
+            <button className="text-4xl mx-auto " onClick={props.clickHomeLink}>{title}</button>
             </div>
             <div className={headerLinkContainerClassName}>
-            <Link to= "/main" className={clickState.isMainActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickMainLink}>
+            <button className={props.destination === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickMainLink}>
                 {main}
-            </Link>
-            <Link to= "/sessions" className={clickState.isSessionsActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickSessionsLink}>
+            </button>
+            <button className={props.destination === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSessionsLink}>
                 {sessions}
-            </Link>
-            <Link to= "/sources" className={clickState.isSourcesActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickSourcesLink}>
+            </button>
+            <button  className={props.destination === '/sources' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
                 {sources}
-            </Link>
-            <Link to= "/about" className={clickState.isAboutMeActive ? headerLinkClassNameClicked : headerLinkClassName} onClick={clickAboutMeLink} >
+            </button>
+            <button className={props.destination === '/about' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickAboutMeLink} >
                 {about}      
-            </Link>
+            </button>
                 {/* <div className="container flex-row-reverse space-x-2 basis-1/5">
                 <button className="p-2 w-12 bg-orange opacity-70 rounded-lg transition ease-in-out delay-100 hover:scale-110 hover:underline-offset-1 duration-200" onClick={props.setToEnglish}>ENG</button>
                 <button className="p-2 w-12 bg-orange opacity-70 rounded-lg transition ease-in-out delay-100 hover:scale-110 hover:underline-offset-1 duration-200" onClick={props.setToDutch}>NL</button>
