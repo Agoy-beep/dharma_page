@@ -6,16 +6,31 @@ import { retrieveLabel } from '../helpers/labelhelper.js';
 import { containerClassName,
     containerHiddenClassName, 
     titleClassName, 
-    paragraphClassName, 
+    paragraphClassName,
+    aboutContainerHiddenClassName,
+    aboutContainerClassName, 
     } from '../collections/layout.js';
 
 
 export default function AboutPage(props){
-    const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    const [footerFadeOut, setFooterFadeOut] = useState(false);
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(aboutContainerHiddenClassName);
+
+    console.log('PREFLIGHT ABOUT PAGE ', props.preflight);
     
     useEffect(()=>{
-        setContainerVisibleClassName(() => containerClassName);
+        setContainerVisibleClassName(() => aboutContainerClassName);
     }, []);
+
+    useEffect(() => {
+        if(props.canFadeOut === true && props.preflight !== '/about') {
+          setContainerVisibleClassName(() => aboutContainerHiddenClassName);
+          setFooterFadeOut(() => true);
+        //   return props.fireNavigator(); 
+        }
+      }, [props.canFadeOut, props.preflight])
+
+
 
     const about_title = retrieveLabel('about', props.lang);
     const about_paragraph_1 = retrieveLabel('about.paragraph_1', props.lang);
@@ -37,8 +52,8 @@ export default function AboutPage(props){
                 </div>
                 <div className={paragraphClassName}><ReactMarkdown>{about_paragraph_3}</ReactMarkdown></div>     
             </div>
-            <FaqPage lang={props.lang}/>
-            <Footer lang={props.lang} />
+            <FaqPage lang={props.lang} canFadeOut={props.canFadeOut} preflight={props.preflight}/>
+            <Footer lang={props.lang} fadeOut={footerFadeOut} />
 
         </React.Fragment>
         

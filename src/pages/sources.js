@@ -13,7 +13,9 @@ import { sourceImageClassNameWide,
     sourceContainerSwitchButtons,
     sourceFilterButtonClassName,
     sourceFilterButtonClassNameActive,
-    containerHiddenClassName } from '../collections/layout.js';
+    containerHiddenClassName, 
+    sourcesWrapperHiddenClassname,
+    sourcesWrapperClassName} from '../collections/layout.js';
 
 const notClicked = {
     isWakingUpClicked: false,
@@ -29,15 +31,27 @@ const notClicked = {
 const isSmartphoneScreen = window.innerWidth < '1000';
 
 export default function SourcesPage(props){
+    const [footerFadeOut, setFooterFadeOut] = useState(false);
     const [whichImageClicked, setwhichImageClicked] = useState(notClicked);
     const [isFullScreenWithGrid, setIsFullScreenWithGrid] = useState(false);
     const [isAppFilterOn, setIsAppFilterOn] = useState(false);
     const [isBookFilterOn, setIsBookFilterOn] = useState(false);
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    const [wrapperVisibleClassName, setWrapperVisibleClassName] = useState(sourcesWrapperHiddenClassname);
     
     useEffect(()=>{
         setContainerVisibleClassName(() => sourceContainerSwitchButtons);
+        setWrapperVisibleClassName(() => sourcesWrapperClassName);
     }, []);
+
+    useEffect(() => {
+        if(props.canFadeOut === true) {
+          setContainerVisibleClassName(() => containerHiddenClassName);
+          setWrapperVisibleClassName(() => sourcesWrapperHiddenClassname);
+          setFooterFadeOut(() => true);
+        //   return props.fireNavigator(); 
+        }
+      }, [props.canFadeOut])
 
     const changeLook = () => {
       
@@ -446,8 +460,8 @@ export default function SourcesPage(props){
     return(
         <React.Fragment>
             <div className={topFiller}></div>
-            <div className="container md:grid md:grid-cols-4">
-                <div className={containerVisibleClassName}>
+            <div className={wrapperVisibleClassName}>
+                <div className={sourceContainerSwitchButtons}>
                     {!isSmartphoneScreen 
                     ? 
                     <React.Fragment>
@@ -471,7 +485,7 @@ export default function SourcesPage(props){
                 </div>
             </div>
             <div className={bottomFiller}></div>
-            <Footer lang={props.lang} />
+            <Footer lang={props.lang} fadeOut={footerFadeOut}/>
     </React.Fragment>
     )
 }

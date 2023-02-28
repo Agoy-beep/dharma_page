@@ -1,55 +1,55 @@
-import React, { useEffect, useState, useCallback} from 'react';
+import React, { useEffect, useState} from 'react';
 import Footer from '../footer';
 import ReactMarkdown from 'react-markdown';
 import { retrieveLabel } from '../helpers/labelhelper';
-import { containerClassName, 
-  containerHiddenClassName,
+import {
   paragraphClassName,
   buttonClassName, 
   topFiller,
-  introContainerHiddenClassName } from '../collections/layout.js';
+  introContainerHiddenClassName, 
+  introContainerClassName} from '../collections/layout.js';
 
   
-  const footer = false;
-
 export default function Intro(props) {
-  const [footerFadeOut, setFooterFadeOut] = useState(footer);
-  const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
-  console.log('ON INTRO ', containerVisibleClassName);
   
-  // function fadeOut () {
-  //   console.log('fade out function called');
-  //   setContainerVisibleClassName(() => introContainerHiddenClassName);
-  //   setFooterFadeOut(() => true);
-  //   return props.fadeOut();
-  // }
+  const [footerFadeOut, setFooterFadeOut] = useState(false);
+  const [containerVisibleClassName, setContainerVisibleClassName] = useState(introContainerHiddenClassName);
+  console.log('INTRO FUNCTION LOADED ', containerVisibleClassName);
+  console.log('FOOTER FADE OUT function lvl ', footerFadeOut);
+  console.log('props.destination function lvl', props.destination);
+ 
+  useEffect(()=>{
+    if(props.destination === '/' || props.destination === undefined ) {
+      console.log('INTRO USE EFFECT');
+      setContainerVisibleClassName(() => introContainerClassName);
+        return () => {
+          // waarom wordt props.destination hier op '/' gezet? 
+          // console.log('on destroy ', props.destination);
+          // setContainerVisibleClassName(() => introContainerHiddenClassName);
+        }
+    }
+  },[props.destination]);
+
+  useEffect(() => {
+    if(props.canFadeOut === true) {
+      setContainerVisibleClassName(() => introContainerHiddenClassName);
+      setFooterFadeOut(() => true);
+      // props.fireNavigator(); 
+    }
+  }, [props.canFadeOut])
+ 
+
   // ONCLICK button property lijkt hier cruciaal om de pagina te rerenderen. 
   const buttonClick = () => {
     console.log('button clicked');
+    //  deze state changes geven een function reload
     setContainerVisibleClassName(() => introContainerHiddenClassName);
     setFooterFadeOut(() => true);
+    // deze return geeft een function reload en set een nieuwe props.destination
       return props.buttonClick();
   }
 
-  useEffect(()=>{
-    console.log('INTRO USE EFFECT');
-    setContainerVisibleClassName(() => containerClassName);
-      return () => {
-        // waarom wordt props.destination hier op '/' gezet? 
-        // console.log('on destroy ', props.destination);
-        // setContainerVisibleClassName(() => introContainerHiddenClassName);
-      }
-  },[]);
-
-//   useEffect(()=>{
-//     console.log('MAIN USE EFFECT');
-//     setContainerVisibleClassName(() => containerClassName);
-//     return () => {
-//         // console.log('MAIN USE EFFECT ON DESTROY');
-//         // setContainerVisibleClassName(() => containerHiddenClassName);
-//     }
-
-// }, []);
+  
 
 
   // useEffect(() => {
@@ -59,7 +59,7 @@ export default function Intro(props) {
   //     console.log('FADE OUT');
   //     // fadeOut();
   //   }
-  // },[props.destination])
+  // },[props.destination, setContainerVisibleClassName])
 
 
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);

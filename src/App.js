@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./header";
 import SessionsPage from "./pages/sessions";
 import IntroPage from './pages/intro';
@@ -7,31 +8,54 @@ import MainPage from "./pages/main";
 import SourcesPage from "./pages/sources";
 import AboutPage from "./pages/about";
 import ScrollToTop from './helpers/scrolltotop';
-import React, { useState } from 'react';
 
 export default function App() {
   const [language, setLanguage] = useState('nl');
+  const [preflightDestination, setPreflightDestination] = useState();
   const [destination, setDestination] = useState();
+  const [canFadeOut, setCanFadeOut] = useState(false);
+  // !!!!! set to true for testing
+  const [canFireNavigator, setCanFireNavigator] = useState(true);
   const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
+  console.log('IN APP');
+  console.log('CAN FADE OUT ', canFadeOut);
+  console.log('CAN FIRE NAVIGATOR ', canFireNavigator);
+  console.log('PREFLIGHT ', preflightDestination);
+  const fireNavigator = () => {
+    return setCanFireNavigator(()=> true)
+  }
+
+  useEffect(() => {
+    if(canFireNavigator === true) {
+      console.log('FIRED NAVIGATOR IN APP');
+      setTimeout(() => setDestination(() => preflightDestination), 700)
+      setIsMainButtonClicked();
+      setCanFadeOut(() => false);
+      // setCanFireNavigator(()=> false);
+    }
+  }, [canFireNavigator, preflightDestination])
 
   const clickHomeLink = () => {
-    setTimeout(() => setDestination(() => '/'),20);
-    setIsMainButtonClicked();
+    setCanFadeOut(() => true);
+    setPreflightDestination(()=>'/');
   }
 
-  const clickMainLink = () => { return setTimeout(() => setDestination(() => '/main'),1000)};
+  const clickMainLink = () => { 
+    setCanFadeOut(() => true);
+    setPreflightDestination(()=>'/main');
+  };
 
   const clickSessionsLink = () => {
-    setTimeout(() => setDestination(() => '/sessions'),20);
-    setIsMainButtonClicked();
+    setCanFadeOut(() => true);
+    setPreflightDestination(()=>'/sessions');
    }
   const clickSourcesLink = () => {
-    setTimeout(() => setDestination(() => '/sources'),20);
-    setIsMainButtonClicked();
+    setCanFadeOut(() => true);
+    setPreflightDestination(()=>'/sources');
   }
   const clickAboutMeLink = () => {
-    setTimeout(() => setDestination(() => '/about'),20);
-    setIsMainButtonClicked();
+    setCanFadeOut(() => true);
+    setPreflightDestination(()=>'/about');
   }
 
   const setLanguageToDutch = () => {
@@ -41,15 +65,9 @@ export default function App() {
     setLanguage('en');
   }
   const setMainHeaderViaIntroButton = () => {
-    setTimeout(() => setDestination(() => '/main'), 1000);
+    setTimeout(() => setDestination(() => '/main'), 700);
     setIsMainButtonClicked((prevState) => !prevState);
-    // setDestination(() => '/main');
   }
-  const fadeOut = () => {
-    console.log('APP FADEOUT IS CALLED');
-    setTimeout(() => setDestination(() => '/sessions'), 1000);
-  }
-
 
   return (
     <React.Fragment>
@@ -66,15 +84,42 @@ export default function App() {
           clickSourcesLink={clickSourcesLink}
           clickAboutMeLink={clickAboutMeLink}
           destination={destination}
+          preflight={preflightDestination}
           />
           { 
             <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y md:bg-repeat-x">
               <Routes>
-                <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton} destination={destination} fadeOut={fadeOut}/>}/>
-                <Route path='/main' element={<MainPage lang={language}/>} />
-                <Route path='/sessions' element={<SessionsPage lang={language}/>} />
-                <Route path='/sources' element={<SourcesPage lang={language}/>} />
-                <Route path='/about' element={<AboutPage lang={language}/>} />
+                <Route path='/' element={<IntroPage 
+                                            lang={language} 
+                                            buttonClick={setMainHeaderViaIntroButton} 
+                                            destination={destination} 
+                                            canFadeOut={canFadeOut} 
+                                            // fireNavigator={fireNavigator}
+                                            preflight={preflightDestination}/>}/>
+                <Route path='/main' element={<MainPage 
+                                            lang={language}
+                                            destination={destination} 
+                                            canFadeOut={canFadeOut} 
+                                            // fireNavigator={fireNavigator}
+                                            preflight={preflightDestination}/>} />
+                <Route path='/sessions' element={<SessionsPage 
+                                            lang={language}
+                                            destination={destination} 
+                                            canFadeOut={canFadeOut} 
+                                            // fireNavigator={fireNavigator}
+                                            preflight={preflightDestination}/>} />
+                <Route path='/sources' element={<SourcesPage 
+                                            lang={language}
+                                            destination={destination} 
+                                            canFadeOut={canFadeOut} 
+                                            // fireNavigator={fireNavigator}
+                                            preflight={preflightDestination}/>} />
+                <Route path='/about' element={<AboutPage 
+                                            lang={language}
+                                            destination={destination} 
+                                            canFadeOut={canFadeOut} 
+                                            // fireNavigator={fireNavigator}
+                                            preflight={preflightDestination}/>} />
               </Routes>
             </div>
           }

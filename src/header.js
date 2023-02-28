@@ -17,21 +17,24 @@ export default function Header(props) {
     const about = retrieveLabel('about', props.lang);
     const sources = retrieveLabel('sources', props.lang);
 
+    
+    // de APP laag geeft de nieuwe destination door via set Destination. App  kan dit niet doen want geen Router. 
     useEffect(() => {
         if(props.destination !== undefined) {
+            console.log('HEADER NAVIGATES TO DESTINATION');
             return navigate(props.destination);
         }
     }, [props.destination]);
 
-    const handleClickMain = () => {
+    // const handleClickMain = () => {
 
-        return props.clickMainLink();
-    }
+    //     return props.clickMainLink();
+    // }
 
-    const handleClickSessions = () => {
+    // const handleClickSessions = () => {
 
-        return props.clickSessionsLink();
-    }
+    //     return props.clickSessionsLink();
+    // }
 
 
 // contains the logo, info, about and contact tab.
@@ -41,16 +44,16 @@ export default function Header(props) {
             <button className="text-4xl mx-auto " onClick={props.clickHomeLink}>{title}</button>
             </div>
             <div className={headerLinkContainerClassName}>
-            <button className={props.destination === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={handleClickMain}>
+            <button className={props.preflight === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickMainLink}>
                 {main}
             </button>
-            <button className={props.destination === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={handleClickSessions}>
+            <button className={props.preflight === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSessionsLink}>
                 {sessions}
             </button>
-            <button  className={props.destination === '/sources' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
+            <button  className={props.preflight === '/sources' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
                 {sources}
             </button>
-            <button className={props.destination === '/about' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickAboutMeLink} >
+            <button className={props.preflight === '/about' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickAboutMeLink} >
                 {about}      
             </button>
                 {/* <div className="container flex-row-reverse space-x-2 basis-1/5">

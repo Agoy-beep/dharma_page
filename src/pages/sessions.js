@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import Session from '../components/session.js';
 import Footer from '../footer.js';
@@ -6,6 +6,15 @@ import { bottomFiller, topFiller } from '../collections/layout.js';
 import NoSession from '../components/nosession.js';
 
 export default function SessionsPage(props){
+    const [footerFadeOut, setFooterFadeOut] = useState(false);
+    console.log('SESSIONS LOADED');
+
+    useEffect(() => {
+        if(props.canFadeOut === true) {
+          setFooterFadeOut(() => true);
+        }
+      }, [props.canFadeOut])
+
     const sessions= [
         {
             id: 'Session_1',
@@ -62,6 +71,9 @@ export default function SessionsPage(props){
                 key={noSession.id}
                 subject={noSession.subject}
                 description={noSession.description}
+                destination={props.destination} 
+                canFadeOut={props.canFadeOut} 
+                fireNavigator={props.fireNavigator}
             />
             {/* {sessions.map(session =>(
                 <Session
@@ -76,7 +88,7 @@ export default function SessionsPage(props){
                     />
             ))} */}
             <div className={bottomFiller}></div>
-            <Footer lang={props.lang} />
+            <Footer lang={props.lang} fadeOut={footerFadeOut} />
         </React.Fragment>
              
     )

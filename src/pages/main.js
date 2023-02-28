@@ -15,7 +15,8 @@ import { containerClassName,
     titleSubClassName,
     buttonClassName, 
     buttonClassNameClicked,
-    topFiller} from '../collections/layout.js';
+    topFiller,
+    mainContainerHiddenClassName} from '../collections/layout.js';
 
 const meditationStarterBools = {
     meditation_1: false,
@@ -26,19 +27,28 @@ const meditationStarterBools = {
 }
 
 export default function Main(props) {
+    const [footerFadeOut, setFooterFadeOut] = useState(false);
     const [meditationBools, setMedationBools] = useState(meditationStarterBools);
-    const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(mainContainerHiddenClassName);
     console.log('ON MAIN ', containerVisibleClassName);
     
     useEffect(()=>{
         console.log('MAIN USE EFFECT');
-        setContainerVisibleClassName(() => containerClassName);
+        setContainerVisibleClassName(() => mainContainerClassName);
         return () => {
             // console.log('MAIN USE EFFECT ON DESTROY');
             // setContainerVisibleClassName(() => containerHiddenClassName);
         }
-
     }, []);
+
+    useEffect(() => {
+        if(props.canFadeOut === true) {
+          setContainerVisibleClassName(() => mainContainerHiddenClassName);
+          setFooterFadeOut(() => true);
+        //   return props.fireNavigator(); 
+        }
+      }, [props.canFadeOut])
+     
 
     const main_title_1 = retrieveLabel('main.title_1', props.lang);
     const main_quote_1 = retrieveLabel('main.quote_1', props.lang);
@@ -184,7 +194,7 @@ export default function Main(props) {
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_27}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_28}</ReactMarkdown></div>
             </div> 
-            <Footer lang={props.lang} />
+            <Footer lang={props.lang} fadeOut={footerFadeOut} />
         </React.Fragment>
     )
 }

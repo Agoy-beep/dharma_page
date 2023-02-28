@@ -35,3 +35,5 @@ TODO
 - Look for a font
 - Rewrite Why Meditate V
 - Add retreats to sources
+- We have a fade out, fade ins are irregular
+- clicking twice on a header link breaks it.
