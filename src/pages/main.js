@@ -4,7 +4,8 @@ import ReactMarkdown from 'react-markdown';
 import Meditation from '../components/meditation.js';
 import Footer from "../footer.js";
 import { containerClassName,
-    containerHiddenClassName, 
+    containerHiddenClassName,
+    mainContainerClassName,
     titleClassName, 
     paragraphClassName, 
     divClassName, 
@@ -30,6 +31,10 @@ export default function Main(props) {
     
     useEffect(()=>{
         setContainerVisibleClassName(() => containerClassName);
+        return () => {
+            setContainerVisibleClassName(() => containerHiddenClassName)
+        }
+
     }, []);
 
     const main_title_1 = retrieveLabel('main.title_1', props.lang);
@@ -138,7 +143,7 @@ export default function Main(props) {
                 {/* <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_10}</ReactMarkdown></div>
                 <div className={paragraphBottomClassName}>{main_paragraph_11}</div> */}
             </div>
-            <div className= {containerClassName}>
+            <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_3}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_4}</h3>
                 {/* <div className={paragraphClassName}>{main_paragraph_12}</div> */}

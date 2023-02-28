@@ -1,4 +1,5 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, createRef} from 'react';
+import  { useNavigate } from 'react-router-dom';
 import Footer from '../footer';
 import { Link } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
@@ -10,20 +11,36 @@ import { containerClassName,
   titleClassName,
   divClassName, 
   buttonClassName, 
-  topFiller} from '../collections/layout.js';
+  topFiller,
+  introContainerHiddenClassName} from '../collections/layout.js';
+
+  //setInterval?
 
 export default function Intro(props) {
+  const [canNavigate, setCanNavigate] = useState(true);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
-  
-    
-  useEffect(()=>{
-      setContainerVisibleClassName(() => containerClassName);
-      props.buttonClick()
-  }, []);
+  const navigate = useNavigate();
 
-  // useEffect(()=>{
-  //   setContainerVisibleClassName(() => containerHiddenClassName);
-  // }, [navigate === 'true']);
+  const handleOnClick = () => {
+    return navigate('/main');
+  }
+
+  const buttonClick = () => {
+    setContainerVisibleClassName(() => introContainerHiddenClassName);
+    
+    setTimeout(() => {
+      return handleOnClick()
+    }, 1000);
+      return props.buttonClick();
+  }
+
+  useEffect(()=>{
+    setContainerVisibleClassName(() => containerClassName);
+      return () => {
+      }
+
+  },[]);
+
 
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);
   const intro_paragraph_2 = retrieveLabel('intro.paragraph_2', props.lang);
@@ -43,7 +60,9 @@ export default function Intro(props) {
       <div className={paragraphClassName}>{intro_paragraph_3}</div>
       <div className={paragraphClassName}>{intro_div_par1_2}</div>
       {/* <div className={divClassName}>{intro_div_par1_3}</div> */}
-      <button className={buttonClassName} onClick={props.buttonClick}><Link to= "/main">{to_the_text}</Link></button>
+        {/* <a href='/dharma_page/main' className={buttonClassName} onClick={props.button} ref={linkRef} id="bob">{to_the_text} */}
+          <button className={buttonClassName} onClick={buttonClick} >{to_the_text}</button>
+         {/* </a> */}
     </div>
     {/* <div className={containerVisibleClassName}>
       <h1 className={titleClassName}>Werken aan de website</h1>

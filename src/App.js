@@ -18,7 +18,7 @@ const initialHeaderState = {
 let buttonMainWasClicked = true;
 export default function App() {
   const [language, setLanguage] = useState('nl');
-  const [isMainButtonClicked, setIsMainButtonClicked] = useState(buttonMainWasClicked);
+  const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
   const setLanguageToDutch = () => {
     setLanguage('nl');
   }
@@ -42,7 +42,7 @@ export default function App() {
           { 
             <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y">
               <Routes>
-                <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton}/>}/>
+                <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton} buttonMain={isMainButtonClicked}/>}/>
                 <Route path='/sessions' element={<SessionsPage lang={language}/>} />
                 <Route path='/main' element={<MainPage lang={language}/>} />
                 <Route path='/about' element={<AboutPage lang={language}/>} />
