@@ -2,6 +2,8 @@ export const topFiller = "mt-24 h-4 md:mt-0";
 export const bottomFiller = "container h-32 bg-transparent";
 
 export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-all ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const footerContainerClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition-all ease-in-out delay-100 duration-1000";
+export const footerContainerHiddenClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition-all ease-in-out delay-100 duration-1000 opacity-0";
 export const mainContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-opactiy ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const introContainerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 my-12 pb-8 pt-4 opacity-0 transition-all  delay-100 duration-1000";
 export const containerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 h-0 my-12 pb-8 pt-4 opacity-0 transition-all ease-in-out delay-100 duration-1000";

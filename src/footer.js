@@ -1,10 +1,22 @@
+import React, { useState, useEffect } from 'react';
 import { retrieveLabel } from './helpers/labelhelper.js';
+import { footerContainerClassName, footerContainerHiddenClassName } from './collections/layout.js';
 
 
 export default function Footer(props) {
     const footer = retrieveLabel('footer', props.lang);
+    const [footerCurrentContainerClassName, setFooterCurrencContainerClassName] = useState(footerContainerHiddenClassName);
+
+    useEffect(() => {
+        setFooterCurrencContainerClassName(() => footerContainerHiddenClassName);
+    }, [props.fadeOut])
+
+    useEffect(()=>{
+        setFooterCurrencContainerClassName(() => footerContainerClassName);
+    },[]);
+
     return(
-        <div className="container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8">
+        <div className={footerCurrentContainerClassName}>
             <div>{footer}</div>
         </div>
     )

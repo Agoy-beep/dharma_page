@@ -12,12 +12,14 @@ import { containerClassName,
   divClassName, 
   buttonClassName, 
   topFiller,
-  introContainerHiddenClassName} from '../collections/layout.js';
+  introContainerHiddenClassName,
+  footerContainerClassName} from '../collections/layout.js';
 
   //setInterval?
 
 export default function Intro(props) {
   const [canNavigate, setCanNavigate] = useState(true);
+  const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
   const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ export default function Intro(props) {
 
   const buttonClick = () => {
     setContainerVisibleClassName(() => introContainerHiddenClassName);
-    
+    setFooterFadeOut(() => true);
     setTimeout(() => {
       return handleOnClick()
     }, 1000);
@@ -79,7 +81,7 @@ export default function Intro(props) {
         <li>- Paginaovergangen</li>
       </ol></div>
     </div> */}
-    <Footer lang={props.lang}/>
+      <Footer lang={props.lang} fadeOut={footerFadeOut}/>
   </React.Fragment>
  )
 }
