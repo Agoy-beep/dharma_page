@@ -9,16 +9,20 @@ import { containerClassName,
   topFiller,
   introContainerHiddenClassName } from '../collections/layout.js';
 
+  
+  const footer = false;
+
 export default function Intro(props) {
-  const [footerFadeOut, setFooterFadeOut] = useState(false);
+  const [footerFadeOut, setFooterFadeOut] = useState(footer);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
   console.log('ON INTRO ', containerVisibleClassName);
-  function fadeOut () {
-    console.log('fade out function called');
-    setContainerVisibleClassName(() => introContainerHiddenClassName);
-    setFooterFadeOut(() => true);
-    return props.fadeOut();
-  }
+  
+  // function fadeOut () {
+  //   console.log('fade out function called');
+  //   setContainerVisibleClassName(() => introContainerHiddenClassName);
+  //   setFooterFadeOut(() => true);
+  //   return props.fadeOut();
+  // }
   // ONCLICK button property lijkt hier cruciaal om de pagina te rerenderen. 
   const buttonClick = () => {
     console.log('button clicked');
@@ -37,14 +41,25 @@ export default function Intro(props) {
       }
   },[]);
 
-  useEffect(() => {
-    console.log(props.destination);
-    if(props.destination !== '/' && props.destination !== undefined) {
-      setContainerVisibleClassName(() => introContainerHiddenClassName);
-      console.log('FADE OUT');
-      // fadeOut();
-    }
-  },[props.destination])
+//   useEffect(()=>{
+//     console.log('MAIN USE EFFECT');
+//     setContainerVisibleClassName(() => containerClassName);
+//     return () => {
+//         // console.log('MAIN USE EFFECT ON DESTROY');
+//         // setContainerVisibleClassName(() => containerHiddenClassName);
+//     }
+
+// }, []);
+
+
+  // useEffect(() => {
+  //   console.log(props.destination);
+  //   if(props.destination !== '/' && props.destination !== undefined) {
+  //     setContainerVisibleClassName(() => introContainerHiddenClassName);
+  //     console.log('FADE OUT');
+  //     // fadeOut();
+  //   }
+  // },[props.destination])
 
 
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);
@@ -54,6 +69,7 @@ export default function Intro(props) {
   const intro_div_par1_2 = retrieveLabel('intro.div_2', props.lang);
   const intro_div_par1_3 = retrieveLabel('intro.div_3', props.lang);
   const to_the_text = retrieveLabel('intro.button', props.lang);
+
  return (
   <React.Fragment>
   <div className={topFiller}></div>

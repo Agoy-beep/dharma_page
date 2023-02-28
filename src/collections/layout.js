@@ -1,12 +1,15 @@
 export const topFiller = "mt-24 h-4 md:mt-0";
 export const bottomFiller = "container h-32 bg-transparent";
 
-export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-opacity ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-all ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const containerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 h-0 my-12 pb-8 pt-4 opacity-0 transition-all ease-in-out delay-100 duration-1000";
+
 export const footerContainerClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition-all ease-in-out delay-100 duration-1000";
 export const footerContainerHiddenClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition-all ease-in-out delay-100 duration-1000 opacity-0";
+//not used
 export const mainContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition-opactiy ease-in-out delay-100 duration-1000 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+
 export const introContainerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 my-12 pb-8 pt-4 opacity-0 transition-all ease-in-out delay-100 duration-1000";
-export const containerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 h-0 my-12 pb-8 pt-4 opacity-0 transition-all ease-in-out delay-100 duration-1000";
 export const titleClassName = "text-5xl md:text-4xl my-4 mx-auto p-4 text-center normal-case bg-gray-light rounded-lg";
 export const titleSubClassName = "text-4xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase";
 export const paragraphClassName = "my-2 mx-8 md:mr-4 md:ml-4 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";

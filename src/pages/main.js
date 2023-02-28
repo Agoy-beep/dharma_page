@@ -34,8 +34,8 @@ export default function Main(props) {
         console.log('MAIN USE EFFECT');
         setContainerVisibleClassName(() => containerClassName);
         return () => {
-            console.log('MAIN USE EFFECT ON DESTROY');
-            setContainerVisibleClassName(() => containerHiddenClassName);
+            // console.log('MAIN USE EFFECT ON DESTROY');
+            // setContainerVisibleClassName(() => containerHiddenClassName);
         }
 
     }, []);

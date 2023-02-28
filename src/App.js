@@ -18,7 +18,9 @@ export default function App() {
     setTimeout(() => setDestination(() => '/'),20);
     setIsMainButtonClicked();
   }
-  const clickMainLink = () => setTimeout(() => setDestination(() => '/main'),20);
+
+  const clickMainLink = () => { return setTimeout(() => setDestination(() => '/main'),1000)};
+
   const clickSessionsLink = () => {
     setTimeout(() => setDestination(() => '/sessions'),20);
     setIsMainButtonClicked();
