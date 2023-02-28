@@ -36,4 +36,4 @@ TODO
 - Rewrite Why Meditate V
 - Add retreats to sources
 - We have a fade out, fade ins are irregular
-- clicking twice on a header link breaks it.
+- clicking twice on a header link breaks it. (see about page for fix)

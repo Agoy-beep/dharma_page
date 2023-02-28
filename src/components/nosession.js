@@ -21,7 +21,7 @@ import { containerHiddenClassName,
       useEffect(() => {
         if(props.canFadeOut === true) {
           setContainerVisibleClassName(() => nosessionContainerHiddenClassName);
-          return props.fireNavigator(); 
+          // return props.fireNavigator(); 
         }
       }, [props.canFadeOut])
       

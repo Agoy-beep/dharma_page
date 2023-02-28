@@ -63,7 +63,7 @@ export default function SessionsPage(props){
             time:'20.00-21.00',
             location:'Mortsel'
     }
-
+        //TODO make wrapper for sessions, see sources, helps with the fade ins and outs
     return (
         <React.Fragment>
             <div className={topFiller}></div>
