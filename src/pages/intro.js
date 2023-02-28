@@ -1,5 +1,4 @@
-import React, { useEffect, useState} from 'react';
-import  { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState, useCallback} from 'react';
 import Footer from '../footer';
 import ReactMarkdown from 'react-markdown';
 import { retrieveLabel } from '../helpers/labelhelper';
@@ -13,27 +12,39 @@ import { containerClassName,
 export default function Intro(props) {
   const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
-  const navigate = useNavigate();
-
-  const handleOnClick = () => {
-    return navigate('/main');
-  }
-
-  const buttonClick = () => {
+  console.log('ON INTRO ', containerVisibleClassName);
+  function fadeOut () {
+    console.log('fade out function called');
     setContainerVisibleClassName(() => introContainerHiddenClassName);
     setFooterFadeOut(() => true);
-    setTimeout(() => {
-      return handleOnClick()
-    }, 1000);
+    return props.fadeOut();
+  }
+  // ONCLICK button property lijkt hier cruciaal om de pagina te rerenderen. 
+  const buttonClick = () => {
+    console.log('button clicked');
+    setContainerVisibleClassName(() => introContainerHiddenClassName);
+    setFooterFadeOut(() => true);
       return props.buttonClick();
   }
 
   useEffect(()=>{
+    console.log('INTRO USE EFFECT');
     setContainerVisibleClassName(() => containerClassName);
       return () => {
+        // waarom wordt props.destination hier op '/' gezet? 
+        // console.log('on destroy ', props.destination);
+        // setContainerVisibleClassName(() => introContainerHiddenClassName);
       }
-
   },[]);
+
+  useEffect(() => {
+    console.log(props.destination);
+    if(props.destination !== '/' && props.destination !== undefined) {
+      setContainerVisibleClassName(() => introContainerHiddenClassName);
+      console.log('FADE OUT');
+      // fadeOut();
+    }
+  },[props.destination])
 
 
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);

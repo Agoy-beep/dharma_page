@@ -28,11 +28,14 @@ const meditationStarterBools = {
 export default function Main(props) {
     const [meditationBools, setMedationBools] = useState(meditationStarterBools);
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
+    console.log('ON MAIN ', containerVisibleClassName);
     
     useEffect(()=>{
+        console.log('MAIN USE EFFECT');
         setContainerVisibleClassName(() => containerClassName);
         return () => {
-            setContainerVisibleClassName(() => containerHiddenClassName)
+            console.log('MAIN USE EFFECT ON DESTROY');
+            setContainerVisibleClassName(() => containerHiddenClassName);
         }
 
     }, []);

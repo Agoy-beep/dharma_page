@@ -8,7 +8,6 @@ import SourcesPage from "./pages/sources";
 import AboutPage from "./pages/about";
 import ScrollToTop from './helpers/scrolltotop';
 import React, { useState } from 'react';
-import { headerLinksContainerClassName } from './collections/layout';
 
 export default function App() {
   const [language, setLanguage] = useState('nl');
@@ -16,20 +15,20 @@ export default function App() {
   const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
 
   const clickHomeLink = () => {
-    setDestination(() => '/');
+    setTimeout(() => setDestination(() => '/'),20);
     setIsMainButtonClicked();
   }
-  const clickMainLink = () => setDestination(() => '/main');
+  const clickMainLink = () => setTimeout(() => setDestination(() => '/main'),20);
   const clickSessionsLink = () => {
-    setDestination(() => '/sessions');
+    setTimeout(() => setDestination(() => '/sessions'),20);
     setIsMainButtonClicked();
-  }
+   }
   const clickSourcesLink = () => {
-    setDestination(() => '/sources');
+    setTimeout(() => setDestination(() => '/sources'),20);
     setIsMainButtonClicked();
   }
   const clickAboutMeLink = () => {
-    setDestination(() => '/about');
+    setTimeout(() => setDestination(() => '/about'),20);
     setIsMainButtonClicked();
   }
 
@@ -40,9 +39,15 @@ export default function App() {
     setLanguage('en');
   }
   const setMainHeaderViaIntroButton = () => {
+    setTimeout(() => setDestination(() => '/main'), 1000);
     setIsMainButtonClicked((prevState) => !prevState);
-    setDestination(() => '/main')
+    // setDestination(() => '/main');
   }
+  const fadeOut = () => {
+    console.log('APP FADEOUT IS CALLED');
+    setTimeout(() => setDestination(() => '/sessions'), 1000);
+  }
+
 
   return (
     <React.Fragment>
@@ -61,13 +66,13 @@ export default function App() {
           destination={destination}
           />
           { 
-            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y">
+            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y md:bg-repeat-x">
               <Routes>
-                <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton}/>}/>
-                <Route path='/sessions' element={<SessionsPage lang={language}/>} />
+                <Route path='/' element={<IntroPage lang={language} buttonClick={setMainHeaderViaIntroButton} destination={destination} fadeOut={fadeOut}/>}/>
                 <Route path='/main' element={<MainPage lang={language}/>} />
-                <Route path='/about' element={<AboutPage lang={language}/>} />
+                <Route path='/sessions' element={<SessionsPage lang={language}/>} />
                 <Route path='/sources' element={<SourcesPage lang={language}/>} />
+                <Route path='/about' element={<AboutPage lang={language}/>} />
               </Routes>
             </div>
           }

@@ -17,15 +17,21 @@ export default function Header(props) {
     const about = retrieveLabel('about', props.lang);
     const sources = retrieveLabel('sources', props.lang);
 
-    // useEffect(()=> {
-    //     props.buttonMain ? props.clickMainLink : props.clickHomeLink;
-    // },[props.buttonMain]);
-
     useEffect(() => {
         if(props.destination !== undefined) {
             return navigate(props.destination);
         }
     }, [props.destination]);
+
+    const handleClickMain = () => {
+
+        return props.clickMainLink();
+    }
+
+    const handleClickSessions = () => {
+
+        return props.clickSessionsLink();
+    }
 
 
 // contains the logo, info, about and contact tab.
@@ -35,10 +41,10 @@ export default function Header(props) {
             <button className="text-4xl mx-auto " onClick={props.clickHomeLink}>{title}</button>
             </div>
             <div className={headerLinkContainerClassName}>
-            <button className={props.destination === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickMainLink}>
+            <button className={props.destination === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={handleClickMain}>
                 {main}
             </button>
-            <button className={props.destination === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSessionsLink}>
+            <button className={props.destination === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={handleClickSessions}>
                 {sessions}
             </button>
             <button  className={props.destination === '/sources' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
