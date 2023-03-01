@@ -86,7 +86,7 @@ export const labels = [
   },
   { 
     key: 'intro.paragraph_3',
-    nl : 'Alle handvaten en technieken die zowel op deze website als tijdens workshops en sessies worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Hiermee wil ik duidelijk stellen dat ik mij niet profileer als iemand die je een revolutionaire nieuwe aanpak ga aanleren. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta maar omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, in het Nederlands ter beschikking stellen. ',
+    nl : 'Alle handvaten en technieken die zowel op deze website als tijdens workshops en sessies worden aangehaald bestaan reeds vele jaren en zijn elders ook ter beschikking. Hiermee wil ik duidelijk stellen dat ik mij niet profileer als iemand die een revolutionaire aanpak hanteert. Er is een hele pagina gewijd aan het bronmateriaal dat ik heb mogen gebruiken om te staan waar ik vandaag sta maar omdat die informatie bijna volledig in het Engels is, wou ik die graag, weliswaar in beknopte vorm, in het Nederlands ter beschikking stellen. ',
     en : 'A QUIET PLACE'
   },
   {
