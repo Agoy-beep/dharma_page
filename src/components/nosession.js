@@ -15,8 +15,7 @@ import {
 
       useEffect(() => {
         if(props.canFadeOut === true && props.preflight !== '/sessions') {
-          setContainerVisibleClassName(() => nosessionContainerHiddenClassName);
-          // return props.fireNavigator(); 
+          setContainerVisibleClassName(() => nosessionContainerHiddenClassName); 
         }
       }, [props.canFadeOut, props.preflight])
       
