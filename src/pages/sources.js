@@ -93,7 +93,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isWhyMeditateClicked
+            showDetail: whichImageClicked.isWhyMeditateClicked
 
         },
         {
@@ -121,7 +121,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isInLoveClicked
+            showDetail: whichImageClicked.isInLoveClicked
 
         },
         {
@@ -149,7 +149,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isWhoAmIClicked
+            showDetail: whichImageClicked.isWhoAmIClicked
 
         },
         {
@@ -177,7 +177,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isTheBookClicked
+            showDetail: whichImageClicked.isTheBookClicked
 
         },
         {
@@ -205,7 +205,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isIAmThatClicked
+            showDetail: whichImageClicked.isIAmThatClicked
         },
         {
             id: 'Book_6',
@@ -232,7 +232,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isChangeYourMindClicked
+            showDetail: whichImageClicked.isChangeYourMindClicked
 
         },
         {
@@ -260,7 +260,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isTheWayOfEffortlessMindfulnessClicked
+            showDetail: whichImageClicked.isTheWayOfEffortlessMindfulnessClicked
         },
         {
             id: 'App_1',
@@ -287,7 +287,7 @@ export default function SourcesPage(props){
                     }
                 })
             },
-            showCard: whichImageClicked.isWakingUpClicked
+            showDetail: whichImageClicked.isWakingUpClicked
         },
     ]
 
@@ -367,7 +367,7 @@ export default function SourcesPage(props){
                                 button_text={source.buttonText}
                                 link={source.link}
                                 clickIcon={source.clickIcon}
-                                showCard={!isFullScreenWithGrid}
+                                showDetail={!isFullScreenWithGrid}
                                 hasBackButton={isFullScreenWithGrid}
                             />
                     ))}
@@ -388,7 +388,7 @@ export default function SourcesPage(props){
                                 button_text={source.buttonText}
                                 link={source.link}
                                 clickIcon={source.clickIcon}
-                                showCard={!isFullScreenWithGrid}
+                                showDetail={!isFullScreenWithGrid}
                                 hasBackButton={isFullScreenWithGrid}
                             />
                     ))}
@@ -410,7 +410,7 @@ export default function SourcesPage(props){
                                 button_text={source.buttonText}
                                 link={source.link}
                                 clickIcon={source.clickIcon}
-                                showCard={source.showCard}
+                                showDetail={source.showCard}
                                 hasBackButton={isFullScreenWithGrid}
                             />
                         ))}
@@ -428,7 +428,7 @@ export default function SourcesPage(props){
                         button_text={filterByKey[0].buttonText}
                         link={filterByKey[0].link}
                         clickIcon={filterByKey[0].clickIcon}
-                        showCard={true}
+                        showDetail={true}
                         hasBackButton={isFullScreenWithGrid || isSmartphoneScreen}
                     />
                  )
@@ -448,7 +448,7 @@ export default function SourcesPage(props){
                             button_text={source.buttonText}
                             link={source.link}
                             clickIcon={source.clickIcon}
-                            showCard={true}
+                            showDetail={true}
                             hasBackButton={isFullScreenWithGrid}
                             />
                     ))}

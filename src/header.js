@@ -20,7 +20,7 @@ export default function Header(props) {
     // de APP laag geeft de nieuwe destination door via set Destination. App  kan dit niet doen want geen Router. 
     useEffect(() => {
         if(props.destination !== undefined) {
-            setTimeout(() => navigate(props.destination), 500);
+            setTimeout(() => navigate(props.destination), 300);
         }
     }, [props.destination]);
 

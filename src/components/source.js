@@ -17,18 +17,18 @@ export default function Source(props) {
   useEffect(()=>{
       setContainerImageOnlyVisibleClassName(() => containerHiddenClassName);
         setContainerImageOnlyVisibleClassName(() => sourceContainerClassNameImageOnly);
-    }, [props.showCard === false]);
+    }, [props.showDetail === false]);
 
     useEffect(()=>{
         setContainerVisibleClassName(() => sourceContainerHiddenClassNameCard);
-        if(props.showCard === true){
+        if(props.showDetail === true){
           setContainerVisibleClassName(() => sourceContainerClassName);
         }  
-    }, [props.showCard]);
+    }, [props.showDetail]);
 
   return (
     <React.Fragment>
-    {props.showCard ? 
+    {props.showDetail ? 
     <div className= {containerVisibleClassName}>
         <div className={sourceTitleSubClassName}>{props.title}</div>
         <div className={props.image_card_styling}>

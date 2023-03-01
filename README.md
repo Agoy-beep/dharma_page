@@ -36,4 +36,5 @@ TODO
 - Rewrite Why Meditate V
 - Add retreats to sources
 - We have a fade out, fade ins are irregular
-- clicking twice on a header link breaks it. (see about page for fix)
+- clicking twice on a header link breaks it. (see about page for fix) V
+- Set icons of books to invisible instead of removing them in grid mode. 
