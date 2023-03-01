@@ -22,8 +22,11 @@ export const sourcesWrapperHiddenClassname = "container md:grid md:grid-cols-4 t
 export const sessionsWrapperClassName = "container flex flex-col mx-auto transition ease-out delay-100 duration-400 opacity-100"
 export const sessionsWrapperHiddenClassName = "container flex flex-col mx-auto transition ease-out opacity-0"
 
+export const meditationContainerClassName = "container flex transition-all delay-150 duration-700 flex-col mx-10 my-6 w-2/3 bg-gray bg-opacity-25 opacity-100 border rounded-lg border-gray-light shadow-lg "
+export const meditationContainerHiddenClassName =  "container mx-10 w-2/3 h-0 rounded-lg transition ease-in-out bg-opacity-0 opacity-0"
+
 export const titleClassName = "text-5xl md:text-4xl my-4 mx-auto p-4 text-center normal-case bg-gray-light rounded-lg";
-export const titleSubClassName = "text-4xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase";
+export const titleSubClassName = "text-3xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase";
 export const paragraphClassName = "my-2 mx-8 md:mr-4 md:ml-4 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
 export const paragraphBottomClassName = "my-2 mx-12 md:mr-4 md:ml-4 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
 export const divClassName = "my-2 mx-8 md:ml-4 md:mr-4 md:ml-12 xl:mr-8 xl:ml-8 text-left text-3xl md:text-base";
@@ -42,7 +45,7 @@ export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-
 export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition ease-out duration-400 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceContainerHiddenClassNameCard = "container flex flex-col w-11/12 transition ease-out opacity-0";
 export const sourceContainerClassNameImageOnly = "container w-fit h-fit mx-auto items-center overflow-hidden transition ease-out duration-400 border rounded-md bg-white border-gray-light shadow-md opacity-90";
-export const sourceTitleSubClassName = "text-4xl md:text-2xl my-4 md:ml-8 py-2 px-4 w-fit mx-auto text-center md:text-left normal-case bg-gray-light opacity-80 md:bg-transparent rounded-lg";
+export const sourceTitleSubClassName = "text-4xl md:text-2xl my-4 md:ml-4 py-2 px-4 w-fit mx-auto text-center md:text-left normal-case bg-gray-light opacity-80 md:bg-transparent rounded-lg";
 export const sourceParagraphClassName = "basis-3/4 my-2 ml-8 mr-8 md:mr-6 md:ml-8 text-left text-3xl md:text-base";
 export const sourceImageClassNameWide = "md:w-48 md:h-24 mr-4 ml-2 my-2 md:mr-4 md:ml-4 overflow-hidden border rounded-md float-right"
 export const sourceImageClassNameWideOnly = "md:w-48 md:h-24 overflow-hidden border rounded-lg"

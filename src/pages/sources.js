@@ -468,12 +468,12 @@ export default function SourcesPage(props){
                         <button className={sourceSwitchButtonClassName} onClick={changeLook}>
                             {isFullScreenWithGrid ? 'naar lijstweergave' : 'naar roosterweergave'} 
                         </button>
-                        <button className={isAppFilterOn ? sourceFilterButtonClassNameActive : sourceFilterButtonClassName } onClick={filterApps}>
+                        {/* <button className={isAppFilterOn ? sourceFilterButtonClassNameActive : sourceFilterButtonClassName } onClick={filterApps}>
                             Appfilter
                         </button>
                         <button className={isBookFilterOn ? sourceFilterButtonClassNameActive : sourceFilterButtonClassName} onClick={filterBooks}>
                             Boekfilter 
-                        </button>
+                        </button> */}
 
                     </React.Fragment>
                     :
