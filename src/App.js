@@ -14,26 +14,14 @@ export default function App() {
   const [preflightDestination, setPreflightDestination] = useState();
   const [destination, setDestination] = useState();
   const [canFadeOut, setCanFadeOut] = useState(false);
-  // !!!!! set to true for testing
-  const [canFireNavigator, setCanFireNavigator] = useState(true);
   const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
-  console.log('IN APP');
-  console.log('CAN FADE OUT ', canFadeOut);
-  console.log('CAN FIRE NAVIGATOR ', canFireNavigator);
-  console.log('PREFLIGHT ', preflightDestination);
-  const fireNavigator = () => {
-    return setCanFireNavigator(()=> true)
-  }
+  
 
   useEffect(() => {
-    if(canFireNavigator === true) {
-      console.log('FIRED NAVIGATOR IN APP');
-      setTimeout(() => setDestination(() => preflightDestination), 700)
+      setTimeout(() => setDestination(() => preflightDestination), 300)
       setIsMainButtonClicked();
       setCanFadeOut(() => false);
-      // setCanFireNavigator(()=> false);
-    }
-  }, [canFireNavigator, preflightDestination])
+  }, [preflightDestination])
 
   const clickHomeLink = () => {
     setCanFadeOut(() => true);
@@ -65,7 +53,7 @@ export default function App() {
     setLanguage('en');
   }
   const setMainHeaderViaIntroButton = () => {
-    setTimeout(() => setDestination(() => '/main'), 700);
+    setPreflightDestination(() => '/main');
     setIsMainButtonClicked((prevState) => !prevState);
   }
 

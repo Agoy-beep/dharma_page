@@ -2,18 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import Session from '../components/session.js';
 import Footer from '../footer.js';
-import { bottomFiller, topFiller } from '../collections/layout.js';
+import { bottomFiller, 
+    sessionsWrapperClassName, 
+    sessionsWrapperHiddenClassName, 
+    topFiller } from '../collections/layout.js';
 import NoSession from '../components/nosession.js';
 
 export default function SessionsPage(props){
     const [footerFadeOut, setFooterFadeOut] = useState(false);
-    console.log('SESSIONS LOADED');
+    const [containerVisibleClassName, setContainerVisibleClassName] = useState(sessionsWrapperHiddenClassName);
 
     useEffect(() => {
-        if(props.canFadeOut === true) {
-          setFooterFadeOut(() => true);
+        setContainerVisibleClassName(() => sessionsWrapperClassName);
+    })
+
+    useEffect(() => {
+        if(props.canFadeOut === true && props.preflight !== '/sessions') {
+            setContainerVisibleClassName(() => sessionsWrapperHiddenClassName);
+            setFooterFadeOut(() => true);
         }
-      }, [props.canFadeOut])
+      }, [props.canFadeOut, props.preflight])
 
     const sessions= [
         {
@@ -63,18 +71,20 @@ export default function SessionsPage(props){
             time:'20.00-21.00',
             location:'Mortsel'
     }
-        //TODO make wrapper for sessions, see sources, helps with the fade ins and outs
     return (
         <React.Fragment>
             <div className={topFiller}></div>
-            <NoSession 
-                key={noSession.id}
-                subject={noSession.subject}
-                description={noSession.description}
-                destination={props.destination} 
-                canFadeOut={props.canFadeOut} 
-                fireNavigator={props.fireNavigator}
-            />
+                <div className={containerVisibleClassName}>
+                    <NoSession 
+                        key={noSession.id}
+                        subject={noSession.subject}
+                        description={noSession.description}
+                        destination={props.destination} 
+                        canFadeOut={props.canFadeOut} 
+                        preflight={props.preflight}
+                     
+                    />
+                </div>
             {/* {sessions.map(session =>(
                 <Session
                     key={session.id}

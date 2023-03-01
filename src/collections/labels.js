@@ -237,7 +237,7 @@ export const labels = [
   },
   { 
     key: 'main.paragraph_28',
-    nl : 'Proficiat, je bent aan het einde geraakt! Hopelijk is dit het begin of voortzetting van een boeiende reis en niet een abrupte botsing met De Muur Van Frustratie, Hoongelach En Bitterheid, of zoiets. Als je jezelf wil verdiepen in de materie kan je terecht bij het bronmateriaal.',
+    nl : 'Proficiat, je bent aan het einde geraakt! Hopelijk is dit het begin of voortzetting van een boeiende reis en niet een abrupte botsing met De Muur Van Frustratie, Hoongelach En Bitterheid, of zoiets. Als je jezelf wil verdiepen in de materie kan je terecht bij het bronmateriaal en kan je de kalender raadplegen voor geplande workshops en sessies.',
     en : 'A QUIET PLACE'
   },
   { 

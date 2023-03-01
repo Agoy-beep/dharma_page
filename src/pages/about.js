@@ -3,9 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import FaqPage from './faqpage';
 import Footer from '../footer';
 import { retrieveLabel } from '../helpers/labelhelper.js';
-import { containerClassName,
-    containerHiddenClassName, 
-    titleClassName, 
+import { 
     paragraphClassName,
     aboutContainerHiddenClassName,
     aboutContainerClassName, 
@@ -15,8 +13,6 @@ import { containerClassName,
 export default function AboutPage(props){
     const [footerFadeOut, setFooterFadeOut] = useState(false);
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(aboutContainerHiddenClassName);
-
-    console.log('PREFLIGHT ABOUT PAGE ', props.preflight);
     
     useEffect(()=>{
         setContainerVisibleClassName(() => aboutContainerClassName);
@@ -26,13 +22,9 @@ export default function AboutPage(props){
         if(props.canFadeOut === true && props.preflight !== '/about') {
           setContainerVisibleClassName(() => aboutContainerHiddenClassName);
           setFooterFadeOut(() => true);
-        //   return props.fireNavigator(); 
         }
       }, [props.canFadeOut, props.preflight])
 
-
-
-    const about_title = retrieveLabel('about', props.lang);
     const about_paragraph_1 = retrieveLabel('about.paragraph_1', props.lang);
     const about_paragraph_2 = retrieveLabel('about.paragraph_2', props.lang);
     const about_paragraph_3 = retrieveLabel('about.paragraph_3', props.lang);
@@ -41,7 +33,6 @@ export default function AboutPage(props){
         <React.Fragment>
         <div className="mt-32 h-4 md:mt-0"></div>
             <div className= {containerVisibleClassName}>
-                {/* <h1 className={titleClassName}>{about_title}</h1> */}
                 
                 <div className="mt-4 ">
                 <div className="container float-right w-52 h-52 mr-10 ml-4 mt-4">

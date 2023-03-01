@@ -14,29 +14,23 @@ export default function Intro(props) {
   
   const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(introContainerHiddenClassName);
-  console.log('INTRO FUNCTION LOADED ', containerVisibleClassName);
-  console.log('FOOTER FADE OUT function lvl ', footerFadeOut);
-  console.log('props.destination function lvl', props.destination);
  
   useEffect(()=>{
-    if(props.destination === '/' || props.destination === undefined ) {
-      console.log('INTRO USE EFFECT');
+    if(props.preflight === '/' || props.destination === undefined ) {
       setContainerVisibleClassName(() => introContainerClassName);
         return () => {
           // waarom wordt props.destination hier op '/' gezet? 
-          // console.log('on destroy ', props.destination);
           // setContainerVisibleClassName(() => introContainerHiddenClassName);
         }
     }
-  },[props.destination]);
+  },[props.destination, props.preflight]);
 
   useEffect(() => {
-    if(props.canFadeOut === true) {
+    if(props.canFadeOut === true && props.preflight !== '/') {
       setContainerVisibleClassName(() => introContainerHiddenClassName);
       setFooterFadeOut(() => true);
-      // props.fireNavigator(); 
     }
-  }, [props.canFadeOut])
+  }, [props.canFadeOut, props.preflight])
  
 
   // ONCLICK button property lijkt hier cruciaal om de pagina te rerenderen. 
@@ -48,20 +42,6 @@ export default function Intro(props) {
     // deze return geeft een function reload en set een nieuwe props.destination
       return props.buttonClick();
   }
-
-  
-
-
-  // useEffect(() => {
-  //   console.log(props.destination);
-  //   if(props.destination !== '/' && props.destination !== undefined) {
-  //     setContainerVisibleClassName(() => introContainerHiddenClassName);
-  //     console.log('FADE OUT');
-  //     // fadeOut();
-  //   }
-  // },[props.destination, setContainerVisibleClassName])
-
-
   const intro_paragraph_1 = retrieveLabel('intro.paragraph_1', props.lang);
   const intro_paragraph_2 = retrieveLabel('intro.paragraph_2', props.lang);
   const intro_paragraph_3 = retrieveLabel('intro.paragraph_3', props.lang);

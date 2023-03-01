@@ -30,10 +30,8 @@ export default function Main(props) {
     const [footerFadeOut, setFooterFadeOut] = useState(false);
     const [meditationBools, setMedationBools] = useState(meditationStarterBools);
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(mainContainerHiddenClassName);
-    console.log('ON MAIN ', containerVisibleClassName);
     
     useEffect(()=>{
-        console.log('MAIN USE EFFECT');
         setContainerVisibleClassName(() => mainContainerClassName);
         return () => {
             // console.log('MAIN USE EFFECT ON DESTROY');
@@ -42,12 +40,12 @@ export default function Main(props) {
     }, []);
 
     useEffect(() => {
-        if(props.canFadeOut === true) {
+        if(props.canFadeOut === true && props.preflight !== '/main') {
           setContainerVisibleClassName(() => mainContainerHiddenClassName);
           setFooterFadeOut(() => true);
         //   return props.fireNavigator(); 
         }
-      }, [props.canFadeOut])
+      }, [props.canFadeOut, props.preflight])
      
 
     const main_title_1 = retrieveLabel('main.title_1', props.lang);

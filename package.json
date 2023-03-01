@@ -1,6 +1,6 @@
 {
   "name": "dharma_page",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",

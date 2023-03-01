@@ -45,13 +45,13 @@ export default function SourcesPage(props){
     }, []);
 
     useEffect(() => {
-        if(props.canFadeOut === true) {
+        if(props.canFadeOut === true && props.preflight !== '/sources') {
           setContainerVisibleClassName(() => containerHiddenClassName);
           setWrapperVisibleClassName(() => sourcesWrapperHiddenClassname);
           setFooterFadeOut(() => true);
         //   return props.fireNavigator(); 
         }
-      }, [props.canFadeOut])
+      }, [props.canFadeOut, props.preflight])
 
     const changeLook = () => {
       

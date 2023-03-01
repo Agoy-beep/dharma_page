@@ -1,29 +1,24 @@
 import React, {useState, useEffect} from 'react';
-import { retrieveLabel } from '../helpers/labelhelper.js';
 import ReactMarkdown from 'react-markdown';
-import { containerHiddenClassName,
-  sessionContainerClassName,
+import { 
   paragraphClassName,
-  titleSubClassName,
   nosessionContainerClassName,
   nosessionContainerHiddenClassName, 
    } from '../collections/layout.js';
 
    export default function NoSession(props) {
      const [containerVisibleClassName, setContainerVisibleClassName] = useState(nosessionContainerHiddenClassName);
-     console.log('NO SESSION LOADED');
-     console.log('NO SESSION VISIBLE CONTAINER ', containerVisibleClassName);
      
      useEffect(()=>{
        setContainerVisibleClassName(() => nosessionContainerClassName);
       }, []);
 
       useEffect(() => {
-        if(props.canFadeOut === true) {
+        if(props.canFadeOut === true && props.preflight !== '/sessions') {
           setContainerVisibleClassName(() => nosessionContainerHiddenClassName);
           // return props.fireNavigator(); 
         }
-      }, [props.canFadeOut])
+      }, [props.canFadeOut, props.preflight])
       
     return (
       <div className={containerVisibleClassName}>

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
 import  { useNavigate } from 'react-router-dom';
 import { retrieveLabel } from './helpers/labelhelper.js';
 import { headerLinkClassName, 
@@ -21,20 +20,9 @@ export default function Header(props) {
     // de APP laag geeft de nieuwe destination door via set Destination. App  kan dit niet doen want geen Router. 
     useEffect(() => {
         if(props.destination !== undefined) {
-            console.log('HEADER NAVIGATES TO DESTINATION');
-            return navigate(props.destination);
+            setTimeout(() => navigate(props.destination), 500);
         }
     }, [props.destination]);
-
-    // const handleClickMain = () => {
-
-    //     return props.clickMainLink();
-    // }
-
-    // const handleClickSessions = () => {
-
-    //     return props.clickSessionsLink();
-    // }
 
 
 // contains the logo, info, about and contact tab.
