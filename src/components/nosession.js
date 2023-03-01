@@ -22,7 +22,7 @@ import {
       
     return (
       <div className={containerVisibleClassName}>
-        <div className="text-3xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase">{props.subject}</div>
+        {/* <div className="text-3xl md:text-xl my-2 md:my-4 mx-8 md:ml-4 md:mr-4 xl:mr-8 xl:ml-8 text-left uppercase">{props.subject}</div> */}
         <div className={paragraphClassName}><ReactMarkdown>{props.description}</ReactMarkdown></div>
       </div>
     )
