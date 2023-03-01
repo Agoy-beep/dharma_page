@@ -16,7 +16,7 @@ export default function App() {
   const [canFadeOut, setCanFadeOut] = useState(false);
   const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
   
-
+  // preflight delay is den tijd die je hebt om out te faden.
   useEffect(() => {
       setTimeout(() => setDestination(() => preflightDestination), 300)
       setIsMainButtonClicked();

@@ -35,7 +35,6 @@ export default function Intro(props) {
 
   // ONCLICK button property lijkt hier cruciaal om de pagina te rerenderen. 
   const buttonClick = () => {
-    console.log('button clicked');
     //  deze state changes geven een function reload
     setContainerVisibleClassName(() => introContainerHiddenClassName);
     setFooterFadeOut(() => true);
