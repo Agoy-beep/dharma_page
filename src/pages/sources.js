@@ -312,7 +312,7 @@ export default function SourcesPage(props){
         {
             id: 'Retreat_1',
             title: 'Vipassana Retreat',
-            image: 'Goenka.png',
+            image: 'goenka.png',
             imageCardStyling: sourceImageClassNamePortrait,
             imageIconStyling: sourceImageClassNamePortraitIcon,
             description: retrieveLabel('source_9', props.lang),
