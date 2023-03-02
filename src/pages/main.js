@@ -192,7 +192,7 @@ export default function Main(props) {
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_27}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_28}</ReactMarkdown></div>
             </div> 
-            {/* <Footer lang={props.lang} fadeOut={footerFadeOut} /> */}
+            <Footer lang={props.lang} fadeOut={footerFadeOut} />
         </React.Fragment>
     )
 }
