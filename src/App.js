@@ -3,11 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from "./header";
 import SessionsPage from "./pages/sessions";
 import IntroPage from './pages/intro';
-import Footer from './footer';
 import MainPage from "./pages/main";
 import SourcesPage from "./pages/sources";
 import AboutPage from "./pages/about";
 import ScrollToTop from './helpers/scrolltotop';
+
+// "homepage": "https://agoy-beep.github.io/dharma_page",
 
 export default function App() {
   const [language, setLanguage] = useState('nl');
