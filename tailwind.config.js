@@ -36,9 +36,8 @@ module.exports = {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'darktrees': "url('../public/background_dark.png')",
+        'darktrees': "url('../public/background_dark_header.png')",
         'darkyellowtrees': "url('../public/background_dark_yellow.png')",
-        'trees': "url('../public/background.png')",
       },
     }
   },

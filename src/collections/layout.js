@@ -57,7 +57,7 @@ export const sourceSwitchButtonClassName = "w-52 h-12 mb-4 ml-12 basis-1/4 overf
 export const sourceFilterButtonClassName = "w-52 h-12 my-4 ml-12 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-green-500 opacity-70 rounded-md transition ease-linear delay-100 hover:scale-110 duration-200 select-none"
 export const sourceFilterButtonClassNameActive = "w-52 h-12 ml-12 my-4 basis-1/4 overflow-hidden text-center text-2xl text-gray-dark md:text-base uppercase bg-blue opacity-70 rounded-md transition ease-linear delay-100 hover:scale-110 duration-200 select-none"
 
-export const headerLinksContainerClassName = "container fixed top-0 flex flex-col md:flex-row  mx-auto z-10 md:px-16 h-fit md:h-16 max-w-full md:max-w-7xl items-center bg-darktrees bg-transparent bg-center md:bg-gray-light md:opacity-85 md:rounded-b-md text-black"
+export const headerLinksContainerClassName = "container fixed top-0 flex flex-col md:flex-row  mx-auto z-10 md:px-16 h-fit md:h-16 max-w-full md:max-w-7xl items-center bg-darktrees bg-center bg-transparent md:bg-gray-light md:opacity-85 md:rounded-b-md text-black"
 export const headerHomeLinkContainer = "container flex-1 text-white items-center text-center mx-auto px-4 py-2 basis-full md:basis-1/5 opacity-50 ";
 export const headerLinkContainerClassName = "container flex md:flex-row mx-auto text-center basis-full md:basis-4/5 select-none bg-gray-light opacity-80 rounded-lg lg:bg-transparent";
 export const headerLinkClassName = "text-2xl md:text-lg text-gray-dark p-4 md:py-2 md:basis-1/4 text-center uppercase mx-auto lg:mx-6 md:transition ease-linear delay-100 lg:hover:scale-110 hover:underline-offset-1 duration-200 bg-gray-light opacity-80 rounded-lg"
