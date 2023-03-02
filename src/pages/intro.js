@@ -17,7 +17,7 @@ export default function Intro(props) {
  
   useEffect(()=>{
     if(props.preflight === '/' || props.destination === undefined ) {
-      setContainerVisibleClassName(() => introContainerClassName);
+      setTimeout(() => setContainerVisibleClassName(() => introContainerClassName), 100);
         return () => {
           // waarom wordt props.destination hier op '/' gezet? 
           // setContainerVisibleClassName(() => introContainerHiddenClassName);

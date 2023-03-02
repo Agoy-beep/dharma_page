@@ -21,7 +21,7 @@ export default function Header(props) {
     // navigate delay geeft tijd om in te faden. 200 preflight en 500 navigate geeft geen hickups
     useEffect(() => {
         if(props.destination !== undefined) {
-            setTimeout(() => navigate(props.destination), 400);
+            setTimeout(() => navigate(props.destination), 100);
         }
     }, [props.destination]);
 

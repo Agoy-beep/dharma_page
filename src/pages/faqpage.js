@@ -10,7 +10,7 @@ export default function FaqPage(props) {
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(aboutContainerHiddenClassName);
     
   useEffect(()=>{
-      setContainerVisibleClassName(() => aboutContainerClassName);
+    setTimeout(() => setContainerVisibleClassName(() => aboutContainerClassName), 200);
   }, []);
 
   useEffect(() => {

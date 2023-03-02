@@ -15,7 +15,10 @@ export default function AboutPage(props){
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(aboutContainerHiddenClassName);
     
     useEffect(()=>{
-        setContainerVisibleClassName(() => aboutContainerClassName);
+            setTimeout(() => setContainerVisibleClassName(() => aboutContainerClassName), 100);
+        return (() => {
+
+        })
     }, []);
 
     useEffect(() => {

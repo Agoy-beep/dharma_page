@@ -41,7 +41,7 @@ export default function SourcesPage(props){
     
     useEffect(()=>{
         setContainerVisibleClassName(() => sourceContainerSwitchButtons);
-        setWrapperVisibleClassName(() => sourcesWrapperClassName);
+        setTimeout(() => setWrapperVisibleClassName(() => sourcesWrapperClassName), 100);
     }, []);
 
     useEffect(() => {

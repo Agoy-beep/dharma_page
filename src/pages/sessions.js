@@ -13,7 +13,7 @@ export default function SessionsPage(props){
     const [containerVisibleClassName, setContainerVisibleClassName] = useState(sessionsWrapperHiddenClassName);
 
     useEffect(() => {
-        setContainerVisibleClassName(() => sessionsWrapperClassName);
+        setTimeout(() => setContainerVisibleClassName(() => sessionsWrapperClassName), 100);
     })
 
     useEffect(() => {
