@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import Header from "./header";
 import SessionsPage from "./pages/sessions";
 import IntroPage from './pages/intro';
@@ -60,7 +60,8 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <BrowserRouter basename='/dharma_page/'>
+      {/* <BrowserRouter basename='/dharma_page/'> */}
+      <HashRouter>
       <ScrollToTop />
         <Header
           lang={language} 
@@ -113,7 +114,7 @@ export default function App() {
             </div>
           }
       
-    </BrowserRouter>
+    </HashRouter>
     {/* <Footer lang={language}/> */}
   </React.Fragment>
   )
