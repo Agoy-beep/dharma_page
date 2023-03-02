@@ -98,7 +98,7 @@ export default function SessionsPage(props){
                     />
             ))} */}
             <div className={bottomFiller}></div>
-            <Footer lang={props.lang} fadeOut={footerFadeOut} />
+            {/* <Footer lang={props.lang} fadeOut={footerFadeOut} /> */}
         </React.Fragment>
              
     )

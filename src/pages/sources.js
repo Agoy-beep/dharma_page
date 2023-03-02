@@ -558,12 +558,12 @@ export default function SourcesPage(props){
                     <div></div>
                     }
                 </div>
-                <div className="container col-span-3">
+                <div className="container md:col-span-3 lg:col-span-4">
                     {decideOnWhatToShow()}
                 </div>
             </div>
             <div className={bottomFiller}></div>
-            <Footer lang={props.lang} fadeOut={footerFadeOut}/>
+            {/* <Footer lang={props.lang} fadeOut={footerFadeOut}/> */}
     </React.Fragment>
     )
 }

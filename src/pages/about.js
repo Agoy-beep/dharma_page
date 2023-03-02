@@ -47,7 +47,7 @@ export default function AboutPage(props){
                 <div className={paragraphClassName}><ReactMarkdown>{about_paragraph_3}</ReactMarkdown></div>     
             </div>
             <FaqPage lang={props.lang} canFadeOut={props.canFadeOut} preflight={props.preflight}/>
-            <Footer lang={props.lang} fadeOut={footerFadeOut} />
+            {/* <Footer lang={props.lang} fadeOut={footerFadeOut} /> */}
 
         </React.Fragment>
         
