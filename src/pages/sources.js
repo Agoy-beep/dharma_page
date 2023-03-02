@@ -4,8 +4,8 @@ import Footer from '../footer.js';
 import { retrieveLabel } from '../helpers/labelhelper.js'
 import { sourceImageClassNameWide,
     sourceImageClassNameBook, 
-    sourceImageClassNameBookOnly, 
-    sourceImageClassNameWideOnly, 
+    sourceImageClassNameBookIcon, 
+    sourceImageClassNameWideIcon, 
     sourceSwitchButtonClassName, 
     topFiller,
     bottomFiller,
@@ -13,6 +13,8 @@ import { sourceImageClassNameWide,
     sourceContainerSwitchButtons,
     sourceFilterButtonClassName,
     sourceFilterButtonClassNameActive,
+    sourceImageClassNamePortrait,
+    sourceImageClassNamePortraitIcon,
     containerHiddenClassName, 
     sourcesWrapperHiddenClassname,
     sourcesWrapperClassName} from '../collections/layout.js';
@@ -26,6 +28,8 @@ const notClicked = {
     isTheBookClicked: false,
     isIAmThatClicked: false,
     isTheWayOfEffortlessMindfulnessClicked: false,
+    isGoenkaClicked: false,
+    isMingyurClicked: false,
     showIconsOnly: true
 }
 const isSmartphoneScreen = window.innerWidth < '1000';
@@ -73,7 +77,7 @@ export default function SourcesPage(props){
             title: 'Why Meditate - Matthieu Ricard',
             image: 'whymeditate.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_2', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.amazon.com/Why-Meditate-Working-Thoughts-Emotions/dp/1401926630',
@@ -88,6 +92,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Why Meditate - Matthieu Ricard',
                     }
@@ -101,7 +107,7 @@ export default function SourcesPage(props){
             title: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov',
             image: 'in_love_with_the_world.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_4', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.bol.com/be/nl/p/in-love-with-the-world/9200000097279934/',
@@ -116,6 +122,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov'
                     }
@@ -129,7 +137,7 @@ export default function SourcesPage(props){
             title: 'Who Am I - Ramana Maharshi',
             image: 'who_am_i.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_5', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.goodreads.com/book/show/551750.Who_Am_I_',
@@ -144,6 +152,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Who Am I - Ramana Maharshi'
                     }
@@ -157,7 +167,7 @@ export default function SourcesPage(props){
             title: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts',
             image: 'the_book.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_6', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.goodreads.com/book/show/60551.The_Book',
@@ -172,6 +182,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: !whichImageClicked.isTheBookClicked,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts'
                     }
@@ -185,7 +197,7 @@ export default function SourcesPage(props){
             title: 'I Am That: Talks With Nisagradatta Maharaj',
             image: 'I_am_that.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_7', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.goodreads.com/book/show/299869.I_Am_That',
@@ -200,6 +212,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: !whichImageClicked.isIAmThatClicked,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'I Am That: Talks With Nisagradatta Maharaj'
                     }
@@ -212,7 +226,7 @@ export default function SourcesPage(props){
             title: 'How To Change Your Mind - Michael Pollan',
             image: 'how_to_change_your_mind.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_3', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.standaardboekhandel.be/p/how-to-change-your-mind-9781594204227',
@@ -227,6 +241,8 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'How To Change Your Mind - Michael Pollan',
                     }
@@ -240,11 +256,11 @@ export default function SourcesPage(props){
             title: 'The Way Of Effortless Mindfulness - Loch Kelly',
             image: 'the_way_of_effortless_mindfulness.png',
             imageCardStyling: sourceImageClassNameBook,
-            imageIconStyling: sourceImageClassNameBookOnly,
+            imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_8', props.lang),
             buttonText: retrieveLabel('source.button.link.book', props.lang),
             link: 'https://www.goodreads.com/book/show/40899270-the-way-of-effortless-mindfulness',
-            clickIcon: function clickIAmThat() {
+            clickIcon: function clickEffortlessMindfulness() {
                 setwhichImageClicked(()=> { 
                     return {
                     isWakingUpClicked: false,
@@ -253,8 +269,10 @@ export default function SourcesPage(props){
                     isInLoveClicked: false,
                     isWhoAmIClicked: false,
                     isTheBookClicked: false,
-                    isIAmThatClicked: !whichImageClicked.isIAmThatClicked,
+                    isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: !whichImageClicked.isTheWayOfEffortlessMindfulnessClicked,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'The Way Of Effortless Mindfulness - Loch Kelly'
                     }
@@ -267,7 +285,7 @@ export default function SourcesPage(props){
             title: 'Waking Up App',
             image: 'wakingup.png',
             imageCardStyling: sourceImageClassNameWide,
-            imageIconStyling: sourceImageClassNameWideOnly,
+            imageIconStyling: sourceImageClassNameWideIcon,
             description: retrieveLabel('source_1', props.lang),
             buttonText: retrieveLabel('source.button.link.app', props.lang),
             link: 'https://app.wakingup.com/',
@@ -282,12 +300,72 @@ export default function SourcesPage(props){
                     isTheBookClicked: false,
                     isIAmThatClicked: false,
                     isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: false,
                     showIconsOnly: !whichImageClicked.showIconsOnly,
                     key: 'Waking Up App',
                     }
                 })
             },
             showDetail: whichImageClicked.isWakingUpClicked
+        },
+        {
+            id: 'Retreat_1',
+            title: 'Vipassana Retreat',
+            image: 'Goenka.png',
+            imageCardStyling: sourceImageClassNamePortrait,
+            imageIconStyling: sourceImageClassNamePortraitIcon,
+            description: retrieveLabel('source_9', props.lang),
+            buttonText: retrieveLabel('source.button.link.website', props.lang),
+            link: 'https://pajjota.dhamma.org/nl/het-centrum-in-belgie/',
+            clickIcon: function clickGoenka() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: !whichImageClicked.isGoenkaClicked,
+                    isMingyurClicked: false,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'Vipassana Retreat',
+                    }
+                })
+            },
+            showDetail: whichImageClicked.isGoenkaClicked
+        },
+        {
+            id: 'Course_1',
+            title: 'Tergar Meditation',
+            image: 'mingyur.png',
+            imageCardStyling: sourceImageClassNamePortrait,
+            imageIconStyling: sourceImageClassNamePortraitIcon,
+            description: retrieveLabel('source_10', props.lang),
+            buttonText: retrieveLabel('source.button.link.website', props.lang),
+            link: 'https://tergar.org',
+            clickIcon: function clickMingyur() {
+                setwhichImageClicked(()=> { 
+                    return {
+                    isWakingUpClicked: false,
+                    isWhyMeditateClicked: false,
+                    isChangeYourMindClicked: false,
+                    isInLoveClicked: false,
+                    isWhoAmIClicked: false,
+                    isTheBookClicked: false,
+                    isIAmThatClicked: false,
+                    isTheWayOfEffortlessMindfulnessClicked: false,
+                    isGoenkaClicked: false,
+                    isMingyurClicked: !whichImageClicked.isMingyurClicked,
+                    showIconsOnly: !whichImageClicked.showIconsOnly,
+                    key: 'Tergar Meditation',
+                    }
+                })
+            },
+            showDetail: whichImageClicked.isMingyurClicked
         },
     ]
 

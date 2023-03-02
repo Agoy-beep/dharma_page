@@ -652,7 +652,7 @@ export const labels = [
   },
   { 
     key: 'source_1',
-    nl : 'De Waking Up App kan je bijna beschouwen als de plek waar je alles vindt wat je maar nodig hebt. Je vindt er begeleide meditaties, conversaties, lessen en lezingen. Het geesteskind van schrijver Sam Harris heeft als doel om meditatie bij zoveel mogelijk mensen te krijgen. Er bestaat een boek met dezelfde naam die zeker ook de moeite is. Het is een betalende app, die ook een gratis versie ter beschikking stelt voor mensen die het zich niet kunnen verloorloven. De gebruikers van de app kunnen de app voor 1 maand gratis ter beschikking stellen voor anderen. Ik ben erbij sinds het begin, dus ik kan dat ook. Contacteer mij gerust als je het eens wil proberen. Alle inhoud is in het Engels en vooral de conversaties vereisen een goede beheersing van de taal. Beschikbaar op Android, IOS en via de browser.',
+    nl : 'De Waking Up App kan je bijna beschouwen als de plek waar je alles vindt wat je maar nodig hebt. Je vindt er begeleide meditaties, conversaties, lessen en lezingen. Het geesteskind van schrijver Sam Harris heeft als doel om meditatie bij zoveel mogelijk mensen te krijgen. Er bestaat een boek met dezelfde naam die zeker ook de moeite is. Het is een betalende app, die ook een gratis versie ter beschikking stelt voor mensen die het zich niet kunnen verloorloven. De gebruikers van de app kunnen de app voor 1 maand gratis ter beschikking stellen voor anderen. Alle inhoud is in het Engels en vooral de conversaties vereisen een goede beheersing van de taal. Beschikbaar op Android, IOS en via de browser.',
     en : 'SOURCE MATERIAL'
   },
   { 
@@ -689,7 +689,17 @@ export const labels = [
     key: 'source_8',
     nl : 'Een praktijkboek voor niet-dualisme. Loch Kelly reisde de halve wereld af op zoek naar leraars die een verklaring konden geven voor een revelatie die Kelly als tiener onderging. Zelf beschouwt hij een niet-dualistische kijk naar de wereld als de volgende stap in de menselijke ontwikkeling aangezien het resultaat steeds mededogen en geluk zal zijn. Hij biedt ook online cursusse aan en organiseert ook retraites in de Verenigde Staten.',
     en : 'SOURCE MATERIAL'
-  },    
+  }, 
+  { 
+    key: 'source_9',
+    nl : 'Voor de goede introductie tot Vipassana kan je terecht in het Dhamma Pajjota centrum in Dilsen waar je 10 dagen in stilte leert mediteren. Je mediteert ongeveer 11 uur per dag en krijgt elke avond een uiteenzitting van S.N. Goenka, die ondanks overleden te zijn in 2013, nog een grote invloed heeft op vele mensen. Het is een populaire bestemming dus het is aangewezen tijdig te reserveren. Geen vaste prijs, men werkt daar met vrijwillige brijdrage.',
+    en : 'SOURCE MATERIAL'
+  },  
+  { 
+    key: 'source_10',
+    nl : 'Op de pagina van Tergar vind je online meditatiecursussen, gegeven door Yongey Mingyur Rinpoche. Dit traject is zeer uitgebreid en doet zijn best om meditatie zo toegankelijk mogelijk te maken door met vragenlijsten en videomateriaal te werken. Wel wordt er veel verwezen naar twee boeken: Joy Of Living en Joyful Wisdom, die je moet aanschaffen om helemaal op de hoogte te zijn. Je kan alles op je eigen tempo doen. De prijs bedraagt 25$/per maand.',
+    en : 'SOURCE MATERIAL'
+  },     
   { 
     key: 'source.button.link.app',
     nl : 'Naar de website',
@@ -698,6 +708,11 @@ export const labels = [
   { 
     key: 'source.button.link.book',
     nl : 'Naar het boek',
+    en : 'SOURCE MATERIAL'
+  },
+  { 
+    key: 'source.button.link.website',
+    nl : 'Naar de website',
     en : 'SOURCE MATERIAL'
   },
   { 
