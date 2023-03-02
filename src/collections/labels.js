@@ -692,7 +692,7 @@ export const labels = [
   }, 
   { 
     key: 'source_9',
-    nl : 'Voor de goede introductie tot Vipassana kan je terecht in het Dhamma Pajjota centrum in Dilsen waar je 10 dagen in stilte leert mediteren. Je mediteert ongeveer 11 uur per dag en krijgt elke avond een uiteenzitting van S.N. Goenka, die ondanks overleden te zijn in 2013, nog een grote invloed heeft op vele mensen. Het is een populaire bestemming dus het is aangewezen tijdig te reserveren. Geen vaste prijs, men werkt daar met vrijwillige brijdrage.',
+    nl : 'Voor de goede introductie tot Vipassana kan je terecht in het Dhamma Pajjota centrum in Dilsen waar je 10 dagen in stilte leert mediteren. Je mediteert ongeveer 11 uur per dag en krijgt elke avond een uiteenzitting van S.N. Goenka, die ondanks overleden te zijn in 2013, nog een grote invloed heeft op veel mensen. Het is een populaire bestemming dus het is aangewezen tijdig te reserveren. Geen vaste prijs, men werkt daar met vrijwillige brijdrage.',
     en : 'SOURCE MATERIAL'
   },  
   { 
