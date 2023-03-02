@@ -48,7 +48,6 @@ export default function AboutPage(props){
             </div>
             <FaqPage lang={props.lang} canFadeOut={props.canFadeOut} preflight={props.preflight}/>
             <Footer lang={props.lang} fadeOut={footerFadeOut} />
-
         </React.Fragment>
         
     )
