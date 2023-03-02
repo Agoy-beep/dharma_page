@@ -75,7 +75,7 @@ export default function App() {
           preflight={preflightDestination}
           />
           { 
-            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 bg-gradient-to-t from-amber-900 to-amber-600 md:pt-16 md:bg-darkyellowtrees bg-fixed bg-center bg-repeat-y md:bg-repeat-x">
+            <div id='pages-container' className="flex-auto content-center h-full min-h-screen pt-8 md:pt-16 bg-darkyellowtrees bg-fixed bg-center bg-repeat-y md:bg-repeat-x">
               <Routes>
                 <Route path='/' element={<IntroPage 
                                             lang={language} 
