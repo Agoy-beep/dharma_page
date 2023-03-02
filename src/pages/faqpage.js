@@ -47,7 +47,6 @@ export default function FaqPage(props) {
         />
       ))}
     </div>
-
     </React.Fragment>
     
   )
