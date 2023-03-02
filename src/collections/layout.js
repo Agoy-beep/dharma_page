@@ -1,28 +1,28 @@
 export const topFiller = "mt-24 h-4 md:mt-0";
 export const bottomFiller = "container h-32 bg-transparent";
 
-export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear duration-700 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const containerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear duration-500 border bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const containerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 h-0 my-12 pb-8 pt-4 opacity-0 transition ease-linear";
 
-export const footerContainerClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition ease-linear delay-100 duration-700";
+export const footerContainerClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition ease-linear delay-100 duration-500";
 export const footerContainerHiddenClassName = "container text-center mx-auto text-lg md:text-base text-white pt-2 pb-8 transition ease-linear opacity-0";
 
-export const mainContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear delay-100 duration-700 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const mainContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear delay-100 duration-500 border bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const mainContainerHiddenClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear border bg-white rounded-md border-gray-light shadow-md opacity-0";
 
-export const aboutContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear delay-100 duration-700 border bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const aboutContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear delay-100 duration-500 border bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const aboutContainerHiddenClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 mx-auto md:my-6 my-12 pb-8 pt-4 transition ease-linear border bg-white rounded-md border-gray-light shadow-md opacity-0";
 
-export const introContainerClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 my-12 pb-8 pt-4 transition delay-100 duration-700 ease-linear bg-white rounded-md border-gray-light shadow-md opacity-80";
+export const introContainerClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 my-12 pb-8 pt-4 transition delay-100 duration-500 ease-linear bg-white rounded-md border-gray-light shadow-md opacity-80";
 export const introContainerHiddenClassName = "container flex flex-col mx-auto w-11/12 md:w-4/6 xl:w-7/12 my-12 pb-8 pt-4 transition ease-linear bg-white rounded-md border-gray-light shadow-md opacity-0";
 
-export const sourcesWrapperClassName = "container md:grid md:grid-cols-4 transition ease-linear delay-100 duration-700 opacity-100"
+export const sourcesWrapperClassName = "container md:grid md:grid-cols-4 transition ease-linear delay-100 duration-500 opacity-100"
 export const sourcesWrapperHiddenClassname = "container md:grid md:grid-cols-4 transition ease-linear opacity-0"
 
-export const sessionsWrapperClassName = "container flex flex-col mx-auto transition ease-linear delay-100 duration-700 opacity-100"
+export const sessionsWrapperClassName = "container flex flex-col mx-auto transition ease-linear delay-100 duration-500 opacity-100"
 export const sessionsWrapperHiddenClassName = "container flex flex-col mx-auto transition ease-linear opacity-0"
 
-export const meditationContainerClassName = "container flex transition-all delay-150 duration-700 flex-col mx-10 my-6 w-2/3 bg-gray bg-opacity-25 opacity-100 border rounded-lg border-gray-light shadow-lg "
+export const meditationContainerClassName = "container flex transition-all delay-150 duration-500 flex-col mx-10 my-6 w-2/3 bg-gray bg-opacity-25 opacity-100 border rounded-lg border-gray-light shadow-lg "
 export const meditationContainerHiddenClassName =  "container mx-10 w-2/3 h-0 rounded-lg transition ease-in-out bg-opacity-0 opacity-0"
 
 export const titleClassName = "text-5xl md:text-4xl my-4 mx-auto p-4 text-center normal-case bg-gray-light rounded-lg";
@@ -35,16 +35,16 @@ export const quoterClassName = "text-3xl  md:text-lg my-2 mx-8 md:ml-4 md:mr-4 m
 export const buttonClassName = "w-fit h-fit mx-auto my-4 p-6 md:p-3 overflow-hidden text-center font-bold uppercase text-2xl md:text-base bg-orange opacity-70 rounded-md transition ease-linear delay-100 hover:scale-110 duration-200 select-none"
 export const buttonClassNameClicked = "w-fit h-fit mx-auto my-4 p-6 md:p-3 overflow-hidden text-center font-bold uppercase text-white text-2xl md:text-base bg-orange opacity-70 rounded-md transition ease-linear delay-100 hover:scale-110 duration-200 select-none"
 
-export const sessionContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition ease-linear duration-700 bg-white border rounded-md border-gray-light shadow-md opacity-90";
+export const sessionContainerClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition ease-linear duration-500 bg-white border rounded-md border-gray-light shadow-md opacity-90";
 export const sessionContainerHiddenClassName = "container flex flex-col w-11/12 md:w-4/6 xl:w-7/12 md:flex-row md:items-center mx-auto my-3 md:my-6 pb-4 transition ease-linear bg-white border rounded-md border-gray-light shadow-md opacity-0";
-export const nosessionContainerClassName = "container flex-1 flex-row w-11/12 md:w-4/6 xl:w-7/12 md:items-center mx-auto my-3 md:my-12 pb-4 transition ease-linear duration-700 bg-white border rounded-md border-gray-light shadow-md opacity-80"
+export const nosessionContainerClassName = "container flex-1 flex-row w-11/12 md:w-4/6 xl:w-7/12 md:items-center mx-auto my-3 md:my-12 pb-4 transition ease-linear duration-500 bg-white border rounded-md border-gray-light shadow-md opacity-80"
 export const nosessionContainerHiddenClassName = "container flex-1 flex-row w-11/12 md:w-4/6 xl:w-7/12 md:items-center mx-auto my-3 md:my-12 pb-4 transition ease-linear bg-white border rounded-md border-gray-light shadow-md opacity-0"
 
-export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px mt-10 bg-transparent rounded-lg transition ease-linear duration-700";
-export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto transition ease-linear duration-700";
-export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition ease-linear duration-700 border rounded-md bg-white border-gray-light shadow-md opacity-90";
+export const sourceContainerSwitchButtons = "container md:col-span-1 flex-1 flex-col place-content-center h-42px mt-10 bg-transparent rounded-lg transition ease-linear duration-500";
+export const sourceContainerGridMode = "container grid grid-col grid-cols-4 gap-2 w-11/12 md:w-4/6 xl:w-7/12 items-center mx-auto transition ease-linear duration-500";
+export const sourceContainerClassName = "container flex-auto flex-col my-3 md:my-8 pb-4 w-11/12 md:w-5/6 xl:w-8/12 mx-auto items-center overflow-hidden transition ease-linear duration-500 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceContainerHiddenClassNameCard = "container flex flex-col w-11/12 transition ease-linear opacity-0";
-export const sourceContainerClassNameImageOnly = "container w-fit h-fit mx-auto items-center overflow-hidden transition ease-linear duration-700 border rounded-md bg-white border-gray-light shadow-md opacity-90";
+export const sourceContainerClassNameImageOnly = "container w-fit h-fit mx-auto items-center overflow-hidden transition ease-linear duration-500 border rounded-md bg-white border-gray-light shadow-md opacity-90";
 export const sourceTitleSubClassName = "text-4xl md:text-2xl my-4 md:ml-4 py-2 px-4 w-fit mx-auto text-center md:text-left normal-case bg-gray-light opacity-80 md:bg-transparent rounded-lg";
 export const sourceParagraphClassName = "basis-3/4 my-2 ml-8 mr-8 md:mr-6 md:ml-8 text-left text-3xl md:text-base";
 export const sourceImageClassNameWide = "md:w-48 md:h-24 mr-4 ml-2 my-2 md:mr-4 md:ml-4 overflow-hidden border rounded-md float-right"
