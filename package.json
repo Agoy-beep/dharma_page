@@ -41,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://agoy-beep.github.io/dharma_page",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
