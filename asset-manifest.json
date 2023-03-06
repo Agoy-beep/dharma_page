@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dharma_page/static/css/main.3de95713.css",
-    "main.js": "/dharma_page/static/js/main.629a5822.js",
+    "main.js": "/dharma_page/static/js/main.4fd0b199.js",
     "static/media/background_dark_yellow.png": "/dharma_page/static/media/background_dark_yellow.2e46b3185d67512a4480.png",
     "static/media/background_dark_header.png": "/dharma_page/static/media/background_dark_header.a1f7833eb3ba46186173.png",
     "index.html": "/dharma_page/index.html",
     "main.3de95713.css.map": "/dharma_page/static/css/main.3de95713.css.map",
-    "main.629a5822.js.map": "/dharma_page/static/js/main.629a5822.js.map"
+    "main.4fd0b199.js.map": "/dharma_page/static/js/main.4fd0b199.js.map"
   },
   "entrypoints": [
     "static/css/main.3de95713.css",
-    "static/js/main.629a5822.js"
+    "static/js/main.4fd0b199.js"
   ]
 }
