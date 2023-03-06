@@ -14,16 +14,15 @@ export default function Intro(props) {
   
   const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(introContainerHiddenClassName);
- 
+  console.log ('props.destination ', props);
+  console.log(document.URL);
   useEffect(()=>{
-    if(props.preflight === '/' || props.destination === undefined ) {
       setTimeout(() => setContainerVisibleClassName(() => introContainerClassName), 100);
         return () => {
           // waarom wordt props.destination hier op '/' gezet? 
           // setContainerVisibleClassName(() => introContainerHiddenClassName);
         }
-    }
-  },[props.destination, props.preflight]);
+  },[]);
 
   useEffect(() => {
     if(props.canFadeOut === true && props.preflight !== '/') {

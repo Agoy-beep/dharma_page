@@ -16,7 +16,6 @@ export default function Header(props) {
     const about = retrieveLabel('about', props.lang);
     const sources = retrieveLabel('sources', props.lang);
 
-    
     // de APP laag geeft de nieuwe destination door via set Destination. App  kan dit niet doen want geen Router. 
     // navigate delay geeft tijd om in te faden. 200 preflight en 500 navigate geeft geen hickups
     useEffect(() => {
@@ -33,16 +32,16 @@ export default function Header(props) {
             <button className="text-4xl mx-auto " onClick={props.clickHomeLink}>{title}</button>
             </div>
             <div className={headerLinkContainerClassName}>
-            <button className={props.preflight === '/main' || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickMainLink}>
+            <button className={document.baseURI.includes('/main') || props.buttonMain ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickMainLink}>
                 {main}
             </button>
-            <button className={props.preflight === '/sessions' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSessionsLink}>
+            <button className={document.baseURI.includes('/sessions') ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSessionsLink}>
                 {sessions}
             </button>
-            <button  className={props.preflight === '/sources' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
+            <button  className={document.baseURI.includes('/sources') ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickSourcesLink}>
                 {sources}
             </button>
-            <button className={props.preflight === '/about' ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickAboutMeLink} >
+            <button className={document.baseURI.includes('/about') ? headerLinkClassNameClicked : headerLinkClassName} onClick={props.clickAboutMeLink} >
                 {about}      
             </button>
                 {/* <div className="container flex-row-reverse space-x-2 basis-1/5">

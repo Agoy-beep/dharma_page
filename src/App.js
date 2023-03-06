@@ -84,31 +84,28 @@ export default function App() {
                                             buttonClick={setMainHeaderViaIntroButton} 
                                             destination={destination} 
                                             canFadeOut={canFadeOut} 
-                                            // fireNavigator={fireNavigator}
-                                            preflight={preflightDestination}/>}/>
+                                            preflight={preflightDestination}
+                                            />}
+                                            />
                 <Route path='/main' element={<MainPage 
                                             lang={language}
                                             destination={destination} 
                                             canFadeOut={canFadeOut} 
-                                            // fireNavigator={fireNavigator}
                                             preflight={preflightDestination}/>} />
                 <Route path='/sessions' element={<SessionsPage 
                                             lang={language}
                                             destination={destination} 
                                             canFadeOut={canFadeOut} 
-                                            // fireNavigator={fireNavigator}
                                             preflight={preflightDestination}/>} />
                 <Route path='/sources' element={<SourcesPage 
                                             lang={language}
                                             destination={destination} 
                                             canFadeOut={canFadeOut} 
-                                            // fireNavigator={fireNavigator}
                                             preflight={preflightDestination}/>} />
                 <Route path='/about' element={<AboutPage 
                                             lang={language}
                                             destination={destination} 
                                             canFadeOut={canFadeOut} 
-                                            // fireNavigator={fireNavigator}
                                             preflight={preflightDestination}/>} />
               </Routes>
             </div>
