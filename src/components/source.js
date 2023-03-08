@@ -8,7 +8,6 @@ import { containerHiddenClassName,
   sourceButtonClassName, 
   sourceButtonsContainer} from '../collections/layout.js';
 
-  const notClicked = false;
 export default function Source(props) {
   
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(containerHiddenClassName);
@@ -17,7 +16,7 @@ export default function Source(props) {
   useEffect(()=>{
       setContainerImageOnlyVisibleClassName(() => containerHiddenClassName);
         setContainerImageOnlyVisibleClassName(() => sourceContainerClassNameImageOnly);
-    }, [props.showDetail === false]);
+    }, [props.showDetail]);
 
     useEffect(()=>{
         setContainerVisibleClassName(() => sourceContainerHiddenClassNameCard);

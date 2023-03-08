@@ -1,8 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import Faq from '../components/faq';
 import { retrieveLabel } from '../helpers/labelhelper';
-import { aboutContainerClassName, aboutContainerHiddenClassName, containerClassName,
-  containerHiddenClassName,
+import { aboutContainerClassName, aboutContainerHiddenClassName,
   titleClassName, 
   } from '../collections/layout.js';
 
@@ -17,7 +16,7 @@ export default function FaqPage(props) {
     if(props.canFadeOut === true && props.preflight !== '/about') {
       setContainerVisibleClassName(() => aboutContainerHiddenClassName);
     }
-  }, [props.canFadeOut])
+  }, [props.canFadeOut, props.preflight])
 
   const faq_title = retrieveLabel('faq.title', props.lang);
   // const faq_q1_question = retrieveLabel('faq.q1.question', props.lang);

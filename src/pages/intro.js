@@ -14,8 +14,7 @@ export default function Intro(props) {
   
   const [footerFadeOut, setFooterFadeOut] = useState(false);
   const [containerVisibleClassName, setContainerVisibleClassName] = useState(introContainerHiddenClassName);
-  console.log ('props.destination ', props);
-  console.log(document.URL);
+  
   useEffect(()=>{
       setTimeout(() => setContainerVisibleClassName(() => introContainerClassName), 100);
         return () => {
@@ -45,7 +44,6 @@ export default function Intro(props) {
   const intro_paragraph_3 = retrieveLabel('intro.paragraph_3', props.lang);
   const intro_div_par1_1 = retrieveLabel('intro.div_1', props.lang);
   const intro_div_par1_2 = retrieveLabel('intro.div_2', props.lang);
-  const intro_div_par1_3 = retrieveLabel('intro.div_3', props.lang);
   const to_the_text = retrieveLabel('intro.button', props.lang);
 
  return (

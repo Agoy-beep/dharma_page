@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
 import FaqPage from './faqpage';
 import Footer from '../footer';
+import mePic from '../assets/me.png';
 import { retrieveLabel } from '../helpers/labelhelper.js';
 import { 
     paragraphClassName,
@@ -39,7 +40,7 @@ export default function AboutPage(props){
                 
                 <div className="mt-4 ">
                 <div className="container float-right w-52 h-52 mr-10 ml-4 mt-4">
-                    <img src='me.png' alt='icon' className="object-cover rounded-2xl"></img>
+                    <img src={mePic} alt='icon' className="object-cover rounded-2xl"></img>
                 </div>
                 <div className={paragraphClassName}>{about_paragraph_1}</div>
                 <div className={paragraphClassName}>{about_paragraph_2}</div>

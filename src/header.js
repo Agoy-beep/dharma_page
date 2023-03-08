@@ -17,8 +17,9 @@ export default function Header(props) {
     const sources = retrieveLabel('sources', props.lang);
 
     // de APP laag geeft de nieuwe destination door via set Destination. App  kan dit niet doen want geen Router. 
-    // navigate delay geeft tijd om in te faden. 200 preflight en 500 navigate geeft geen hickups
+    // navigate delay geeft tijd om in te faden.
     useEffect(() => {
+        console.log('HEADER: Use effect props.destination', props.destination);
         if(props.destination !== undefined) {
             setTimeout(() => navigate(props.destination), 100);
         }

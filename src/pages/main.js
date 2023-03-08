@@ -3,15 +3,12 @@ import { retrieveLabel } from '../helpers/labelhelper.js';
 import ReactMarkdown from 'react-markdown';
 import Meditation from '../components/meditation.js';
 import Footer from "../footer.js";
-import { containerClassName,
-    containerHiddenClassName,
+import { 
     mainContainerClassName,
     titleClassName, 
     paragraphClassName, 
-    divClassName, 
     quoteClassName,
     quoterClassName, 
-    paragraphBottomClassName, 
     titleSubClassName,
     buttonClassName, 
     buttonClassNameClicked,
@@ -48,7 +45,6 @@ export default function Main(props) {
       }, [props.canFadeOut, props.preflight])
      
 
-    const main_title_1 = retrieveLabel('main.title_1', props.lang);
     const main_quote_1 = retrieveLabel('main.quote_1', props.lang);
     const main_quote_1_pt_2 = retrieveLabel('main.quote_1_pt_2', props.lang);
     const main_quote_2 = retrieveLabel('main.quote_2', props.lang);
@@ -77,10 +73,6 @@ export default function Main(props) {
     const main_paragraph_6 = retrieveLabel('main.paragraph_6', props.lang);
     const main_paragraph_7 = retrieveLabel('main.paragraph_7', props.lang);
     const main_paragraph_8 = retrieveLabel('main.paragraph_8', props.lang);
-    const main_paragraph_9 = retrieveLabel('main.paragraph_9', props.lang);
-    const main_paragraph_10 = retrieveLabel('main.paragraph_10', props.lang);
-    const main_paragraph_11 = retrieveLabel('main.paragraph_11', props.lang);
-    const main_paragraph_12 = retrieveLabel('main.paragraph_12', props.lang);
     const main_paragraph_13 = retrieveLabel('main.paragraph_13', props.lang);
     const main_paragraph_14 = retrieveLabel('main.paragraph_14', props.lang);
     const main_paragraph_15 = retrieveLabel('main.paragraph_15', props.lang);
@@ -91,8 +83,6 @@ export default function Main(props) {
     const main_paragraph_20 = retrieveLabel('main.paragraph_20', props.lang);
     const main_paragraph_21 = retrieveLabel('main.paragraph_21', props.lang);
     const main_paragraph_22 = retrieveLabel('main.paragraph_22', props.lang);
-    const main_paragraph_22_div_1 = retrieveLabel('main.paragraph_22.div_1', props.lang);
-    const main_paragraph_22_div_2 = retrieveLabel('main.paragraph_22.div_2', props.lang);
     const main_paragraph_23 = retrieveLabel('main.paragraph_23', props.lang);
     const main_paragraph_24 = retrieveLabel('main.paragraph_24', props.lang);
     const main_paragraph_25 = retrieveLabel('main.paragraph_25', props.lang);
@@ -150,14 +140,10 @@ export default function Main(props) {
                 <div className={quoteClassName}>"{main_quote_1}"</div>
                 <div className={quoterClassName}>{main_quote_1_pt_2}</div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_8}</ReactMarkdown></div>
-                {/* <div className={paragraphClassName}>{main_paragraph_9}</div> */}
-                {/* <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_10}</ReactMarkdown></div>
-                <div className={paragraphBottomClassName}>{main_paragraph_11}</div> */}
             </div>
             <div className= {containerVisibleClassName}>
                 <h1 className={titleClassName}>{main_title_3}</h1>
                 <h3 className={titleSubClassName}>{main_title_sub_4}</h3>
-                {/* <div className={paragraphClassName}>{main_paragraph_12}</div> */}
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_13}</ReactMarkdown></div>
                 <div className={paragraphClassName}><ReactMarkdown>{main_paragraph_14}</ReactMarkdown></div>
                 <div className={quoteClassName}>"{main_quote_4}"</div>

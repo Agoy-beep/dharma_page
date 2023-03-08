@@ -507,7 +507,7 @@ export const labels = [
   },
   { 
     key: 'nosession.description',
-    nl : 'Op dit ogenblik zijn er geen sessies of workshops gepland. Wanneer mijn agenda het toelaat, zullen hier sessies met vaste regelmaat ingepland worden. Heb je interesse en wil je op de hoogte gehouden worden? Stuur een mailtje naar **arne.goyvaerts@gmail.com**.',
+    nl : 'Op dit ogenblik zijn er geen sessies of workshops gepland. Wanneer mijn agenda het toelaat, zullen hier sessies met vaste regelmaat ingepland worden. Heb je interesse en wil je op de hoogte gehouden worden? Stuur een mailtje naar **arne.goyvaerts@gmail.com**  of word lid van [**deze facebookgroep**](https://www.facebook.com/groups/943650243458034).',
     en : 'SESSIONS'
   },
   { 
@@ -732,7 +732,7 @@ export const labels = [
   },
   { 
     key: 'about.paragraph_3',
-    nl : 'Heb je vragen of opmerkingen over wat hier op de website te vinden is, wil je mij graag contacteren rond het organiseren van workshops of ben je geinteresseerd in de sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com**.',
+    nl : 'Heb je vragen of opmerkingen over wat hier op de website te vinden is, wil je mij graag contacteren rond het organiseren van workshops of ben je geinteresseerd in de sessies, kan je altijd een mailtje sturen naar **arne.goyvaerts@gmail.com** of lid worden van [**deze facebookgroep**](https://www.facebook.com/groups/943650243458034).',
     en : 'ABOUT ME'
   },
   { 

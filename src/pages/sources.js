@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Source from '../components/source.js';
 import Footer from '../footer.js';
+import whyMeditatePic from '../assets/whymeditate.png';
+import howToChangePic from '../assets/how_to_change_your_mind.png';
+import goenkaPic from '../assets/goenka.png';
+import iAmThatPic from '../assets/I_am_that.png';
+import inLovePic from '../assets/in_love_with_the_world.png';
+import mingyurPic from '../assets/mingyur.png';
+import theBookPic from '../assets/the_book.png';
+import effortlessMindfulnessPic from '../assets/the_way_of_effortless_mindfulness.png';
+import whoAmIPic from '../assets/who_am_i.png';
+import wakingUpPic from '../assets/wakingup.png';
 import { retrieveLabel } from '../helpers/labelhelper.js'
 import { sourceImageClassNameWide,
     sourceImageClassNameBook, 
@@ -11,8 +21,6 @@ import { sourceImageClassNameWide,
     bottomFiller,
     sourceContainerGridMode,
     sourceContainerSwitchButtons,
-    sourceFilterButtonClassName,
-    sourceFilterButtonClassNameActive,
     sourceImageClassNamePortrait,
     sourceImageClassNamePortraitIcon,
     containerHiddenClassName, 
@@ -53,7 +61,6 @@ export default function SourcesPage(props){
           setContainerVisibleClassName(() => containerHiddenClassName);
           setWrapperVisibleClassName(() => sourcesWrapperHiddenClassname);
           setFooterFadeOut(() => true);
-        //   return props.fireNavigator(); 
         }
       }, [props.canFadeOut, props.preflight])
 
@@ -75,7 +82,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_1',
             title: 'Why Meditate - Matthieu Ricard',
-            image: 'whymeditate.png',
+            image: whyMeditatePic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_2', props.lang),
@@ -105,7 +112,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_2',
             title: 'In Love With The World - Yongey Mingyur Rinpoche, Helen Tworkov',
-            image: 'in_love_with_the_world.png',
+            image: inLovePic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_4', props.lang),
@@ -135,7 +142,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_3',
             title: 'Who Am I - Ramana Maharshi',
-            image: 'who_am_i.png',
+            image: whoAmIPic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_5', props.lang),
@@ -165,7 +172,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_4',
             title: 'The Book: On The Taboo Against Knowing Who You Are - Alan Watts',
-            image: 'the_book.png',
+            image: theBookPic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_6', props.lang),
@@ -195,7 +202,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_5',
             title: 'I Am That: Talks With Nisagradatta Maharaj',
-            image: 'I_am_that.png',
+            image: iAmThatPic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_7', props.lang),
@@ -224,7 +231,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_6',
             title: 'How To Change Your Mind - Michael Pollan',
-            image: 'how_to_change_your_mind.png',
+            image: howToChangePic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_3', props.lang),
@@ -254,7 +261,7 @@ export default function SourcesPage(props){
         {
             id: 'Book_7',
             title: 'The Way Of Effortless Mindfulness - Loch Kelly',
-            image: 'the_way_of_effortless_mindfulness.png',
+            image: effortlessMindfulnessPic,
             imageCardStyling: sourceImageClassNameBook,
             imageIconStyling: sourceImageClassNameBookIcon,
             description: retrieveLabel('source_8', props.lang),
@@ -283,7 +290,7 @@ export default function SourcesPage(props){
         {
             id: 'App_1',
             title: 'Waking Up App',
-            image: 'wakingup.png',
+            image: wakingUpPic,
             imageCardStyling: sourceImageClassNameWide,
             imageIconStyling: sourceImageClassNameWideIcon,
             description: retrieveLabel('source_1', props.lang),
@@ -312,7 +319,7 @@ export default function SourcesPage(props){
         {
             id: 'Retreat_1',
             title: 'Vipassana Retreat',
-            image: 'goenka.png',
+            image: goenkaPic,
             imageCardStyling: sourceImageClassNamePortrait,
             imageIconStyling: sourceImageClassNamePortraitIcon,
             description: retrieveLabel('source_9', props.lang),
@@ -341,7 +348,7 @@ export default function SourcesPage(props){
         {
             id: 'Course_1',
             title: 'Tergar Meditation',
-            image: 'mingyur.png',
+            image: mingyurPic,
             imageCardStyling: sourceImageClassNamePortrait,
             imageIconStyling: sourceImageClassNamePortraitIcon,
             description: retrieveLabel('source_10', props.lang),

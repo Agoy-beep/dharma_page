@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Header from "./header";
 import SessionsPage from "./pages/sessions";
 import IntroPage from './pages/intro';
@@ -16,12 +16,17 @@ export default function App() {
   const [destination, setDestination] = useState();
   const [canFadeOut, setCanFadeOut] = useState(false);
   const [isMainButtonClicked, setIsMainButtonClicked] = useState(false);
+  console.log('destination, preflight ', destination, preflightDestination);
   
   // preflight delay is den tijd die je hebt om out te faden.
   useEffect(() => {
+      console.log('UseEffectApp Fires');
       setTimeout(() => setDestination(() => preflightDestination), 100)
       setIsMainButtonClicked();
       setCanFadeOut(() => false);
+      return(() => {
+        console.log('app destroy ', preflightDestination);
+      })
   }, [preflightDestination])
 
   const clickHomeLink = () => {
@@ -60,7 +65,6 @@ export default function App() {
 
   return (
     <React.Fragment>
-      {/* <BrowserRouter basename='/dharma_page/'> */}
       <HashRouter>
       <ScrollToTop />
         <Header
@@ -112,7 +116,6 @@ export default function App() {
           }
       
     </HashRouter>
-    {/* <Footer lang={language}/> */}
   </React.Fragment>
   )
 }

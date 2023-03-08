@@ -21,6 +21,9 @@ export default function SessionsPage(props){
             setContainerVisibleClassName(() => sessionsWrapperHiddenClassName);
             setFooterFadeOut(() => true);
         }
+        return(()=> {
+            console.log('on destroy props ', props);
+        })
       }, [props.canFadeOut, props.preflight])
 
     const sessions= [
