@@ -1,15 +1,25 @@
 {
   "files": {
     "main.css": "/dharma_page/static/css/main.3de95713.css",
-    "main.js": "/dharma_page/static/js/main.4fd0b199.js",
+    "main.js": "/dharma_page/static/js/main.9b5c7321.js",
     "static/media/background_dark_yellow.png": "/dharma_page/static/media/background_dark_yellow.2e46b3185d67512a4480.png",
     "static/media/background_dark_header.png": "/dharma_page/static/media/background_dark_header.a1f7833eb3ba46186173.png",
+    "static/media/me.png": "/dharma_page/static/media/me.0f2b7307bd6eaf875a4c.png",
+    "static/media/who_am_i.png": "/dharma_page/static/media/who_am_i.1ed22f909fe7fd947fae.png",
+    "static/media/I_am_that.png": "/dharma_page/static/media/I_am_that.a7ff71d84a51348b3d05.png",
+    "static/media/in_love_with_the_world.png": "/dharma_page/static/media/in_love_with_the_world.edfea2d77f73fa7b63d5.png",
+    "static/media/the_way_of_effortless_mindfulness.png": "/dharma_page/static/media/the_way_of_effortless_mindfulness.baf28117cba805a3b372.png",
+    "static/media/how_to_change_your_mind.png": "/dharma_page/static/media/how_to_change_your_mind.1a2a44f10b07c0c701e8.png",
+    "static/media/whymeditate.png": "/dharma_page/static/media/whymeditate.23292df78d4e80a5fe13.png",
+    "static/media/goenka.png": "/dharma_page/static/media/goenka.2ac962e1c057e28a3259.png",
+    "static/media/mingyur.png": "/dharma_page/static/media/mingyur.d557aa8ab3765ac5ec45.png",
+    "static/media/the_book.png": "/dharma_page/static/media/the_book.eb33753b553175d745dd.png",
     "index.html": "/dharma_page/index.html",
     "main.3de95713.css.map": "/dharma_page/static/css/main.3de95713.css.map",
-    "main.4fd0b199.js.map": "/dharma_page/static/js/main.4fd0b199.js.map"
+    "main.9b5c7321.js.map": "/dharma_page/static/js/main.9b5c7321.js.map"
   },
   "entrypoints": [
     "static/css/main.3de95713.css",
-    "static/js/main.4fd0b199.js"
+    "static/js/main.9b5c7321.js"
   ]
 }
