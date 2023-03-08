@@ -1,8 +1,7 @@
 {
   "name": "dharma_page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
-  "homepage": "https://agoy-beep.github.io/dharma_page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
